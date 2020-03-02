@@ -122,8 +122,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="details" id="details"></a>Details
 
-<img style="float: left;" src="isra/readme/images/rhisral.png">
-Isra is a twenty year old squire-paladin with the Sisters and Brothers of the Ruby Rose, the Sunite paladinic order. She is a follower of Sune Firehair, the goddess of love, beauty, and passion, and the only chaotic aligned deity to sponsor paladins. As such, she has far more experience with (and sympathy for) the chaotic good churches of Sune and Lliira than any of the lawful churches, and associates with some of the most mirthful churches in the Realms.
+<img style="float: left;" src="isra/readme/images/rhisral.png"> Isra is a twenty year old squire-paladin with the Sisters and Brothers of the Ruby Rose, the Sunite paladinic order. She is a follower of Sune Firehair, the goddess of love, beauty, and passion, and the only chaotic aligned deity to sponsor paladins. As such, she has far more experience with (and sympathy for) the chaotic good churches of Sune and Lliira than any of the lawful churches, and associates with some of the most mirthful churches in the Realms.
 
 So her outlook and personality are somewhat removed from what you might expect from a paladin. Don't expect sermons or proselytism: the Firehair's faith is something better served by building close friendships than by lecturing dogma, and Isra understands that. She definitely still believes in honor, discipline, and order, but she tends to value the courtly aspects of the code of conduct more highly than the demands of duty. As a result, she's usually pretty willing to ignore harmlessly chaotic behavior (not evil behavior, though).
 
@@ -162,13 +161,18 @@ Troubled by the hints of conspiracy and the threat of war, Isra will be very eag
 - Isra is intended to be a romance option in BGII for a good-aligned protagonist of any race or gender with a charisma of 13 or greater. You may flirt with her in BGI, though she won't be interested in anything more serious until BGII.
 - Isra doesn't get into lethal arguments with any other joinable NPC, though her relationships with evil NPCs are strained at best, downright hostile at worst.
 
+## 
+
+#### NPC Relationships
+
+If you want to choose NPCs by how much they talk, Quayle, Tiax, Faldorn, and Shar-Teel only have one banter a piece. Dorn sort of has one, though it's not exactly a banter. Branwen, Coran, Dynaheir, Imoen, Khalid, and Jaheira all have three (as does Eldoth if Skie is around). Everyone else has two.
+
+She tends to get along with most of the good and neutral aligned folk, though there's a bit of religious tension with Ajantis at times, and Branwen as well (Sune hates Tempus; Tempus doesn't care). Rasaad is probably somewhat interesting from a religious perspective also. She gets along really well with Khalid, though there's some tension with Jaheira. She may be crushing on Dynaheir a little bit, though it's a bit hard to tell. Her relationship with Coran is more than a bit mercurial. She does not like Safana at all, while Safana mostly just finds her amusing.
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
-#### NPC Relationships
-
-There will be conflict, occasionally on the edge of violence, but you can keep him with any Bioware NPC without fearing a lethal outcome. Jaheira in particular is recommended, as her presence can significantly affect the epilogue. This is doubly true if you are romancing him.
 
 
 ## <a name="components" id="components"></a>Components
