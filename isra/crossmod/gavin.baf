@@ -1,0 +1,64 @@
+IF  
+   CheckStatGT(Myself,40,INTOXICATION)
+   InParty(Myself)
+   InParty("rh#Isra") 
+   InMyArea("rh#Isra") 
+   CombatCounter(0)
+   !See([ENEMY])
+   !StateCheck(Myself,CD_STATE_NOTVALID)
+   !StateCheck("rh#Isra",CD_STATE_NOTVALID)
+   Gender(Player1,MALE)
+   Global("rh#IsraGavin4","GLOBAL",0)
+THEN
+RESPONSE #100
+	SetGlobal("rh#IsraGavin4","GLOBAL",1)
+END
+
+IF  
+   CheckStatGT(Myself,40,INTOXICATION)
+   InParty(Myself)
+   InParty("rh#Isra") 
+   InMyArea("rh#Isra") 
+   CombatCounter(0)
+   !See([ENEMY])
+   !StateCheck(Myself,CD_STATE_NOTVALID)
+   !StateCheck("rh#Isra",CD_STATE_NOTVALID)
+   Gender(Player1,MALE)
+   Global("rh#IsraGavin4","GLOBAL",1)
+THEN
+RESPONSE #100
+	StartDialogueNoSet("rh#Isra")
+END
+
+// morning after
+
+IF  
+   InParty(Myself)
+   InParty("rh#Isra") 
+   InMyArea("rh#Isra") 
+   CombatCounter(0)
+   !See([ENEMY])
+   !StateCheck(Myself,CD_STATE_NOTVALID)
+   !StateCheck("rh#Isra",CD_STATE_NOTVALID)
+   Gender(Player1,MALE)
+   PartyRested()
+   Global("rh#IsraGavin4","GLOBAL",2)
+THEN
+RESPONSE #100
+	SetGlobal("rh#IsraGavin4","GLOBAL",3)
+END
+
+IF  
+   InParty(Myself)
+   InParty("rh#Isra") 
+   InMyArea("rh#Isra") 
+   CombatCounter(0)
+   !See([ENEMY])
+   !StateCheck(Myself,CD_STATE_NOTVALID)
+   !StateCheck("rh#Isra",CD_STATE_NOTVALID)
+   Gender(Player1,MALE)
+   Global("rh#IsraGavin4","GLOBAL",3)
+THEN
+RESPONSE #100
+	StartDialogueNoSet("rh#Isra")
+END

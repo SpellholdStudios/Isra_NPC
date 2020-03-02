@@ -1,0 +1,13 @@
+IF
+  OR(2)
+    InMyArea("rh#Isra")
+    InPartyAllowDead("rh#Isra")
+  GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+  RESPONSE #100
+    ActionOverride("rh#Isra",LeaveParty())
+	ActionOverride("PlayerChest00",TakeCreatureItems("rh#Isra",BACKPACK))
+    SmallWait(1)
+    ActionOverride("rh#Isra",DestroySelf())
+    Continue()
+END

@@ -1,0 +1,12 @@
+IF
+InParty("rh#Isra")
+Global("rh#IsraLeavesPartyBGT","GLOBAL",0)
+THEN
+RESPONSE #100
+ActionOverride("rh#Isra",LeaveParty())
+ActionOverride("rh#Isra",ChangeAIScript("",DEFAULT))
+ActionOverride("rh#Isra",ClearAllActions())
+ActionOverride("rh#Isra",DestroySelf())
+SetGlobal("rh#IsraLeavesPartyBGT","GLOBAL",1)
+Continue()
+END

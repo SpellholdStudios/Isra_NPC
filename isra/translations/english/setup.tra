@@ -1,0 +1,53 @@
+@0    = ~v1.0~
+@1    = ~BG:EE install detected~
+@2    = ~Tutu install detected.~
+@3    = ~BGT install detected.~
+@4    = ~Please install on BG:EE, Tutu or BGT.~
+@5    = ~Isra NPC Mod for BG:EE, BGT and TuTu~
+@6    = ~Messenger~
+@7    = ~Isra~
+@8    = ~When asked about her past, ISRA laughs and admits that there is precious little to tell thus far. She explains that she has spent the past eight years in Crimmor, the Caravan Capital of Amn, living amongst her mother's kin while squired to a paladin of Sune in the Order of the Ruby Rose. As much as she seems to enjoy speaking about the city, you are left with the impression that she is quite thrilled to finally be away from it and out in the world on her own.~
+
+@10   = ~I'm truly honored to be in your company.~ [rh#is001]
+@11   = ~I don't care for some of the choices you've been making.~ [rh#is002]
+@12   = ~I shan't simply stand by and watch this any longer.~ [rh#is003]
+@13   = ~Enough! I shall be party to this no longer.~ [rh#is004]
+@14   = ~This is new... and not entirely unwelcome.~ [rh#is005]
+@15   = ~These hours are beginning to wear on me.~ [rh#is006]
+@16   = ~Would that we had some Lliirans amongst us to laugh away the tedium.~ [rh#is007]
+@17   = ~For the Firehair!~ [rh#is008]
+@18   = ~For all that is good!~ [rh#is009]
+@19   = ~For the glory of Sune!~ [rh#is010]
+
+
+@22   = ~A healer's aid, please!~ [rh#is013]
+@23   = ~As lovely as it is here, I'm beginning to miss civilization.~ [rh#is014]
+@24   = ~Ah, the city, in all of its magnificence... and infamy.~ [rh#is015]
+@25   = ~I wonder what lost marvels we might find hidden down here.~ [rh#is016]
+@26   = ~All things seem possible in the daylight.~ [rh#is017]
+@27   = ~'Tis a beautiful night... at least for the moment.~ [rh#is018]
+@28   = ~I hear you.~ [rh#is019]
+@29   = ~What do you need?~ [rh#is020]
+@30   = ~How may I help?~ [rh#is021]
+@31   = ~I'm ready.~ [rh#is022]
+@32   = ~Yes?~ [rh#is023]
+@33   = ~Yes, what is it?~ [rh#is024]
+@34   = ~Of course.~ [rh#is025]
+@35   = ~Very well.~ [rh#is026]
+@36   = ~As you wish.~ [rh#is027]
+@37   = ~I shall do as you say.~ [rh#is028]
+@38   = ~Aye, I thought so.~ [rh#is029]
+@39   = ~Certainly.~ [rh#is030]
+@40   = ~As you would have it.~ [rh#is031]
+
+
+@43   = ~This does not work at all!~ [rh#is034]
+@44   = ~That's more than I can carry.~ [rh#is035]
+@45   = ~Hmm?~ [rh#is036]
+@46   = ~This should prove interesting.~ [rh#is037]
+@47   = ~My spell...~ [rh#is038]
+@48   = ~Install Valerie/Isra crossmod banter?~
+@49   = ~You do not appear to have Isra installed~
+@50   = ~You do not appear to have Valerie installed~
+@51   = ~Install Gavin/Isra crossmod banter?~
+@52   = ~You do not appear to have Gavin installed~

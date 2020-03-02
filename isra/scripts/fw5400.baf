@@ -1,0 +1,32 @@
+IF
+	Global("rh#IsraExists","%NashkelMines%",0)
+	!Dead("Prism")
+THEN
+RESPONSE #100
+	SetGlobal("rh#IsraExists","%NashkelMines%",1)
+	CreateCreature("rh#isra",[619.2778],12)
+	Continue()
+END
+
+IF
+	Global("rh#IsraGreywolfAttacks2","GLOBAL",1)
+	Dead("rh#Isra")
+	!Dead("Prism")
+THEN
+  RESPONSE #100
+  	ActionOverride("Greywolf",Attack("Prism"))
+  	Continue()
+END
+
+IF
+	Global("rh#IsraGreywolfAttacks","GLOBAL",1)
+	Global("rh#IsraPrismTalks","GLOBAL",0)
+	Dead("Greywolf")
+	!Dead("rh#Isra")
+	!Dead("Prism")
+THEN
+  RESPONSE #100
+  	SetGlobal("rh#IsraPrismTalks","GLOBAL",1)
+  	ActionOverride("Prism",Dialogue(Player1))
+  	Continue()
+END

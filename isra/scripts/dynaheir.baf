@@ -1,0 +1,13 @@
+
+IF
+	AreaCheck("%GnollStronghold%")
+	!InParty(Myself)
+	Global("rh#PartyAttackedDynaheir","GLOBAL",0)
+	OR(2)
+		!GlobalTimerExpired("edwin","GLOBAL") //Edwin help promise = yes
+		Global("FindDynaheir","GLOBAL",1)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+	SetGlobal("rh#PartyAttackedDynaheir","GLOBAL",1)
+END
