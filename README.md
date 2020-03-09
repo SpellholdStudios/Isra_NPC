@@ -244,6 +244,12 @@ The installer includes the following components. The number of each is the compo
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 
+- Added Modmerge check for SoD games.
+
+- Fixed Isra portraits in EE games.
+- Traified rh#isfix.baf.
+- Updated deprecated modding tools links.
+
 TODO - Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
 
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).

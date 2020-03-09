@@ -144,7 +144,7 @@ COMPILE EVALUATE_BUFFER ~isra/scripts/rh#isra.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#israd.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#israx.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#ismes.baf~
-COMPILE EVALUATE_BUFFER ~isra/scripts/rh#isfix.baf~
+COMPILE EVALUATE_BUFFER ~isra/scripts/rh#isfix.baf~	USING ~isra/translations/%s\setup.tra~
 
 EXTEND_BOTTOM ~%DYNAHEIR_BCS%.bcs~ ~isra/scripts/dynaheir.baf~ EVALUATE_BUFFER
 
@@ -202,17 +202,35 @@ END ELSE BEGIN
 END
 
 
+/* ---------------------- *
+ *  Installing portraits  *
+ * ---------------------- */
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+	COPY ~isra/portraits/rh#isral.bmp~ ~override~
+	COPY ~isra/portraits/rh#isral.bmp~ ~override/rh#isram.bmp~
+END ELSE BEGIN
+	COPY ~isra/portraits~ ~override~
+END
 
-// Copying images and creatures
 
+/* ---------------------- *
+ *  Installing creatures  *
+ * ---------------------- */
+
+// Isra
 COPY ~isra/creatures/rh#isra.cre~ ~override/rh#isra.cre~
 	SAY NAME1 @1007 /* Isra */
 	SAY NAME2 @1007
 	WRITE_ASCII 0x248 ~rh#isra~ #8  // override script
 	WRITE_ASCII 0x280 ~rh#isra~ #32 // DV
 	WRITE_ASCII 0x2cc ~rh#isra~ #8  //pre-joining dialogue file
-	WRITE_ASCII 0x34  ~rh#isras~ #8 //small portrait
-	WRITE_ASCII 0x3c  ~rh#isram~ #8 //medium portrait
+	PATCH_IF is_ee BEGIN
+		WRITE_ASCII 0x34 ~rh#isram~ #8   // small portrait
+		WRITE_ASCII 0x3c ~rh#isral~ #8   // medium portrait
+	END ELSE BEGIN
+		WRITE_ASCII 0x34 ~rh#isras~ #8   //small portrait
+		WRITE_ASCII 0x3c ~rh#isram~ #8   //medium portrait
+	END
 	SAY BIO @1008 /* When asked about her past, ISRA laughs and admits that there is precious little to tell thus far. She explains that she has spent the past eight years in Crimmor, the Caravan Capital of Amn, living amongst her mother's kin while squired to a paladin of Sune in the Order of the Ruby Rose. As much as she seems to enjoy speaking about the city, you are left with the impression that she is quite thrilled to finally be away from it and out in the world on her own. */
 	SAY MORALE ~~
 	SAY HAPPY @1010						/* I'm truly honored to be in your company. */
@@ -260,15 +278,7 @@ COPY ~isra/creatures/rh#isra.cre~ ~override/rh#isra.cre~
 	SAY PICKED_POCKET ~~ []
 	ADD_CRE_ITEM ~plat01~ #0 #0 #0 ~NONE~ ~armor~
 	ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~NONE~ ~weapon1~ EQUIP
-
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  COPY ~isra/images/rh#isral.bmp~ ~override~
-  COPY ~override/rh#isra.cre~ ~override/rh#isra.cre~
-  WRITE_ASCII 0x34 ~rh#israL~ #8   // small portrait
-  WRITE_ASCII 0x3c ~rh#israL~ #8   // large portrait
-END ELSE BEGIN
-COPY ~isra/images~ ~override~
-END
+BUT_ONLY
 
 
 /* ----------------- *
