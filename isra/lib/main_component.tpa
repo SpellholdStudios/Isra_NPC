@@ -187,21 +187,11 @@ COPY_EXISTING ~%WyrmsCrossing%.are~ ~override~
 END
 */
 
-// Audio
+/* ------------------------ *
+ *  Installing audio files  *
+ * ------------------------ */
 
-COPY ~isra/audio~ ~override~
-
-ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
-  COPY   ~isra/israinstall.bat~   ~israinstall.bat~
-  COPY + ~isra/israuninstall.bat~ ~israuninstall.bat~
-    AT_INTERACTIVE_EXIT ~israinstall.bat~
-  AT_UNINSTALL        ~isra/israuninstall.bat~
-END ELSE BEGIN
-  ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
-  AT_INTERACTIVE_EXIT ~sh Isra/isra_install_audio.sh~
-  AT_UNINSTALL        ~sh Isra/isra_uninstall_audio.sh~
-  END
-END
+LAF HANDLE_AUDIO END
 
 
 /* ---------------------------------- *

@@ -248,6 +248,7 @@ The installer includes the following components. The number of each is the compo
 - Replaced `GAME_IS` conditions with variables checks to speed up install time.
 - Removed SoA checks as Isra needs BGT or Tutu to be installed.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
+- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function.
 
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf.
