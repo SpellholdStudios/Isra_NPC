@@ -3,12 +3,20 @@
  * =========================================== */
 
 
-// Adds custom IsValidForPartyDialogue state used throughout cath
-APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
-  ~0x80101FEF CD_STATE_NOTVALID~
-  UNLESS ~CD_STATE_NOTVALID~
+/* -------------------------------------------------------------------------------------------------- *
+ *   	ADDs CamDawg's custom IsValidForPartyDialogue state used throughout isra. Thanks Cam!         *
+ * -------------------------------------------------------------------------------------------------- *
+ *  covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH,          *
+ *  STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS,  *
+ *  STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING                                         *
+ * -------------------------------------------------------------------------------------------------- */
+APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
-// Fixing Imoen's dialogue file
+
+/* ------------------------------ *
+ *  Fixing Imoen's dialogue file  *
+ * ------------------------------ */
+
   /* Tutu: Giving Imoen a banter file entry in the interdi.2da */
   ACTION_IF FILE_EXISTS_IN_GAME ~FW0100.are~ THEN BEGIN
     APPEND ~interdia.2da~ ~IMOEN                    _BIMOEN~ UNLESS ~_\(BIMOEN\|bimoen\)~
@@ -120,7 +128,12 @@ END ELSE BEGIN
   END
 END
 
-// Compiling dialogue...
+
+/* ---------------------------------- *
+ *  Installing dialogues and scripts  *
+ * ---------------------------------- */
+
+// Compiling dialogues...
 COMPILE EVALUATE_BUFFER ~isra/dialogue/rh#isra.d~
 COMPILE EVALUATE_BUFFER ~isra/dialogue/rh#israj.d~
 COMPILE EVALUATE_BUFFER ~isra/dialogue/brh#isra.d~
@@ -133,61 +146,57 @@ COMPILE EVALUATE_BUFFER ~isra/scripts/rh#israx.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#ismes.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#isfix.baf~
 
-EXTEND_BOTTOM ~%DYNAHEIR_BCS%.bcs~ ~isra/scripts/dynaheir.baf~
-    EVALUATE_BUFFER
-    
+EXTEND_BOTTOM ~%DYNAHEIR_BCS%.bcs~ ~isra/scripts/dynaheir.baf~ EVALUATE_BUFFER
+
 ACTION_IF FILE_EXISTS_IN_GAME ~neera.dlg~ THEN BEGIN
-  COMPILE EVALUATE_BUFFER ~isra/dialogue/bgee.d~
-  EXTEND_BOTTOM ~rh#isra.bcs~ ~isra/scripts/bgee_rh#isra.baf~
+	COMPILE EVALUATE_BUFFER ~isra/dialogue/bgee.d~
+	EXTEND_BOTTOM ~rh#isra.bcs~ ~isra/scripts/bgee_rh#isra.baf~
 END
 
 // sod compatibility
-ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.dlg~ THEN BEGIN
-  EXTEND_TOP ~bd0103.bcs~ ~Isra/scripts/bd0103.baf~
+ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.dlg~ BEGIN
+	EXTEND_TOP ~bd0103.bcs~ ~isra/scripts/bd0103.baf~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~FW0100.are~ THEN BEGIN
-// Area scripts
-  EXTEND_TOP ~_ar5400.bcs~ ~isra/scripts/fw5400.baf~
-    EVALUATE_BUFFER
+	// Area scripts
+	EXTEND_TOP ~_ar5400.bcs~ ~isra/scripts/fw5400.baf~ EVALUATE_BUFFER
 
-// Creatures
-  COPY_EXISTING ~_mtown2.cre~ ~override/rh#ismes.cre~
-  SAY NAME1 @6 /* Messenger */
-  SAY NAME2 @6 /* Messenger */
-    WRITE_ASCII 0x248 ~rh#ismes~ #8  //override script
-    WRITE_ASCII 0x280 ~rh#ismes~ #32  //DV
-    WRITE_ASCII 0x2cc ~rh#ismes~ #8   //pre-joining dialogue file
+	// Creatures
+	COPY_EXISTING ~_mtown2.cre~ ~override/rh#ismes.cre~
+		SAY NAME1 @1006 /* Messenger */
+		SAY NAME2 @1006
+		WRITE_ASCII 0x248 ~rh#ismes~ #8  // override script
+		WRITE_ASCII 0x280 ~rh#ismes~ #32 // DV
+		WRITE_ASCII 0x2cc ~rh#ismes~ #8  // pre-joining dialogue file
 
 END ELSE BEGIN 
   ACTION_IF FILE_EXISTS_IN_GAME ~AR7200.are~ THEN BEGIN
 
-// Area scripts
-    EXTEND_TOP ~ar4400.bcs~ ~isra/scripts/fw5400.baf~
-      EVALUATE_BUFFER
-    EXTEND_TOP ~aram00.bcs~ ~isra/scripts/aram00.baf~
+	// Area scripts
+	EXTEND_TOP ~ar4400.bcs~ ~isra/scripts/fw5400.baf~ EVALUATE_BUFFER
+	EXTEND_TOP ~aram00.bcs~ ~isra/scripts/aram00.baf~
 
-// Creatures
-  COPY_EXISTING ~mtown2.cre~ ~override/rh#ismes.cre~
-  SAY NAME1 @6 /* Messenger */
-  SAY NAME2 @6 /* Messenger */
-    WRITE_ASCII 0x248 ~rh#ismes~ #8  //override script
-    WRITE_ASCII 0x280 ~rh#ismes~ #32  //DV
-    WRITE_ASCII 0x2cc ~rh#ismes~ #8   //pre-joining dialogue file
+	// Creatures
+	COPY_EXISTING ~mtown2.cre~ ~override/rh#ismes.cre~
+		SAY NAME1 @1006 /* Messenger */
+		SAY NAME2 @1006
+		WRITE_ASCII 0x248 ~rh#ismes~ #8  // override script
+		WRITE_ASCII 0x280 ~rh#ismes~ #32 // DV
+		WRITE_ASCII 0x2cc ~rh#ismes~ #8  // pre-joining dialogue file
   END ELSE BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~neera.dlg~ THEN BEGIN
 
-  // Area scripts
-      EXTEND_TOP ~ar5400.bcs~ ~isra/scripts/fw5400.baf~
-        EVALUATE_BUFFER
+	// Area scripts
+      EXTEND_TOP ~ar5400.bcs~ ~isra/scripts/fw5400.baf~ EVALUATE_BUFFER
   
-  // Creatures
+	// Creatures
     COPY_EXISTING ~mtown2.cre~ ~override/rh#ismes.cre~
-  SAY NAME1 @6 /* Messenger */
-  SAY NAME2 @6 /* Messenger */
-    WRITE_ASCII 0x248 ~rh#ismes~ #8  //override script
-    WRITE_ASCII 0x280 ~rh#ismes~ #32  //DV
-    WRITE_ASCII 0x2cc ~rh#ismes~ #8   //pre-joining dialogue file
+		SAY NAME1 @1006 /* Messenger */
+		SAY NAME2 @1006
+		WRITE_ASCII 0x248 ~rh#ismes~ #8  // override script
+		WRITE_ASCII 0x280 ~rh#ismes~ #32 // DV
+		WRITE_ASCII 0x2cc ~rh#ismes~ #8  // pre-joining dialogue file
     END
   END
 END
@@ -197,60 +206,60 @@ END
 // Copying images and creatures
 
 COPY ~isra/creatures/rh#isra.cre~ ~override/rh#isra.cre~
-  SAY NAME1 @7 /* Isra */
-  SAY NAME2 @7 /* Isra */
-  WRITE_ASCII 0x248 ~rh#isra~ #8  //override script
-  WRITE_ASCII 0x280 ~rh#isra~ #32  //DV
-  WRITE_ASCII 0x2cc ~rh#isra~ #8   //pre-joining dialogue file
-  WRITE_ASCII 0X34 ~rh#isras~ #8   //small portrait
-  WRITE_ASCII 0x3c ~rh#isram~ #8   //medium portrait
-  SAY BIO @8 /* When asked about her past, ISRA laughs and admits that there is precious little to tell thus far. She explains that she has spent the past eight years in Crimmor, the Caravan Capital of Amn, living amongst her mother's kin while squired to a paladin of Sune in the Order of the Ruby Rose. As much as she seems to enjoy speaking about the city, you are left with the impression that she is quite thrilled to finally be away from it and out in the world on her own. */
-  SAY MORALE ~~
-  SAY HAPPY @10 /* I'm truly honored to be in your company. */
-  SAY UNHAPPY_ANNOYED @11 /* I don't care for some of the choices you've been making. */
-  SAY UNHAPPY_SERIOUS @12 /* I shan't simply stand by and watch this any longer. */
-  SAY UNHAPPY_BREAKING_POINT @13 /* Enough! I shall be party to this no longer. */ 
-  SAY LEADER @14 /* This is new... and not entirely unwelcome. */
-  SAY TIRED @15 /* These hours are beginning to wear on me. */
-  SAY BORED @16 /* Would that we had some Lliirans amongst us to laugh away the tedium. */
-  SAY BATTLE_CRY1 @17 /* For the Firehair! */
-  SAY BATTLE_CRY2 @18 /* For all that is good! */
-  SAY BATTLE_CRY3 @19 /* For the glory of Sune! */
-  SAY BATTLE_CRY4 ~~ []
-  SAY BATTLE_CRY5 ~~ []
-  SAY DAMAGE ~~ [rh#is011]
-  SAY DYING ~~ [rh#is012]
-  SAY HURT @22 /* A healer's aid, please! */
-  SAY AREA_FOREST @23 /* As lovely as it is here, I'm beginning to miss civilization. */
-  SAY AREA_CITY @24 /* Ah, the city, in all of its magnificence... and infamy. */
-  SAY AREA_DUNGEON @25 /* I wonder what lost marvels we might find hidden down here. */
-  SAY AREA_DAY @26 /* All things seem possible in the daylight. */
-  SAY AREA_NIGHT @27 /* 'Tis a beautiful night... at least for the moment. */
-  SAY SELECT_COMMON1 @28 /* I hear you. */
-  SAY SELECT_COMMON2 @29 /* What do you need? */
-  SAY SELECT_COMMON3 @30 /* How may I help? */
-  SAY SELECT_COMMON4 @31 /* I'm ready. */
-  SAY SELECT_COMMON5 @32 /* Yes? */
-  SAY SELECT_COMMON6 @33 /* Yes, what is it? */
-  SAY SELECT_ACTION1 @34 /* Of course. */
-  SAY SELECT_ACTION2 @35 /* Very well. */
-  SAY SELECT_ACTION3 @36 /* As you wish. */
-  SAY SELECT_ACTION4 @37 /* I shall do as you say. */
-  SAY SELECT_ACTION5 @38 /* Aye, I thought so. */
-  SAY SELECT_ACTION6 @39 /* Certainly. */
-  SAY SELECT_ACTION7 @40 /* As you would have it. */
-  SAY CRITICAL_HIT ~~ [rh#is032]
-  SAY CRITICAL_MISS ~~ [rh#is033]
-  SAY TARGET_IMMUNE @43 /* This does not work at all! */
-  SAY INVENTORY_FULL @44 /* That's more than I can carry. */
-  SAY SELECT_RARE1 @45 /* Hmm? */
-  SAY SELECT_RARE2 @46 /* This should prove interesting. */
-  SAY SPELL_DISRUPTED @47 /* My spell... */
-  SAY SET_A_TRAP ~~ []
-  SAY HIDDEN_IN_SHADOWS ~~ []
-  SAY PICKED_POCKET ~~ []
-  ADD_CRE_ITEM ~plat01~ #0 #0 #0 ~NONE~ ~armor~
-  ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~NONE~ ~weapon1~ EQUIP
+	SAY NAME1 @1007 /* Isra */
+	SAY NAME2 @1007
+	WRITE_ASCII 0x248 ~rh#isra~ #8  // override script
+	WRITE_ASCII 0x280 ~rh#isra~ #32 // DV
+	WRITE_ASCII 0x2cc ~rh#isra~ #8  //pre-joining dialogue file
+	WRITE_ASCII 0x34  ~rh#isras~ #8 //small portrait
+	WRITE_ASCII 0x3c  ~rh#isram~ #8 //medium portrait
+	SAY BIO @1008 /* When asked about her past, ISRA laughs and admits that there is precious little to tell thus far. She explains that she has spent the past eight years in Crimmor, the Caravan Capital of Amn, living amongst her mother's kin while squired to a paladin of Sune in the Order of the Ruby Rose. As much as she seems to enjoy speaking about the city, you are left with the impression that she is quite thrilled to finally be away from it and out in the world on her own. */
+	SAY MORALE ~~
+	SAY HAPPY @1010						/* I'm truly honored to be in your company. */
+	SAY UNHAPPY_ANNOYED @1011			/* I don't care for some of the choices you've been making. */
+	SAY UNHAPPY_SERIOUS @1012			/* I shan't simply stand by and watch this any longer. */
+	SAY UNHAPPY_BREAKING_POINT @1013	/* Enough! I shall be party to this no longer. */ 
+	SAY LEADER @1014					/* This is new... and not entirely unwelcome. */
+	SAY TIRED @1015						/* These hours are beginning to wear on me. */
+	SAY BORED @1016						/* Would that we had some Lliirans amongst us to laugh away the tedium. */
+	SAY BATTLE_CRY1 @1017				/* For the Firehair! */
+	SAY BATTLE_CRY2 @1018				/* For all that is good! */
+	SAY BATTLE_CRY3 @1019				/* For the glory of Sune! */
+	SAY BATTLE_CRY4 ~~ []
+	SAY BATTLE_CRY5 ~~ []
+	SAY DAMAGE ~~ [rh#is011]
+	SAY DYING ~~ [rh#is012]
+	SAY HURT @1022						/* A healer's aid, please! */
+	SAY AREA_FOREST @1023				/* As lovely as it is here, I'm beginning to miss civilization. */
+	SAY AREA_CITY @1024					/* Ah, the city, in all of its magnificence... and infamy. */
+	SAY AREA_DUNGEON @1025				/* I wonder what lost marvels we might find hidden down here. */
+	SAY AREA_DAY @1026					/* All things seem possible in the daylight. */
+	SAY AREA_NIGHT @1027				/* 'Tis a beautiful night... at least for the moment. */
+	SAY SELECT_COMMON1 @1028			/* I hear you. */
+	SAY SELECT_COMMON2 @1029			/* What do you need? */
+	SAY SELECT_COMMON3 @1030			/* How may I help? */
+	SAY SELECT_COMMON4 @1031			/* I'm ready. */
+	SAY SELECT_COMMON5 @1032			/* Yes? */
+	SAY SELECT_COMMON6 @1033			/* Yes, what is it? */
+	SAY SELECT_ACTION1 @1034			/* Of course. */
+	SAY SELECT_ACTION2 @1035			/* Very well. */
+	SAY SELECT_ACTION3 @1036			/* As you wish. */
+	SAY SELECT_ACTION4 @1037			/* I shall do as you say. */
+	SAY SELECT_ACTION5 @1038			/* Aye, I thought so. */
+	SAY SELECT_ACTION6 @1039			/* Certainly. */
+	SAY SELECT_ACTION7 @1040			/* As you would have it. */
+	SAY CRITICAL_HIT ~~ [rh#is032]
+	SAY CRITICAL_MISS ~~ [rh#is033]
+	SAY TARGET_IMMUNE @1043				/* This does not work at all! */
+	SAY INVENTORY_FULL @1044			/* That's more than I can carry. */
+	SAY SELECT_RARE1 @1045				/* Hmm? */
+	SAY SELECT_RARE2 @1046				/* This should prove interesting. */
+	SAY SPELL_DISRUPTED @1047			/* My spell... */
+	SAY SET_A_TRAP ~~ []
+	SAY HIDDEN_IN_SHADOWS ~~ []
+	SAY PICKED_POCKET ~~ []
+	ADD_CRE_ITEM ~plat01~ #0 #0 #0 ~NONE~ ~armor~
+	ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~NONE~ ~weapon1~ EQUIP
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   COPY ~isra/images/rh#isral.bmp~ ~override~
@@ -261,9 +270,10 @@ END ELSE BEGIN
 COPY ~isra/images~ ~override~
 END
 
-// Appends
-APPEND ~pdialog.2da~ ~RH#ISRA RH#ISRAP RH#ISRAJ RH#ISRAD~
-  UNLESS ~rh#Isra~
 
-APPEND ~interdia.2da~ ~rh#Isra BRH#ISRA~
-  UNLESS ~rh#Isra~
+/* ----------------- *
+ *  Appending files  *
+ * ----------------- */
+APPEND ~pdialog.2da~ ~RH#ISRA RH#ISRAP RH#ISRAJ RH#ISRAD~ UNLESS ~rh#Isra~
+
+APPEND ~interdia.2da~ ~rh#Isra BRH#ISRA~ UNLESS ~rh#Isra~
