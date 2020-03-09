@@ -177,9 +177,17 @@ She tends to get along with most of the good and neutral aligned folk, though th
 
 ## <a name="components" id="components"></a>Components
 
-0. Isra NPC Mod for BG:EE, BGT and TuTu
+The installer includes the following components. The number of each is the component *DESIGNATED* number which gives it a fixed install position and allows automated installers to specify component choices.
+
+## 
+
+0. Isra NPC Mod for BG:EE, BGT and TuTu (Main component)
+
+## 
 
 1. Valerie/Isra crossmod banter
+
+## 
 
 2. Gavin/Isra crossmod banter
 
@@ -192,7 +200,7 @@ She tends to get along with most of the good and neutral aligned folk, though th
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
 **Author:** <a href="http://www.shsforums.net/user/7955-rhaella/">Rhaella</a>  
-**WeiDU coding:** <a href="http://www.shsforums.net/user/3481-kaeloree/">K'aeloree</a>, <a href="http://www.shsforums.net/user/7955-rhaella/">Rhaella</a>  
+**WeiDU coding:** <a href="http://www.shsforums.net/user/7955-rhaella/">Rhaella</a> and <a href="http://www.shsforums.net/user/3481-kaeloree/">K'aeloree</a>  
 
 ## 
 
@@ -230,6 +238,18 @@ She tends to get along with most of the good and neutral aligned folk, though th
 
 
 ## <a name="versions" id="versions"></a>Version History
+
+#### Version ??? ( March 2020)
+
+- Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
+- Commented code as much as possible.
+
+TODO - Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
+
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Uploaded mod to official Spellhold Studios GitHub mirror account.
+
+## 
 
 #### Version 2.3 (11 April 2018)
 
