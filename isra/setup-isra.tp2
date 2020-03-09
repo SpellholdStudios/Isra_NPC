@@ -62,6 +62,24 @@ END ELSE BEGIN
   END
 END
 */
+	/* --------------------------------------------------------------------------------------------- *
+	 *    Convert strings to UTF-8 for BGEE/BG2EE                                                    *
+	 *    No exception, everything needs to be converted                                             *
+	 *    setup.tra contains in game texts as well as installation texts and need to be converted    *
+	 * --------------------------------------------------------------------------------------------- */
+		ACTION_DEFINE_ARRAY rh#noconvert BEGIN END
+		// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+		ACTION_DEFINE_ARRAY rh#reload BEGIN setup END
+
+		LAF HANDLE_CHARSETS
+			INT_VAR
+				infer_charsets = 1
+			STR_VAR
+				tra_path = EVAL ~%MOD_FOLDER%/translations~
+				noconvert_array = rh#noconvert
+				reload_array = rh#reload
+		END
+
 	END
 
 END
