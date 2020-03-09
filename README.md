@@ -254,6 +254,8 @@ The installer includes the following components. The number of each is the compo
 
 TODO - Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
 
+- Removed useless files.
+
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
