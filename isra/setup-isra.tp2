@@ -8,30 +8,61 @@ README ~Isra/isra_readme.html~
 
 ALWAYS
 
-	// Sod: Modmerge check
-	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) BEGIN FAIL @21 END
+	ACTION_IF NOT VARIABLE_IS_SET is_tutu BEGIN // check to make this happen only once per install
+
+	/* -------------------------- *
+	 *    Sod: Modmerge check.    *
+	 * -------------------------- */
+		ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) BEGIN FAIL @21 END
 
 
-// Crossplatform var stuff blatantly stolen from cmorgan/gavin/bg1npc!
+	/* -------------------------------------------------------------------------------- *
+	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
+	 * -------------------------------------------------------------------------------- */
+		OUTER_SET is_tutu = (GAME_IS ~tutu tutu_totsc~ ? 1 : 0)						// tutu
+		OUTER_SET is_bgt = (GAME_IS ~bgt~) ? 1 : 0									// bgt
+
+		OUTER_SET is_totsc = (GAME_IS ~tutu_totsc bgt bgee eet~) ? 1 : 0			// TotSC
+
+		OUTER_SET is_bgee = (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) ? 1 : 0	// bgee without SoD
+		OUTER_SET is_sod = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0			// SoD
+		OUTER_SET is_eet = (GAME_IS "eet") ? 1 : 0									// eet
+		OUTER_SET is_ee = (GAME_IS ~bgee eet~) ? 1 : 0								// EE game
+
+
+	/* ------------------------------------------------------------------------- *
+	 *    Loads Crossplatform variables according to which game is installed.    *
+	 * ------------------------------------------------------------------------- */
+		ACTION_IF is_tutu BEGIN
+			INCLUDE ~isra/lib/g3_tutu_cpmvars.tpa~
+			PRINT @22	// ~Tutu install detected.~
+		END
+		ACTION_IF is_bgt BEGIN
+			INCLUDE ~isra/lib/g3_bgt_cpmvars.tpa~
+			PRINT @23	// ~BGT install detected.~
+		END
+		ACTION_IF GAME_IS ~bgee~ BEGIN
+//		   INCLUDE ~isra/lib/g3_bgee_cpmvars.tpa~
+			INCLUDE ~isra\lib\liam_bgee_vars.tpa~
+			PRINT @24	// ~Baldur's Gate Enhanced Edition install detected.~
+		END
+/*		ACTION_IF GAME_IS ~eet~ BEGIN
+			INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+			PRINT @25	// ~Enhanced Edition Trilogy install detected.~
+		END
+*/
+/* Crossplatform var stuff blatantly stolen from cmorgan/gavin/bg1npc!
 ACTION_IF FILE_EXISTS_IN_GAME ~neera.dlg~ THEN BEGIN
-  /*Tell the player it is using BG:EE stuff */
-  PRINT @1 /* BG:EE install detected */
-  INCLUDE ~isra\lib\liam_bgee_vars.tpa~
 END ELSE BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~FW0100.are~ THEN BEGIN
-    /* Tell the player it is using Tutu stuff */
-    PRINT @2 /* Tutu install detected. */
-    INCLUDE ~isra\lib\g3_tutu_cpmvars.tpa~
   END ELSE BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~AR7200.are~ THEN BEGIN
-        /* Tell the player it is using BGT stuff */
-        PRINT @3 /* BGT install detected. */
-        INCLUDE ~isra\lib\g3_bgt_cpmvars.tpa~
-        /* Tell the player it is not Tutu or BGT */
-    END ELSE BEGIN FAIL @4 /* Please install on BG:EE, Tutu or BGT. */
+    END ELSE BEGIN FAIL @4 // Please install on BG:EE, Tutu or BGT.
     END
   END
 END
+*/
+	END
 
 END
 

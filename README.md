@@ -245,6 +245,8 @@ The installer includes the following components. The number of each is the compo
 - Commented code as much as possible.
 
 - Added Modmerge check for SoD games.
+- Replaced `GAME_IS` conditions with variables checks to speed up install time.
+- Removed SoA checks as Isra needs BGT or Tutu to be installed.
 
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf.
