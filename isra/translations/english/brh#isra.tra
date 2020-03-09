@@ -1,3 +1,5 @@
+// Ajantis
+// -------
 @0    = ~I must confess, my lady, I have had very little congress with those of your order before.~
 @1    = ~It is not my order, Sir Ajantis. Not yet. Like you, I am still but a novice.~
 @2    = ~Do you expect that the Ruby Rose will decide upon your membership shortly?~
@@ -15,7 +17,7 @@
 @14   = ~A sentiment shared by far too many in Amn, I have noticed.~
 @15   = ~I do not disagree. If I may be so bold, Athkatla seems a strange and not altogether comfortable place for a Waterdhavian.~
 @16   = ~Perhaps. I go where I am needed, however, and the Hall of the Radiant Heart is welcoming, even if the rest of the city is not.~
-@17   = ~If you ever chance to visit Crimmor, I would be happy to direct you to any number of my friends. They are quite the accomodating group, to say the least.~
+@17   = ~If you ever chance to visit Crimmor, I would be happy to direct you to any number of my friends. They are quite the accommodating group, to say the least.~
 @18   = ~I am... not sure that that would be entirely appropriate, my lady.~
 @19   = ~I was not implying drunken, orgiastic revelry, Sir Ajantis.~
 @20   = ~I... forgive me if I offended you, Lady Isra. If you would excuse me...~
@@ -33,6 +35,9 @@
 @32   = ~Whatever his religion, a knight always does an admirable job of keeping his squire out of danger.~
 @33   = ~Aye, I am sure neither of us would be here were it otherwise.~
 @34   = ~As am I.~
+
+// Alora
+// -----
 @35   = ~So what do you do when you're not being a paladin, Isra? Do knights ever have parties?~
 @36   = ~Almost every faith has holy days, though I imagine few would be pleased to hear them described as parties.~
 @37   = ~So... what? You just sit around and listen to some guy drone on about duty all night? That... uh, doesn't sound like much fun.~
@@ -51,6 +56,9 @@
 @50   = ~Okay, okay. Here. You don't need to be so grumpy about it, you know.~
 @51   = ~Grumpy? Alora, I know you mean well, but if you can't master these... impulses, you're likely one day to end up in prison. Or worse. I wish you would grow up enough to recognize that, if nothing else.~
 @52   = ~Yeesh, so serious all of a sudden... I'm sorry I said anything at all!~
+
+// Branwen
+// -------
 @53   = ~What... is that?~
 @54   = ~This? Calishite perfume. An old family favorite, though somewhat difficult to find as of late. You are quite welcome to try some, of course.~
 @55   = ~I am a warrior, not a dancing girl.~
@@ -84,6 +92,9 @@
 @83   = ~You will need to win first.~
 @84   = ~I am well aware of that.~
 @85   = ~Then we are agreed. Mayhap there is hope for you yet, Isra.~
+
+// Coran
+// -----
 @86   = ~Beautiful. Had we more time, I could write a sonnet to that young lady's cheekbones alone...~
 @87   = ~And her eyes, more radiant than sapphires, and the hair gleaming atop her head like so much gold... had I the skill, I would write one right now.~
 @88   = ~*laugh*~
@@ -120,6 +131,9 @@
 @119  = ~I would respect you more if you did.~
 @120  = ~Well, in that case--~
 @121  = ~Odd. I never knew a paladin was allowed to walk away from an argument.~
+
+// Dynaheir
+// --------
 @122  = ~Thou art of more pleasing a demeanor than I would have expected, given thy martial calling.~
 @123  = ~Thank you most kindly, Lady Dynaheir.~
 @124  = ~Thou needst not glory in such simple praise, Isra. Doth not the reality of war ever wear upon thy festive outlook?~
@@ -157,6 +171,9 @@
 @156  = ~Mayhap not, but that is thy calling, Isra. Not mine.~
 @157  = ~*laugh* Thank you. You're a very good friend, to say the least.~
 @158  = ~With thy constant reminders, 'twould be most difficult to forget.~
+
+// Edwin
+// -----
 @159  = ~Pfeh! We had better return to civilization quickly, <CHARNAME>. Even the paladin is beginning to get disheveled, and she has nothing to offer this party aside from her looks as it is.~
 @160  = ~Watch your tongue, wizard. I'm in no mood for your nonsense.~
 @161  = ~I did not think you capable of more wit than a hobgoblin, but even you should be able to manage more than one retort. No? Well, maybe not.~
@@ -167,6 +184,9 @@
 @166  = ~Pfeh! The only time your opinion on the matter would be of any value whatsoever is if I were to deign to invite you into my bed. And even then, I could find a better use for your mouth. (Hmm, I wonder...)~
 @167  = ~With manners like that, wizard, the only company you're likely ever to enjoy is the type you summon yourself.~
 @168  = ~And even that would be preferable to yours, girl. Now leave me be.~
+
+// Eldoth
+// ------
 @169  = ~By Sune! Are you capable of composing even a single song that does not end in ruin or... or perversity for all involved?~
 @170  = ~Forgive me if I have offended your religious sensibilities, my dear. My art has always been inspired by life and experience... rather than by idealism and foolish dreams.~
 @171  = ~Then I cannot help but pity the life you must have led.~
@@ -190,11 +210,17 @@
 @189  = ~I did not tell you to speak. For the moment, I can only wait and pray that she comes to her senses in her own time, but if your... affections, as it were, ever threaten her wellbeing more than your untimely death would, in Sune's name, I won't simply stand by idly.~
 @190  = ~Won't you? Well, sputter on, my lady. After all, I do so enjoy the sight of a paladin's impotent rage.~
 @191  = ~Then you had best ensure that it remains impotent.~
+
+// Faldorn
+// -------
 @192  = ~Isra, I grow tired of watching you snivel every time <CHARNAME> forgoes one of your precious inns for the night. Your obsession with the trappings of civilization sickens me.~
 @193  = ~I don't snivel, druid.~
 @194  = ~Close enough, woman. Pfeh! You would probably say that the music is appealing, or some such rot. If you truly cared about beauty, you would put more effort into protecting nature, not the meaningless works of mankind.~
 @195  = ~Faldorn, enough. I have little enough patience for you as it is. Don't push me.~
 @196  = ~Grr! You aren't worth the effort anyway.~
+
+// Garrick
+// -------
 @197  = ~Where did you learn to play like that, Garrick? Your technique is really quite good.~
 @198  = ~Do you really think so, my lady? Thank you. I learned in Berdusk, but it's been a while since I had proper training. Do you, uh, play at all?~
 @199  = ~Very poorly, I'm afraid. I was instructed as a child, but I was never properly able to put the theory into practice.~
@@ -211,6 +237,9 @@
 @210  = ~...played properly?~
 @211  = ~No, don't wince so. Truly, I would love that.~
 @212  = ~Oh. Okay, great. Just let me make sure this thing is properly tuned first...~
+
+// Imoen
+// -----
 @213  = ~Do you think you could teach me that thing you do with your hair, Izzy?~
 @214  = ~Tonight, certainly, if we have the time. Though I'm not entirely convinced that you have the required patience for it.~
 @215  = ~Eh... I guess it does look a bit complicated. And my hair might not really be long enough for it...~
@@ -235,6 +264,9 @@
 @234  = ~No dragons?~
 @235  = ~Mere mundane teenage folly, and it isn't a tale I care to repeat.~
 @236  = ~Spoilsport.~
+
+// Jaheira
+// -------
 @237  = ~That Mulhorandi kohl you are so fond of is beginning to smudge, Isra. Perhaps you should reconsider what habits are and are not appropriate on the road.~
 @238  = ~I-- oh, so it is. Thank you. I shall need to find something better suited for this northern climate, 'twould seem.~
 @239  = ~You would be wiser to spend less time and energy on your appearance and more on your swordplay.~
@@ -256,6 +288,9 @@
 @255  = ~Aye, and my eyes are glad for the respite.~
 @256  = ~Hmph. Nature does not exist merely to serve your aesthetic tastes, child. For everything that you find beautiful in the forest, there will be another that you consider hideous instead.~
 @257  = ~I assure you, my lady, that much is clear to me.~
+
+// Kagain
+// ------
 @258  = ~Yer a wee bit worldly fer one o' yer order, are ye not? Ye does like yer fine perfumes and such.~
 @259  = ~To a reasonably extent, mayhap. Should I claim to endorse such things and then refuse to patronize them? That would be hypocritical.~
 @260  = ~Har, har, are ye sure yer not a Waukeener, lass?~
@@ -269,6 +304,9 @@
 @268  = ~Yer a rich girl, are ye not? Ye was born rich, yer likely to die rich--and sooner than ye might like, if ye don't stop yer harping.~
 @269  = ~... There are different types of wealth, Kagain, and different types of poverty. Whatever hollowness lurks in your soul, I very much doubt that all of the money in Amn could fill it.~
 @270  = ~Har, not Amn, mayhap, but we can think a bit bigger than that, aye?~
+
+// Khalid
+// ------
 @271  = ~That s-song you were humming, Isra... it s-sounded like s-something I once knew d-during my boyhood.~
 @272  = ~In Calimshan? It may well have been. My family has been Amnish for generations, but we're still rather traditional.~
 @273  = ~That c-can be a c-curse as much as a b-blessing.~
@@ -302,6 +340,9 @@
 @301  = ~I t-trust Jaheira to t-take c-care of herself, and she d-does the s-same for me. What is love without mutual t-trust?~
 @302  = ~Mutual trust... mayhap there is some truth to that, though the concept still baffles me. I don't mean to cast doubts upon the sincerity of your attachment, of course.~
 @303  = ~*laugh* I never thought that you d-did. But c-come, let us move on now.~
+
+// Kivan
+// -----
 @304  = ~Your attention wanders in my direction far too often, Isra. It would be best kept upon the road.~
 @305  = ~Mayhap, though I have always been taught that knowledge of one's allies can prove as important in battle as knowledge of one's foes.~
 @306  = ~Hmm.~
@@ -331,6 +372,9 @@
 @330  = ~It is an invaluable skill, and well worth whatever length of time it takes to learn.~
 @331  = ~Please, Kivan, would you finally put this mad idea out of your mind?~
 @332  = ~Aye, if that is what you wish.~
+
+// Minsc
+// -----
 @333  = ~Friend Isra! Boo and I have been wondering something.~
 @334  = ~What is it, Minsc?~
 @335  = ~You are very pretty, for a lady warrior. Boo has rarely seen any so pretty.~
@@ -348,6 +392,9 @@
 @347  = ~Ahah! See, Boo, was that so difficult?~
 @348  = ~Minsc agrees with Boo's assessment. Friend Isra is most definitely zealous in combating the forces of evil!~
 @349  = ~As are you, my friend.~
+
+// Montaron
+// --------
 @350  = ~I don't much care for the mercenary gleam in your eyes, Montaron.~
 @351  = ~That so? I be thinking, mebbe yer lot be o' more worth than I'd reckon.~
 @352  = ~Really.~
@@ -361,6 +408,9 @@
 @360  = ~Mebbe, but it's th' only time yer at all worth bein' 'round.~
 @361  = ~You truly cannot help but turn everything fair in this world into some foul mockery of itself, can you?~
 @362  = ~It's a talent, s'pose.~
+
+// Quayle
+// ------
 @363  = ~Say, Isra. I see that in the time we've spent in each other's company, I've already begun to have a positive impact on you.~
 @364  = ~What in the Realms are you talking about, Quayle?~
 @365  = ~Well, you don't do quite as many stupid things with your hair as you used to. It's a nice improvement.~
@@ -368,6 +418,9 @@
 @367  = ~You know, you're really lucky that I'm around. I'm widely--and correctly, of course--considered one of the most attractive people in Faerun, and I assure you, looking this good isn't easy! Why, I could provide you any number of fashionable beauty tips! There's nothing quite like learning from the best, after all.~
 @368  = ~Could you please just... go away?~
 @369  = ~I see that I've overwhelmed you with my handsomeness. I hear that happens with Sunites sometimes.~
+
+// Safana
+// ------
 @370  = ~I must say, darling, I am really rather impressed.~
 @371  = ~What in the Realms do you think you're doing, Safana? Put that down this instant!~
 @372  = ~In a moment, dear. I'm quite sure I haven't seen products of this quality since I left Calimshan. I may need to borrow this at some point. You wouldn't mind, would you?~
@@ -400,6 +453,9 @@
 @399  = ~Suddenly so judgmental. Really, darling, that frown is dreadfully unattractive on you. Surely that must be a sin?~
 @400  = ~Sometimes I don't know why I even bother talking to you.~
 @401  = ~Something I've wondered more than once myself, I assure you.~
+
+// Shar-Teel
+// ---------
 @402  = ~You are a disgrace, woman. You are strong and skilled, and yet you let yourself be bound by the idiotic codes that men have written.~
 @403  = ~Can you not see that they think less of you? Do they not always seek to protect you when you fight alongside them, as if you were some foolish weakling child? Bah!~
 @404  = ~... No more than they would anybody else.~
@@ -408,6 +464,9 @@
 @407  = ~The day I see the world like you do, Shar-Teel, is the day I gladly fall upon my own sword.~
 @408  = ~What a romantic gesture, girl. We will see if you still remember it once your beloved brothers have abandoned you to your fate.~
 @409  = ~But there's no point in talking to you yet. Maybe you'll prove worthwhile once you've grown up.~
+
+// Skie
+// ----
 @410  = ~Isra, is it common for Amnish nobles to teach their daughters how to use weapons?~
 @411  = ~Not terribly common, my lady, no. I dare say my father quickly decided that if the choice was between my learning from the best and haunting soldiers' taprooms, he would prefer the former.~
 @412  = ~*giggle* I wish my father were as practical.~
@@ -431,12 +490,18 @@
 @430  = ~You are a beautiful, kind, and intelligent woman... you deserve better than this... this mockery of love.~
 @431  = ~You... you're like all of the others! Why can't you all just leave us alone!?~
 @432  = ~*sigh* If everyone is telling you that you are wrong in this, Skie, mayhap you should listen.~
+
+// Tiax
+// ----
 @433  = ~When Tiax rules all, paladin, you shall be one of his consorts!~
 @434  = ~... I think not. I find even the thought of spending a moment with you nauseating.~
 @435  = ~Fine! Tiax the handsome needs no consort! He needs nobody but himself!~
 @436  = ~I see. Have you ever had a meaningful relationship in your life, Tiax? Any at all?~
 @437  = ~Tiax is his own best friend, confidante, and lover! Who would ever need anyone else but the magnificent destroyer of worlds?~
 @438  = ~I am... not entirely sure I wish to think that through.~
+
+// Viconia
+// -------
 @439  = ~I have noticed how often your eyes linger on me, jalil. Does the lure of the forbidden tempt even you?~
 @440  = ~Don't flatter yourself.~
 @441  = ~You flinch from the sound of my voice like a craven child. *chuckle* But perhaps you do indeed find yourself entertaining notions you do not overly care for... the darkened mirror is a beguiling prospect, is it not?~
@@ -447,6 +512,9 @@
 @446  = ~*chuckle* I think that you would willingly bleed to death before accepting my help.~
 @447  = ~Gladly.~
 @448  = ~As you wish, jalil. One less sanctimonious child in the world would be no loss to anyone.~
+
+// Xan
+// ---
 @449  = ~I can't seem to decide if you are mad or simply naive.~
 @450  = ~You reflect rather poorly upon your kin, Xan, if that is your understanding of courtesy.~
 @451  = ~It would not be the first time.~
@@ -466,6 +534,9 @@
 @465  = ~Mayhap, but the world is richer because of it.~
 @466  = ~And my people, poorer. And we are poor enough now as it is. If we lose any more, we will barely have anything left at all.~
 @467  = ~But I know I won't convince you. I don't know why I even bother to try.~
+
+// Xzar 
+// ----
 @468  = ~Xzar, did you truly just... eat that?~
 @469  = ~Hmm? What of it?~
 @470  = ~I... excuse me...~
@@ -480,6 +551,9 @@
 @479  = ~In my dream, you noticed that as well. Though I must say that you noticed a lot of things that you never seem to in the waking world--~
 @480  = ~Xzar, I truly don't care to hear this.~
 @481  = ~Oh? A pity.~
+
+// Yeslick
+// -------
 @482  = ~Fer a paladin, Isra, ye're a pleasure to travel with. It be nice not to have ta listen to constant speeches about th' virtues o' honor, duty an' patience fer a change.~
 @483  = ~... I'm not quite sure if I should consider that a compliment.~
 @484  = ~Ach, lassie, donnae take it the wrong way. Ye're a fine lass, with a good head on yer shoulders an' a strong sword-arm. It be refreshin' not ter have ta be deal with th' typical paladin nonsense.~

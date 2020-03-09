@@ -1,3 +1,5 @@
+// Dorn conflict
+// -------------
 @0    = ~My <PRO_LADYLORD>, this... this beast that you have taken into your company--~
 @1    = ~You speak of me, paladin? Of course you do. I wonder, is it rage or fear that makes your voice shake so?~
 @2    = ~Fear? If I recoil from you, fiend, 'tis out of revulsion, NOT fear. Whatever unholy pact you have made, the wrongness of it clings to you like a second skin. To be near you is to be ill.~
@@ -12,6 +14,9 @@
 @11   = ~You brought this upon yourself, Isra.~
 @12   = ~Then this wretched creature has as good as dragged you down into the Abyss alongside him. If you do not fall to my sword, you will both surely fall to another's.~
 @13   = ~A poor decision, <CHARNAME>, and one that will be your last.~
+
+// Neera
+// -----
 @14   = ~Neera... might I ask what, exactly, you are doing?~
 @15   = ~Oh! Well, I was thinking about altering the cut of this robe a bit. Though I'd probably just wreck it. I don't know that much about sewing.~
 @16   = ~Can you alter a mage's robe at all without risking its power?~
@@ -43,8 +48,11 @@
 @42   = ~That might actually be a good idea. You don't happen to know any Mystrans, do you?~
 @43   = ~There are precious few in Amn, I'm afraid.~
 @44   = ~Well, I guess it can wait. I've figured stuff out well enough on my own so far. Sort of. A bit longer shouldn't make much of a difference.~
-@45   = ~I cannot say that I have ever heard Sel没ne's teachings approached in quite the manner you take, Rasaad.~
-@46   = ~You are familiar with-- no, of course you would be familiar with Sel没ne's faithful.~
+
+// Rasaad
+// ------
+@45   = ~I cannot say that I have ever heard Sel鹡e's teachings approached in quite the manner you take, Rasaad.~
+@46   = ~You are familiar with-- no, of course you would be familiar with Sel鹡e's faithful.~
 @47   = ~Less so than with several other allied faiths, I admit, though the occasional mystic visits our temple in Crimmor. The temple is informal enough as it is that we seldom protest their spontaneous sermons.~
 @48   = ~Still, your approach is intriguingly novel.~
 @49   = ~Truth is universal; interpretation is the reflection by which we might come to understand it. I would be very interested in speaking with such mystics.~
@@ -53,11 +61,11 @@
 @52   = ~That is unfortunate. I have heard that there are several Sunite Sun Soul sects in Amn.~
 @53   = ~I wonder if their teachings would be as unfamiliar to me as yours are. 'Tis a most... unsettling thought, truly.~
 @54   = ~Unsettling? I am surprised that you would not welcome the prospect. Perhaps one can never understand all that there is to know about one's own faith, but the journey is often as important as the destination.~
-@55   = ~(laugh) I have heard that piece of wisdom from Sel没nites before.~
+@55   = ~(laugh) I have heard that piece of wisdom from Sel鹡ites before.~
 @56   = ~I am a theologian, aye, but I have never dedicated myself to contemplation. 'Tis disquieting to consider how much deeper an understanding one who has done so might have.~
 @57   = ~Deeper? I do not think so. Your goddess is a being of passion, yes? There are aspects of her nature that no monk, no matter how learned, could grasp.~
 @58   = ~But I am somewhat familiar with the teachings of the monks of Sune. I would be willing to share them with you, if you so wish it.~
-@59   = ~To be instructed by a Sel没nite in my own faith... 'twould teach me humility, at the least. I would appreciate that indeed, Rasaad.~
+@59   = ~To be instructed by a Sel鹡ite in my own faith... 'twould teach me humility, at the least. I would appreciate that indeed, Rasaad.~
 @60   = ~Sometimes I forget that you are not actually from Calimshan, my friend. I have not enjoyed such cooking since I left Calimport.~
 @61   = ~Truly? Calishite food is almost as popular throughout Amn as its silks and wines are. I am surprised that you did not find any in Athkatla.~
 @62   = ~Food was... not a priority at the time.~

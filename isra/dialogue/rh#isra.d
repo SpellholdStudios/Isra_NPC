@@ -95,8 +95,9 @@ IF ~!Dead("Prism")~ THEN BEGIN j14
 IF ~~ EXIT
 END
 
-// hijacking the plot
 
+// hijacking the plot
+// ------------------
 CHAIN IF WEIGHT #-100 ~NumTimesTalkedTo(0)~ THEN ~%tutu_var%PRISM~ rh#p1
 @32 /* Ah, beauteous creature! Never should I have stolen these emeralds, but there was nothing else that would capture the majesty of thine eyes! I did what must be done, for I have left my shop, forgotten all my commissions, and spent all that I had. I must complete thee! */
 == RH#ISRA @33 /* Prism... calm yourself a moment. There's someone else here. */

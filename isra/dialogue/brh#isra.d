@@ -1,7 +1,7 @@
 BEGIN BRH#ISRA
 
 // Ajantis
-
+// -------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Ajantis",CD_STATE_NOTVALID)
@@ -70,7 +70,7 @@ DO ~SetGlobal("rh#IsraAjantis3","GLOBAL",1)~
 EXIT
 
 // Alora
-
+// -----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Alora",CD_STATE_NOTVALID)
@@ -110,7 +110,7 @@ DO ~SetGlobal("rh#IsraAlora2","GLOBAL",1)~
 EXIT
 
 // Branwen
-
+// -------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Branwen",CD_STATE_NOTVALID)
@@ -175,7 +175,7 @@ DO ~SetGlobal("rh#IsraBranwen3","GLOBAL",1)~
 EXIT
 
 // Coran
-
+// -----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Coran",CD_STATE_NOTVALID)
@@ -244,7 +244,7 @@ DO ~SetGlobal("rh#IsraCoran3","GLOBAL",1)~
 EXIT
 
 // Dynaheir
-
+// --------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Dynaheir",CD_STATE_NOTVALID)
@@ -313,7 +313,7 @@ DO ~SetGlobal("rh#IsraDynaheir3","GLOBAL",1)~
 EXIT
 
 // Edwin
-
+// -----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Edwin",CD_STATE_NOTVALID)
@@ -346,7 +346,7 @@ DO ~SetGlobal("rh#IsraEdwin2_BG1","GLOBAL",1)~
 EXIT
 
 // Eldoth
-
+// ------
 CHAIN IF ~InParty("Eldoth")
 !InParty("Skie")
 See("Eldoth")
@@ -405,7 +405,7 @@ DO ~SetGlobal("rh#IsraEldoth3","GLOBAL",1)~
 EXIT
 
 // Faldorn
-
+// -------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Faldorn",CD_STATE_NOTVALID)
@@ -422,7 +422,7 @@ DO ~SetGlobal("rh#IsraFaldorn","GLOBAL",1)~
 EXIT
 
 // Garrick
-
+// -------
 CHAIN IF ~InParty("Garrick")
 See("Garrick")
 !StateCheck("Garrick",CD_STATE_NOTVALID)
@@ -461,7 +461,7 @@ DO ~SetGlobal("rh#IsraGarrick2","GLOBAL",1)~
 EXIT
 
 // Imoen
-
+// -----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
@@ -517,7 +517,7 @@ DO ~SetGlobal("rh#IsraImoen3_BG1","GLOBAL",1)~
 EXIT
 
 // Jaheira
-
+// -------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Jaheira",CD_STATE_NOTVALID)
@@ -571,7 +571,7 @@ DO ~SetGlobal("rh#IsraJaheira3_BG1","GLOBAL",1)~
 EXIT
 
 // Kagain
-
+// ------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Kagain",CD_STATE_NOTVALID)
@@ -606,7 +606,7 @@ DO ~SetGlobal("rh#IsraKagain2","GLOBAL",1)~
 EXIT
 
 // Khalid
-
+// ------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Khalid",CD_STATE_NOTVALID)
@@ -673,7 +673,7 @@ DO ~SetGlobal("rh#IsraKhalid3","GLOBAL",1)~
 EXIT
 
 // Kivan
-
+// -----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Kivan",CD_STATE_NOTVALID)
@@ -734,7 +734,7 @@ DO ~SetGlobal("rh#IsraKivan3","GLOBAL",1)~
 EXIT
 
 // Minsc
-
+// -----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Minsc",CD_STATE_NOTVALID)
@@ -773,7 +773,7 @@ DO ~SetGlobal("rh#IsraMinsc2_BG1","GLOBAL",1)~
 EXIT
 
 // Montaron
-
+// --------
 CHAIN IF ~InParty("Montaron")
 See("Montaron")
 !StateCheck("Montaron",CD_STATE_NOTVALID)
@@ -808,7 +808,7 @@ DO ~SetGlobal("rh#IsraMontaron2","GLOBAL",1)~
 EXIT
 
 // Quayle
-
+// ------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Quayle",CD_STATE_NOTVALID)
@@ -827,7 +827,7 @@ DO ~SetGlobal("rh#IsraQuayle","GLOBAL",1)~
 EXIT
 
 // Safana
-
+// ------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Safana",CD_STATE_NOTVALID)
@@ -849,7 +849,7 @@ DO ~SetGlobal("rh#IsraSafana1","GLOBAL",1)~
 EXIT
 
 // in an inn, in the morning
-
+// -------------------------
 CHAIN IF WEIGHT #-1 ~Global("rh#IsraSafana2","GLOBAL",1)~ THEN RH#ISRAJ rh#IsraSafana2
 @380 /* Was that truly necessary, Safana? */
 DO ~SetGlobal("rh#IsraSafana2","GLOBAL",2)~
@@ -887,7 +887,7 @@ DO ~SetGlobal("rh#IsraSafana3","GLOBAL",1)~
 EXIT
 
 // Shar-Teel
-
+// ---------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Sharteel",CD_STATE_NOTVALID)
@@ -907,7 +907,7 @@ DO ~SetGlobal("rh#IsraSharteel","GLOBAL",1)~
 EXIT
 
 // Skie
-
+// ----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Skie",CD_STATE_NOTVALID)
@@ -954,7 +954,7 @@ DO ~SetGlobal("rh#IsraSkie2","GLOBAL",1)~
 EXIT
 
 // Tiax
-
+// ----
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Tiax",CD_STATE_NOTVALID)
@@ -972,7 +972,7 @@ DO ~SetGlobal("rh#IsraTiax","GLOBAL",1)~
 EXIT
 
 // Viconia
-
+// -------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Viconia",CD_STATE_NOTVALID)
@@ -998,7 +998,7 @@ DO ~SetGlobal("rh#IsraViconia2_BG1","GLOBAL",2)~
 EXIT
 
 // Xan
-
+// ---
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Xan",CD_STATE_NOTVALID)
@@ -1039,7 +1039,7 @@ DO ~SetGlobal("rh#IsraXan2","GLOBAL",1)~
 EXIT
 
 // Xzar 
-
+// ----
 CHAIN IF ~InParty("Xzar")
 See("Xzar")
 !StateCheck("Xzar",CD_STATE_NOTVALID)
@@ -1075,7 +1075,7 @@ DO ~SetGlobal("rh#IsraXzar2","GLOBAL",1)~
 EXIT
 
 // Yeslick
-
+// -------
 CHAIN IF ~InParty("rh#Isra")
 See("rh#Isra")
 !StateCheck("Yeslick",CD_STATE_NOTVALID)

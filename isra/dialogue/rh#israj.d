@@ -1,10 +1,11 @@
 BEGIN RH#ISRAJ
 
-// ---------------------------------------------
-// Friendship Track
-// ---------------------------------------------
+/* ------------------ *
+ *  Friendship Track  *
+ * ------------------ */
 
 // 1.
+// --
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",2)~ THEN RH#ISRAJ t1
 @0 /* I should congratulate you on a beautifully executed campaign, my <PRO_LADYLORD>. I must confess, I was not entirely certain what to expect of you. */
 DO ~IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
@@ -121,7 +122,7 @@ END
 END
 
 // 2. triggers in any city or town area, and probably the major road areas too
-
+// ---------------------------------------------------------------------------
 BEGIN RH#ISMES
 
 CHAIN IF ~Global("rh#IsraMessengerSpawn","GLOBAL",1)~ THEN RH#ISMES m1
@@ -271,6 +272,7 @@ END
 END
 
 // 3.
+// --
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",6)~ THEN RH#ISRAJ t3
 @89 /* I'm afraid my knowledge of Sword Coast geography isn't quite what it should be. These small towns seem to blend together all too quickly for me. */
 = @90 /* Candlekeep is... somewhere to the west, is it not? */
@@ -467,6 +469,7 @@ END
 END
 
 // 4.
+// --
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",8)~ THEN RH#ISRAJ t4
 @153 /* <CHARNAME>, I... wanted to offer you my condolences on the loss of your foster father. From what little I have heard of him, it sounds like he was a truly great man. */
 DO ~IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
@@ -628,6 +631,7 @@ END
 END
 
 // 5. morning in an inn
+// --------------------
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",10)~ THEN RH#ISRAJ t5
 @209 /* Good morrow, my <PRO_LADYLORD>. I'm afraid the water has gone rather cold now, but should you wish to bathe, I could certainly look into having it heated again. */
 DO ~IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
@@ -760,6 +764,7 @@ END
 END
 
 // 6.
+// --
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",12)~ THEN RH#ISRAJ t6
 @249 /* I must confess, my <PRO_LADYLORD>, I know that you were forced into this life, but I cannot imagine you doing anything else. */
 = @250 /* Would you have rather preferred a simpler existence instead? */
@@ -990,6 +995,7 @@ END
 END
 
 // 7.
+// --
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",14)~ THEN RH#ISRAJ t7
 @326 /* <CHARNAME>, do you ever find yourself missing Candlekeep? */
 DO ~IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
@@ -1127,6 +1133,7 @@ END
 END
 
 // 8. Post-Cloakwood Forest
+// ------------------------
 CHAIN IF ~Global("rh#IsraTalksBG1Chapter5","GLOBAL",2)~ THEN RH#ISRAJ t8
 @367 /* Would that the waters could wash away more than just the memory of that accursed place. That *fiend* and his vile operation-- */
 = @368 /* Sune preserve me from from being overwhelmed by such... such bitter *hate*. */
@@ -1250,6 +1257,7 @@ END
 END
 
 // 9.
+// --
 CHAIN IF ~Global("rh#IsraTalksBG1Chapter5","GLOBAL",4)~ THEN RH#ISRAJ t9
 @408 /* My <PRO_LADYLORD>, if I have been somewhat... quiet as of late, I apologize. */
 DO ~IncrementGlobal("rh#IsraTalksBG1Chapter5","GLOBAL",1)
@@ -1417,6 +1425,7 @@ END
 END
 
 // 10. at rest in an inn, post Cloakwood
+// -------------------------------------
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",16)~ THEN RH#ISRAJ t10
 @463 /* 'Tis always such a welcome surprise to find true talent in establishments such as this, my <PRO_LADYLORD>. I trust you enjoyed the last performance. */
 DO ~IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
@@ -1616,6 +1625,7 @@ END
 END
 
 // 11. Candlekeep
+// --------------
 CHAIN IF ~Global("rh#IsraTalksBG1Candlekeep","GLOBAL",2)~ THEN RH#ISRAJ t11
 @524 /* <CHARNAME>, that letter... */
 DO ~SetGlobal("rh#IsraTalksBG1Candlekeep","GLOBAL",3)
@@ -1780,6 +1790,7 @@ END
 END
 
 // 12. Post-Candlekeep, in Baldur's Gate
+// -------------------------------------
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",18)~ THEN RH#ISRAJ t12
 @575 /* I could quickly come to *hate* this city if we cannot untangle this conspiracy soon. */
 = @576 /* Truly, <CHARNAME>, absurd though it may be, every day I find myself missing the kobolds and gnolls and bandits that we once hunted just a little bit more. */
@@ -1932,6 +1943,7 @@ END
 END
 
 // 13.
+// ---
 CHAIN IF ~Global("rh#IsraTalksBG1","GLOBAL",20)~ THEN RH#ISRAJ t13
 @626 /* <CHARNAME>, before we finish this once and for all, I wanted to make sure that you knew how much I have enjoyed your company... and how much I would rather stay, given the choice. */
 DO ~IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)~
@@ -2027,12 +2039,13 @@ IF ~~ EXIT
 END
 END
 
-// ---------------------------------------------
-// INTERJECTIONS
-// ---------------------------------------------
+
+/* --------------- *
+ *  INTERJECTIONS  *
+ * --------------- */
 
 // Tranzig
-
+// -------
 I_C_T ~%tutu_var%TRANZI~ 7 rh#int.tranzig
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @656 /* I have no wish to murder a man who has surrendered, <CHARNAME>, granted he can be trusted not to return to his former masters. */
@@ -2041,7 +2054,7 @@ DO ~SetGlobal("rh#IsraTranzigSpared","GLOBAL",1)~
 END
 
 // Edwin
-
+// -----
 I_C_T ~%tutu_var%EDWIN~ 0 rh#int.edwin1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @658 /* And who is this woman that she deserves death? */
@@ -2061,7 +2074,7 @@ I_C_T ~%tutu_var%EDWIN~ 2 rh#int.edwin3
 END
 
 // Eldoth
-
+// ------
 I_C_T ~%tutu_var%ELDOTH~ 7 rh#int.eldoth1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @660 /* Kidnapping? Blackmail? And seduction as well, 'twould seem. You would allow this viper into our company, <CHARNAME>? */
@@ -2075,7 +2088,7 @@ I_C_T ~%tutu_var%ELDOTH~ 8 rh#int.eldoth2
 END
 
 // Joseph's wife
-
+// -------------
 I_C_T ~%tutu_scriptbg%FTOWN2~ 3 rh#int.joe
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @664 /* I see. My lady, I assure you, we will do everything that we can to see your husband returned to you. */
@@ -2083,7 +2096,7 @@ I_C_T ~%tutu_scriptbg%FTOWN2~ 3 rh#int.joe
 END
 
 // Samantha & Jamie
-
+// ----------------
 I_C_T ~%tutu_var%JAMIE~ 0 rh#int.jamie
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @666 /* Calm down a moment, sir! I apologize for any inappropriate flirtation, but we have not touched Samantha, nor do we intend to! I assure you, we mean neither of you any harm! */
@@ -2093,7 +2106,7 @@ END
 APPEND RH#ISRAJ
 
 // Brage
-
+// -----
 IF ~Global("rh#IsraBrageFound","GLOBAL",1)~ rh#brage
  SAY @668 /* I can only pray that the poor man manages to find at least some measure of peace, though even that will likely prove a... difficult road indeed. */
  = @669 /* Let us be gone from this place of sorrow, my <PRO_LADYLORD>. */
@@ -2101,14 +2114,14 @@ IF ~~ DO ~SetGlobal("rh#IsraBrageFound","GLOBAL",2)~ EXIT
 END
 
 // Girdle of Masculinity
-
+// ---------------------
 IF ~Global("rh#IsraGirdle","GLOBAL",1)~ rh#girdle
  SAY @670 /* By Sune, <CHARNAME>, get this wretched thing *off* of me! */
 IF ~~ DO ~SetGlobal("rh#IsraGirdle","GLOBAL",2)~ EXIT
 END
 
 // Dynaheir Attacked
-
+// -----------------
 IF ~Global("rh#IsraDynaheirHostile","GLOBAL",1) InParty("Edwin")~ rh#dynattack1
  SAY @671 /* You would side with the wizard in this!? Do not expect me to simply stand aside and watch! */
 IF ~~ DO ~SetGlobal("rh#IsraDynaheirAttacked","GLOBAL",2) SetGlobal("rh#IsraJoinedBG1","GLOBAL",0) LeaveParty() Enemy()~ EXIT
@@ -2126,7 +2139,7 @@ I_C_T ~%EDWIN_JOINED%~ 7 rh#int.dyna2
 END
 
 // Viconia
-
+// -------
 I_C_T ~%tutu_var%FLAM2~ 1 rh#int.viccy
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @674 /* You mean to say that Baldur's Gate has no more civilized procedure for situations like this? */
@@ -2134,7 +2147,7 @@ I_C_T ~%tutu_var%FLAM2~ 1 rh#int.viccy
 END
 
 // Gallor
-
+// ------
 I_C_T ~%tutu_var%GALLOR~ 1 rh#int.gallor1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @676 /* You would commit murder over some magical item and a handful of coin? <CHARNAME>,  scum like this deserves only one answer. */
@@ -2150,13 +2163,12 @@ END
 END
 
 // Sonner & Tenya
-
+// --------------
 I_C_T ~%tutu_var%TENYA~ 5 rh#int.tenya
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @679 /* Loath as I am to aid one of Umberlee's ilk, if this story is actually true-- */
 == ~%tutu_var%TENYA~ @680 /* It IS true! I am NOT your enemy here. */
 END
-
 
 I_C_T ~%tutu_var%SONNER~ 14 rh#int.sonner
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
@@ -2165,7 +2177,7 @@ I_C_T ~%tutu_var%SONNER~ 14 rh#int.sonner
 END
 
 // Firewine Bridge
-
+// ---------------
 I_C_T ~%tutu_var%POE~ 0 rh#int.poe1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @683 /* Could we not spare a few moments, my <PRO_LADYLORD>? A stirring tale would be very welcome to<DAYNIGHT>. */
@@ -2211,7 +2223,7 @@ I_C_T ~%tutu_var%OGRMA3~ 3 rh#int.firewine3
 END
 
 // Korax
-
+// -----
 I_C_T ~%tutu_var%KORAX~ 3 rh#int.korax
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @694 /* You... you would accept help from this revolting creature? It will no doubt turn on us soon enough anyway. */
@@ -2219,14 +2231,14 @@ I_C_T ~%tutu_var%KORAX~ 3 rh#int.korax
 END
 
 // Bassilus
-
+// --------
 I_C_T ~%tutu_var%BASSIL~ 2 rh#int.bassilus
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @696 /* By Sune, this Cyricist is as mad as his god! We had best destroy him quickly, <CHARNAME>. */
 END
 
 // Lena & Samuel
-
+// -------------
 I_C_T ~%tutu_var%LENA~ 3 rh#int.lena
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @697 /* We must help them, <CHARNAME>. By Sune, I can only pray that he still has the strength to survive the journey. */
@@ -2234,7 +2246,7 @@ I_C_T ~%tutu_var%LENA~ 3 rh#int.lena
 END
 
 // Albert
-
+// ------
 I_C_T ~%tutu_var%ALBERT~ 10 rh#int.albert
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @699 /* By Sune! What wretched fiend did we just aid!? */
@@ -2242,7 +2254,7 @@ I_C_T ~%tutu_var%ALBERT~ 10 rh#int.albert
 END
 
 // Sendai
-
+// ------
 INTERJECT ~%tutu_scriptbg%SENDAI~ 0 rh#int.sendai
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @701 /* My lady, you dishonor both your house and our nation with such an appalling lack of courtesy. */
@@ -2257,7 +2269,7 @@ CHAIN ~%tutu_scriptbg%SENDAI~ rh#int.sendai2
 EXTERN ~%tutu_scriptbg%SENDAI~ 3
 
 // Random Commoner
-
+// ---------------
 I_C_T ~%tutu_var%MTOB3~ 0 rh#int.commoner
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @707 /* You will keep a courteous tongue in your mouth! */
@@ -2265,7 +2277,7 @@ I_C_T ~%tutu_var%MTOB3~ 0 rh#int.commoner
 END
 
 // Cloakwood
-
+// ---------
 I_C_T ~%tutu_var%TIBER~ 1 rh#int.tiber1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @709 /* <CHARNAME>, I know we have other tasks here, but we could have spared the time. */
@@ -2278,7 +2290,7 @@ I_C_T ~%tutu_var%TIBER~ 3 rh#int.tiber2
 END
 
 // Rill
-
+// ----
 I_C_T ~%tutu_scripts%LAVLEAD~ 2 rh#int.rill1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @712 /* It seems as feasible a plan to get these people out of here as we're likely to come across, <CHARNAME>. */
@@ -2321,7 +2333,7 @@ I_C_T ~%tutu_scripts%LAVFREE~ 0 rh#int.slavefree
 END
 
 // Scar
-
+// ----
 I_C_T ~%tutu_var%SCAR~ 2 rh#int.scar1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @723 /* 'Twould seem that matters are even uglier in Baldur's Gate than we had realized, if the Flaming Fist can no longer even trust its own. <CHARNAME>, this does seem important. */
@@ -2329,14 +2341,14 @@ I_C_T ~%tutu_var%SCAR~ 2 rh#int.scar1
 END
 
 // Ogre Mage
-
+// ---------
 I_C_T ~%tutu_var%OGRMBA~ 0 rh#int.ogremage
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @725 /* By Sune, there is nothing about this scene that isn't utterly revolting! You will die for this travesty, ogre! */
 END
 
 // Lady Hannah
-
+// -----------
 I_C_T ~%tutu_var%HANNAH~ 1 rh#int.hannah
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @726 /* 'Tis a rather... distasteful idea, my lady. */
@@ -2344,14 +2356,14 @@ I_C_T ~%tutu_var%HANNAH~ 1 rh#int.hannah
 END
 
 // Alatos, Thieves Guild
-
+// ---------------------
 I_C_T ~%tutu_var%ALATOS~ 10 rh#int.alatos
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @728 /* 'Twas foolish of us to step foot in this building at all, <CHARNAME>. I trust that this piece of petty mischief is not about to become a hobby for you. */
 END
 
 // Brevlick
-
+// --------
 I_C_T ~%tutu_var%BREVLI~ 0 rh#int.brevlick1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @729 /* I already don't care for the sound of this. */
@@ -2370,14 +2382,14 @@ I_C_T ~%tutu_var%BREVLI~ 17 rh#int.brevlick3
 END
 
 // Varci
-
+// -----
 I_C_T ~%tutu_var%VARCI~ 4  rh#int.varci1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @734 /* You could have spared the time at least to speak with the child's guardian. */
 END
 
 // Tremain
-
+// -------
 I_C_T ~%tutu_var%TREMAI~ 4  rh#int.varci2
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @735 /* I'm inclined to agree. If the local Tymorans have lost their thirst for danger, 'tis no fault of the child's. The wrath of the Umberlants is the last thing I would consider here, <CHARNAME>, though the decision is obviously yours. */
@@ -2390,7 +2402,7 @@ I_C_T ~%tutu_var%TREMAI~ 15  rh#int.varci3
 END
 
 // Ocellis
-
+// -------
 I_C_T ~%tutu_var%OCELLI~ 0 rh#int.ocellis
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @738 /* Then... then 'tis more than mere rumor now. Eldath grant us peace, at least a while longer. */
@@ -2398,7 +2410,7 @@ I_C_T ~%tutu_var%OCELLI~ 0 rh#int.ocellis
 END
 
 // Ragefast, Ramazith, and Abela
-
+// -----------------------------
 I_C_T ~%tutu_var%RAMAZI~ 6 rh#int.ramazith
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @740 /* Nymphs are beautiful beyond measure, aye, but useful and productive... I do not care for the words this mage uses, <CHARNAME>. Nor do I care for his company. */
@@ -2446,7 +2458,7 @@ END
 END
 
 // Undercellar
-
+// -----------
 CHAIN IF ~Global("rh#IsraUndercellar","GLOBAL",2)~ THEN RH#ISRAJ rh#int.cellar1
 @753 /* By Sune, this place is utterly disgusting. I hope you don't plan to linger here any longer than necessary, my <PRO_LADYLORD>. */
 DO ~SetGlobal("rh#IsraUndercellar","GLOBAL",3)~
@@ -2473,7 +2485,7 @@ CHAIN RH#ISRAJ rh#int.cellar5
 EXIT
 
 // Priest of Ilmater
-
+// -----------------
 I_C_T ~%tutu_var%PRIILMU~ 2 rh#int.ilmater1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @762 /* Passion is not evil, sir, and I shall not stand by while you vilify the Lady Firehair by comparing her to succubi and erinyes! */
@@ -2486,7 +2498,7 @@ I_C_T ~%tutu_var%PRIILMU~ 4 rh#int.ilmater2
 END
 
 // Areana
-
+// ------
 I_C_T ~%tutu_var%NOBW8~ 3 rh#int.areana
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @765 /* Help you? You speak as if you think this an act of chivalry, not of murder. You should be utterly ashamed of yourself, my lady. */ 
@@ -2494,7 +2506,7 @@ I_C_T ~%tutu_var%NOBW8~ 3 rh#int.areana
 END
 
 // Neb
-
+// ---
 I_C_T ~%tutu_scriptbg%NEB~ 6 rh#int.neb
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @767 /* The only thing I want from you, butcher, is to put a blade through your loathsome heart! */
@@ -2502,7 +2514,7 @@ I_C_T ~%tutu_scriptbg%NEB~ 6 rh#int.neb
 END
 
 // Krystin & Slythe
-
+// ----------------
 APPEND RH#ISRAJ
 
 IF ~Global("rh#IsraKrystinSlythe","GLOBAL",1)~ rh#int.slythe
@@ -2513,7 +2525,7 @@ END
 END
 
 // Tamoko
-
+// ------
 I_C_T ~%tutu_var%TAMOKO~ 16 rh#int.tamoko
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @771 /* My lady, if I might ask, does Sarevok share your affections? */
@@ -2523,7 +2535,7 @@ I_C_T ~%tutu_var%TAMOKO~ 16 rh#int.tamoko
 END
 
 // Low Reputation
-
+// --------------
 CHAIN IF ~Global("rh#IsraLowRep","GLOBAL",1)~ THEN RH#ISRAJ rh#int.rep1
 @775 /* <CHARNAME>, I should like to warn you that I don't care for some of the decisions that you have been making. I trust that you will rectify matters as quickly as possible? */
 DO ~SetGlobal("rh#IsraLowRep","GLOBAL",2)~
@@ -2550,9 +2562,10 @@ CHAIN IF ~Global("rh#IsraRepBreak","GLOBAL",1)~ THEN RH#ISRAJ rh#int.repbreak
 DO ~SetGlobal("rh#IsraRepBreak","GLOBAL",2) SetGlobal("rh#IsraJoinedBG1","GLOBAL",0) LeaveParty() EscapeArea()~ 
 EXIT
 
-// ---------------------------------------------
-// Player Initiated Dialogue
-// ---------------------------------------------
+
+/* --------------------------- *
+ *  Player Initiated Dialogue  *
+ * --------------------------- */
 
 APPEND RH#ISRAJ
 
