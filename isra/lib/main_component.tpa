@@ -51,11 +51,19 @@ BEGIN BIMOEN2
 END
 
 
+/* ------------------------------------------ *
+ *  Fixing .ids, courtesy of the BG2 Fixpack  *
+ * ------------------------------------------ */
 
-  /* ACTION.IDS and TRIGGER.IDS patching to ToB - thanks, Cam, if you read it */
-  /* and GTIMES.IDS, ANIMATE.IDS patching to ToB, courtesy of the BG2 Fix Pack */
-  INCLUDE ~isra/lib/ids_entries_cleanup.tph~
-  
+// Adds ToB trigger/actions to SoA
+// -------------------------------
+INCLUDE ~isra/lib/tob2soa.tph~
+
+// Adds timers entry in gtimes.ids
+// -------------------------------
+INCLUDE ~isra/lib/ids_entries_gtimes.tph~
+
+
 /* Tutu Area Script Assignment Patching: All Areas Script ID'd */
 ACTION_IF is_tutu THEN BEGIN
 	INCLUDE ~isra/lib/tutu_area_script_assign.tph~

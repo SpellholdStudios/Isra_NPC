@@ -250,6 +250,8 @@ The installer includes the following components. The number of each is the compo
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
 - Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function.
 
+- Replaced old ids patch entries with more recent BG2 Fixpack ones and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
+
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf.
 - Updated deprecated modding tools links.
