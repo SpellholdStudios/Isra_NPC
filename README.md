@@ -241,6 +241,10 @@ The installer includes the following components. The number of each is the compo
 
 #### Version ??? ( March 2020)
 
+- TODO Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
+- TODO Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
+- TODO Added components `DESIGNATED` numbers and "*isra_npc*", "*isra_npc_valerie_banters*" and "*isra_npc_gavin_banters*"`LABELS`.
+
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 
@@ -250,16 +254,18 @@ The installer includes the following components. The number of each is the compo
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
 - Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function.
 
-- Replaced old ids patch entries with more recent BG2 Fixpack ones and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
+- TOTO Added EET compatibility.
+
+- Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
 
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf.
 - Updated deprecated modding tools links.
 
-TODO - Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
+- TODO Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
 
 - Removed useless files.
-
+- Updated OggDec to v1.9.7 and added sox v14.4.1 for Mac.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
