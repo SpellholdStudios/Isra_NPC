@@ -257,9 +257,9 @@ The installer includes the following components. The number of each is the compo
 - TOTO Added EET compatibility.
 
 - Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
-
+- Simplified area type flagging and Tutu area script assignment patching.
 - Fixed Isra portraits in EE games.
-- Traified rh#isfix.baf.
+- Traified rh#isfix.baf and crossmod banters.
 - Updated deprecated modding tools links.
 
 - TODO Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
