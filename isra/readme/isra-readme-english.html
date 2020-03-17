@@ -1,890 +1,817 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
   <head>
-
-    <style type="text/css">
-
-    /*<![CDATA[*/
-
-    <!-- 
-
-      body {
-
-        margin: 0;
-
-        padding: 0;
-
-        cursor: default;
-
-        text-align: center;
-
-        color: #000;
-
-        background: #e3e3db url('http://spellholdstudios.net/images/sh_bg_main.jpg');
-
-      }
-
-      
-
-      #wrap {
-
-        text-align: left;
-
-        margin: 0 auto;
-
-        margin-top: 20px;
-
-        width: 88%;
-
-        font-family: Verdana, Tahoma, Arial, sans-serif;
-
-        font-size: 12px;
-
-        color: #333;
-
-      }
-
-      
-
-      #header {
-
-        text-align: center;
-
-        background: #e5e5e5;
-
-        border: 1px solid #781808;
-
-        border-top: 5px solid #781808;
-
-        border-bottom: 5px solid #781808;
-
-        padding: 5px 0 13px 0;
-
-      }
-
-      
-
-      #header .about {
-
-        margin: 7px 0 0 0;
-
-        padding: 0;
-
-        font-style: italic;
-
-        color: #555;
-
-      }
-
-      
-
-      #header .menu {
-
-        font-weight: bold;
-
-        margin: 0;
-
-        color: #999;
-
-      }
-
-      
-
-      #header .menu a:link,
-
-      #header .menu a:visited {
-
-        color: #333;
-
-      }
-
-      
-
-      #maindiv {
-
-        margin: 0 auto;
-
-        margin-top: -20px;
-
-        width: 80%;
-
-      }
-
-      
-
-      #maindiv .content {
-
-        counter-increment: kman;
-
-        counter-reset: h2;
-
-        background-color: #e8e8e6;
-
-        padding: 0 0 25px 0;
-
-        margin: 50px auto;
-
-        border-width: 1px 1px 4px 10px;
-
-        border-style: solid;
-
-        border-color: #781808;
-
-        position: relative;
-
-        display: block;
-
-      }
-
-      
-
-      #maindiv .content::before {
-
-        content: counter(kman, lower-roman);
-
-        font-size: 100%;
-
-        font-weight: bold;
-
-        text-align: center;
-
-        color: #eee;
-
-        background-color: #781808;
-
-        width: 35px;
-
-        position: absolute;
-
-        top: 0px;
-
-        left: 0px;
-
-        display: block;
-
-      }
-
-      
-
-      h2 {
-
-        display: block;
-
-        font-family: Verdana, Trebuchet MS, Arial, serif;
-
-        text-align: left;
-
-        text-indent: 30px;
-
-        padding: 0px;
-
-        margin: 20px 0 0 0;
-
-        border-bottom: dotted 2px #d0d0d0;
-
-        border-top: dotted 2px #d0d0d0;
-
-        background: #deded9;
-
-        font-size: 160%;
-
-      }
-
-      
-
-      h2::first-letter {
-
-        color: #781808;
-
-        background-color: transparent;
-
-      }
-
-      
-
-      #maindiv p {
-
-        font-size: 100%;
-
-        font-style: normal;
-
-        line-height: 150%;
-
-        padding: 0px;
-
-        margin: 10px auto;
-
-        width: 90%;
-
-        display: block;
-
-      }
-
-      
-
-      #maindiv address a:link,
-
-      #maindiv address a:visited {
-
-        font-weight: bold;
-
-        text-decoration: underline;
-
-        background-color: transparent;
-
-        color: #eaeaea !important;
-
-        padding-right: 5px;
-
-        padding-left: 6px;
-
-      }
-
-      
-
-      #maindiv address a:focus,
-
-      #maindiv address a:hover {
-
-        text-decoration: none;
-
-        color: #F1F1F1;
-
-        border: 0;
-
-      }
-
-      
-
-      #maindiv address a:active {
-
-        color: #fff;
-
-        text-decoration: line-through;
-
-        border: none;
-
-      }
-
-      
-
-      #maindiv address {
-
-        font-size: 95%;
-
-        font-style: normal;
-
-        font-weight: bold;
-
-        text-decoration: none;
-
-        color: #BBB;
-
-        background-color: #781808;
-
-        padding: 3px 0px 0px;
-
-        margin: 0px;
-
-        width: 100%;
-
-        position: absolute;
-
-        bottom: -1px;
-
-        left: 0px;
-
-        display: block;
-
-        text-align: right;
-
-      }
-
-      
-
-      #maindiv .important {
-
-        font-size: 95%;
-
-        font-family: Verdana;
-
-        text-align: left;
-
-        background-color: #F1F1F1;
-
-        border-top: solid 1px #aaa;
-
-        border-bottom: solid 1px #aaa;
-
-        border-left: solid 6px #aaa;
-
-        border-right: solid 6px #aaa;
-
-        padding: 10px;
-
-        margin: 20px auto;
-
-        width: 80%;
-
-        line-height: 160%;
-
-      }
-
-      
-
-      #maindiv .important::before {
-
-        display: none;
-
-      }
-
-      
-
-      #maindiv .important p {
-
-        font-size: 100%;
-
-        text-indent: 0px;
-
-        margin: 5px 0 10px 0;
-
-      }
-
-      
-
-      #maindiv ul {
-
-        margin: -10px 0 0 30px;
-
-        *margin-left: 65px;
-
-      }
-
-      
-
-      #maindiv ol {
-
-        margin: -10px 0 0 35px;
-
-        *margin-left: 70px;
-
-      }
-
-      
-
-      #maindiv .important ul {
-
-        margin: -10px 0 0 15px;
-
-      }
-
-      
-
-      #maindiv .important ol {
-
-        margin: -10px 0 0 20px;
-
-      }
-
-      
-
-      #maindiv ul li {
-
-        list-style-type: square;
-
-        line-height: 150%;
-
-      }
-
-      
-
-      #maindiv ol li {
-
-        line-height: 150%;
-
-      }
-
-      
-
-      .t1 {
-
-        font-weight: bold;
-
-        width: 26%;
-
-        text-align: right;
-
-        clear: right;
-
-        float: left;
-
-        *float: none;
-
-        *margin-left: 65px;
-
-        line-height: 22px;
-
-      }
-
-      
-
-      .t2 {
-
-        text-align: left;
-
-        width: 73%;
-
-        float: right;
-
-        *float: none;
-
-        line-height: 22px;
-
-      }
-
-      
-
-      hr {
-
-        margin: 10px 0 10px 0;
-
-        padding: 0;
-
-        height: 1px;
-
-        border: 0;
-
-        color: #aaa;
-
-        background-color: #aaa;
-
-      }
-
-      
-
-      hr.floatfix {
-
-        clear: both;
-
-        color: #e8e8e6;
-
-        background-color: #e8e8e6;
-
-        *margin: 0;
-
-        *padding: 0;
-
-      }
-
-      
-
-      h1 {
-
-        font-size: 225%;
-
-        color: #444;
-
-        padding: 5px 0 5px 0;
-
-        margin: 0;
-
-        width: 100%;
-
-      }
-
-      
-
-      h3,
-
-      h4,
-
-      h5 {
-
-        margin: 10px 40px 10px 40px;
-
-        padding: 0;
-
-      }
-
-      
-
-      h3 {
-
-        font-size: 125%;
-
-        font-style: italic;
-
-      }
-
-      
-
-      h4 {
-
-        font-size: 125%;
-
-      }
-
-      
-
-      h5 {
-
-        font-size: 100%;
-
-      }
-
-      
-
-      h6 {
-
-        width: 100%;
-
-        margin: 10px 0 15px 0;
-
-        background-color: #ECECEC;
-
-        text-align: left;
-
-        text-indent: 30px;
-
-        font-size: 100%;
-
-        font-style: italic;
-
-        padding-top: 1px;
-
-        padding-bottom: 1px;
-
-        border-bottom: solid 1px #bbb;
-
-        border-top: solid 1px #bbb;
-
-      }
-
-      
-
-      a:link,
-
-      a:visited {
-
-        color: #781808;
-
-        font-weight: bold;
-
-        text-decoration: none;
-
-      }
-
-
-
-      a:hover,
-
-      a:active {
-
-        color: #222;
-
-        border-bottom: 1px solid black;
-
-      }
-
-
-
-    -->
-
-    /*]]>*/
-
-    </style>
-
-    <title>SPELLHOLD STUDIOS - Isra NPC</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+/*<![CDATA[*/
+<!-- 
+	body {
+		margin: 0;
+		padding: 0;
+		cursor: default;
+		text-align: center;
+		color: #000;
+		background: #e3e3db url('http://spellholdstudios.net/images/sh_bg_main.jpg');
+	}
+
+	#wrap {
+		text-align: left;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 88%;
+		font-family: Verdana, Tahoma, Arial, sans-serif;
+		font-size: 12px;
+		color: #333;
+	}
+
+	#header {
+		text-align: center;
+		background: #e5e5e5;
+		border: 1px solid #781808;
+		border-top: 5px solid #781808;
+		border-bottom: 5px solid #781808;
+		padding: 5px 0 13px 0;
+	}
+	#header .about {
+		margin: 7px 0 0 0;
+		padding: 0;
+		font-style: italic;
+		color: #555;
+	}
+	#header .menu {
+		font-weight: bold;
+		margin: 0;
+		color: #999;
+	}
+	#header .menu a:link,
+	#header .menu a:visited {
+		color: #333;
+	}
+
+	#footer {
+		text-align: center;
+		background: #e5e5e5;
+		border: 1px solid #781808;
+		border-top: 5px solid #781808;
+		border-bottom: 5px solid #781808;
+		font-size: 75%;
+		padding: 5px 0 13px 0;
+	}
+
+	#maindiv {
+		margin: 0 auto;
+		margin-top: -20px;
+		width: 80%;
+	}
+
+	#maindiv .content {
+		counter-increment: kman;
+		counter-reset: h2;
+		background-color: #e8e8e6;
+		padding: 0 0 25px 0;
+		margin: 50px auto;
+		border-width: 1px 1px 4px 10px;
+		border-style: solid;
+		border-color: #781808;
+		position: relative;
+		display: block;
+	}
+	#maindiv .content::before {
+		content: counter(kman, lower-roman);
+		font-size: 100%;
+		font-weight: bold;
+		text-align: center;
+		color: #eee;
+		background-color: #781808;
+		width: 35px;
+		top: 0px;
+		left: 0px;
+		display: block;
+	}
+
+	#maindiv .important {
+		font-size: 95%;
+		font-family: Verdana;
+		text-align: left;
+		background-color: #F1F1F1;
+		border-top: solid 1px #aaa;
+		border-bottom: solid 1px #aaa;
+		border-left: solid 1px #aaa;
+		border-right: solid 1px #aaa;
+		padding: 10px;
+		margin: 20px auto;
+		width: 80%;
+		line-height: 160%;
+	}
+	#maindiv .important::before {
+		display: none;
+	}
+	#maindiv .important p {
+		width: 100%;
+		font-size: 100%;
+		text-indent: 0px;
+		margin: 5px 0 10px 0;
+	}
+	#maindiv .important ol {
+		margin: -10px 0 0 20px;
+	}
+	#maindiv .important ul {
+		margin: -10px 0 0 15px;
+	}
+
+	#maindiv p {
+		font-size: 100%;
+		font-style: normal;
+		line-height: 150%;
+		padding: 0px;
+		margin: 10px auto;
+		width: 90%;
+		display: block;
+	}
+
+	#maindiv address {
+		font-size: 95%;
+		font-style: normal;
+		font-weight: bold;
+		text-decoration: none;
+		color: #BBB;
+		background-color: #781808;
+		padding: 3px 0px 0px;
+		margin: 0px;
+		width: 100%;
+		position: absolute;
+		bottom: -1px;
+		left: 0px;
+		display: block;
+		text-align: right;
+	}
+	#maindiv address a:active {
+		color: #fff;
+		text-decoration: line-through;
+		border: none;
+	}
+	#maindiv address a:focus,
+	#maindiv address a:hover {
+		text-decoration: none;
+		color: #F1F1F1;
+		border: 0;
+	}
+	#maindiv address a:link,
+	#maindiv address a:visited {
+		font-weight: bold;
+		text-decoration: underline;
+		background-color: transparent;
+		color: #eaeaea !important;
+		padding-right: 5px;
+		padding-left: 6px;
+	}
+
+
+	/*	Lists  */
+	#maindiv ol {
+		line-height: 170%;
+		width: 87%;
+		margin-left: 4%;
+*		margin: -10px 0 0 35px;
+		*margin-left: 70px;
+	}
+	#maindiv ol li {
+		line-height: 150%;
+	}
+	#maindiv ul {
+		line-height: 170%;
+		margin-left: 4%;
+		width: 87%;
+	}
+	#maindiv ul li {
+		line-height: 150%;
+	}
+	#maindiv ul li ul {
+		margin: 0px;
+		width: 96%;
+	}
+	#maindiv ul li ul li {
+	}
+	#maindiv ul li a:link,
+	#maindiv ul li a:visited,
+	#maindiv ul li ul li a:link,
+	#maindiv ul li ul li a:visited {
+		color: #781808;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+	.t1 {
+		font-weight: bold;
+		width: 26%;
+		text-align: right;
+		clear: right;
+		float: left;
+		*float: none;
+		*margin-left: 65px;
+		line-height: 22px;
+	}
+	.t2 {
+		text-align: left;
+		width: 73%;
+		float: right;
+		*float: none;
+		line-height: 22px;
+	}
+
+
+	/*	Liens internet  */
+	a:hover,
+	a:active {
+		color: #222;
+		border-bottom: 1px solid black;
+	}
+	a:link,
+	a:visited {
+		color: #781808;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	h1 {
+		font-size: 250%; /* 225 */
+		color: #444;
+		padding: 10px 0 15px 0; /* 5 0 5 0 */
+		margin: 0;
+		width: 100%;
+	}
+	h2 {
+		display: block;
+		font-family: Verdana, Trebuchet MS, Arial, serif;
+		text-align: left;
+		text-indent: 30px;
+		padding: 0px;
+		margin: 20px 0 0 0;
+		border-bottom: dotted 2px #d0d0d0;
+		border-top: dotted 2px #d0d0d0;
+		background: #deded9;
+		font-size: 160%;
+	}
+	h2::first-letter {
+		color: #781808;
+		background-color: transparent;
+	}
+
+	h3,
+	h4,
+	h5 {
+		margin: 10px 40px 10px 40px;
+		padding: 0;
+	}
+
+	h3 {
+		font-size: 125%;
+		font-style: italic;
+	}
+	h4 {
+		font-size: 125%;
+	}
+	h5 {
+		font-size: 100%;
+	}
+	h6 {
+		width: 100%;
+		margin: 10px 0 15px 0;
+		background-color: #ECECEC;
+		text-align: left;
+		text-indent: 30px;
+		font-size: 100%;
+		font-style: italic;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		border-bottom: solid 1px #bbb;
+		border-top: solid 1px #bbb;
+	}
+
+	.screen {background-size:contain;background-repeat:no-repeat}
+	.screen img{max-width:100%; opacity:1;transition: opacity 1.25s ease-in-out;
+		-moz-transition: opacity 1.25s ease-in-out;
+		-webkit-transition: opacity 1.25s ease-in-out;
+	}
+	.screen img:hover{max-width:100%; opacity:0}
+
+-->
+/*]]>*/
+	</style>
+	<title>
+		Spellhold Studios - Isra NPC
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="images/shsweb.ico" rel="icon" type="image/bmp" />
 
   </head>
 
+
   <body>
+	<div id="wrap">
+	  <a name="top" id="top"></a>
+	  <div id="header">
 
-    <a name="top" id="top"></a>
+		<h1 style="color: #781808;text-shadow: 0.1rem 0.1rem 0.25rem #807559;">Isra NPC</h1>
 
-    <div id="wrap">
+		<span style="font-style: italic;"><strong>A Spellhold Studios mod for Baldur's Gate (TuTu, Baldur's Gate Trilogy, Baldur's Gate: Enhanced Edition and EET).</strong></span>
+		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
 
-      <div id="header">
+		<p class="about">
+			Author: Rhaella
+		</p>
+		<p class="about">
+			<a href="http://www.shsforums.net/forum/638-isra/">Mod Website and Forum</a> &#8226; <a href="http://www.shsforums.net/files/file/1042-isra/">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Isra_NPC/releases/latest">GitHub</a> &#8226; Version 2.3
+		</p>
+		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
 
-        <h1>Isra</h1>
-
-        <strong>A Spellhold Studios mod for Baldur's Gate 1: TuTu/BGT/BGEE</strong>
-
-        <hr />
-
-        <p class="about">
-
-          Author: Rhaella
-
-        </p>
-
-        <p class="about">
-
-          <a href="http://www.spellholdstudios.net/ie/isra">Mod Website</a> &#8226;
-
-          <a href="http://www.shsforums.net/forum/638-isra/">Mod Forum</a> &#8226;
-
-          Version: 2.3
-
-        </p>
-
-        <hr />
-
-        <p class="menu">
-
-          <a href="#intro">Introduction</a> &middot;
-
-          <a href="#installation">Installation</a> &middot;
-
-          <a href="#details">Details</a> &middot;
-
-          <a href="#credits">Credits</a> &middot;
-
-          <a href="#version">Version History</a>
-
-        </p>
-
-      </div>
+		<p class="menu">
+			<a href="#intro">Introduction</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#details">Details</a> &#x2B25; <a href="#romance">Romance</a> &#x2B25; <a href="#compon">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#version">Version History</a>
+		</p>
+	  </div>
 
       <div id="maindiv">
+<!-- ================== I n t r o d u c t i o n ================== -->
+	  <a name="intro" id="intro"></a>
+	  <div class="content">
 
+		<h2>Introduction</h2><br>
 
+		  <p>
+			This mod adds Isra Ghadir, a young paladin of Sune Firehair, to Baldur's Gate (TuTu, BGT, or BGEE). A follower of the goddess of love, beauty, and passion, Isra isn't necessarily what you might expect of a paladin. As a result, she's usually pretty willing to ignore harmlessly chaotic behavior (not evil behavior, though). She is amiable, optimistic, and courteous almost to a fault. She is also still somewhat inexperienced, and not too proud or rigid to admit when she's wrong.
+		  </p>
 
-        <!-- ================== I n t r o d u c t i o n ================== -->
-
-        <a name="intro" id="intro"></a>
-
-        <div class="content">
-
-          <h2>Introduction</h2>
-
-          <p>This mod adds Isra, a young paladin of Sune, to Baldur's Gate 1 (TuTu, BGT, or BGEE). A follower of the goddess of love, beauty, and passion, Isra is amiable, optimistic, and courteous almost to a fault. She is also still somewhat inexperienced, and not too proud or rigid to admit when she's wrong.</p>
+		  <p>
+			You can find her in the Nashkel Mines region, trying (with no success whatsoever) to resolve Prism's legal difficulties.
+		  </p><br>
 		  
-		  <h4>Content</h4><ul>
-          
-          <li>A new cavalier paladin NPC for BG1</li>
-		  <li>Voicing</li>
-          <li>An extensive friendship path with a protagonist</li>
-          <li>Banters with the original Bioware NPCs</li>
-          <li>Interjections and commentary</li>
-          <li>Opportunities for flirtation that may eventually develop into a romance</li>
-          <li>Player initiated dialogue</li>
-          
-          <address>
-
-            <span class="footer">Isra &gt; Introduction</span> &#8226;<a href="#top">BACK TO TOP</a>
-
-          </address>
-
-        </div>
-
-
-
-        <!-- ================== I n s t a l l a t i o n ================== -->
-
-        <a name="installation" id="installation"></a>
-
-        <div class="content">
-
-          <h2>Installation</h2>
-          <h5>PC & non-BG:EE</h5>
-
-          <p>The Isra NPC mod is a WeiDU mod, packaged in an extractable .RAR archive. Simply unrar <em>"Isra_v2.2.rar"</em> (<a href="http://www.rarlabs.com">WinRAR</a>) into your BGEE, BGT, or Tutu directory and run <em>"setup-Isra.exe"</em>.
-          <p>To uninstall, run <em>"setup-Isra.exe"</em> again and select the uninstall option.</p>
-
-
-          <h5>Compatibility and Installation Order</h5>
-
-          <p>Isra should be compatible with all other WeiDU mods for BG1 TuTu or BGT, including BG1NPC. If you do encounter an error, please contact K'aeloree (kae@spellholdstudios.net) or alternatively post on the <a href="http://www.shsforums.net/forum/XYZ-Isra/">forums</a>.</p>
-          
-          <p>Baldur's Gate: Enhanced Edition, Baldur's Gate Trilogy, or Tutu must be installed to play Isra. Tales of the Sword Coast is not required.</p>
-          <address>
-
-            <span class="footer">Isra &gt; Installation</span> <a href="#top">BACK TO TOP</a>
-
-          </address>
-
-        </div>
-        
-            <!-- ================== D e t a i l s ================== -->
-
-        <a name="details" id="details"></a>
-
-        <div class="content">
-
-          <h2>Details</h2>
-          
-          <p>Isra is a twenty year old squire-paladin with the Sisters and Brothers of the Ruby Rose, the Sunite paladinic order. She has far more experience with (and sympathy for) the chaotic good churches of Sune and Lliira than any of the lawful churches, so her outlook and personality are somewhat removed from what you might expect from a paladin. Don't expect sermons or proselytism: the Firehair's faith is something better served by building close friendships than by lecturing dogma, and Isra understands that.<p>
-          
-          <p>Most recently from Crimmor, the Caravan Capital of Amn, she can be found near Nashkel, attempting (with limited success) to resolve the legal difficulties of the artist Prism. Aid her in protecting him from Greywolf, and she will offer to help you clear the nearby mines. Troubled by the hints of conspiracy and the threat of war, Isra will be very eager to follow your quest to its ultimate conclusion.</p>
-          <h4>Statistics</h4><p>
-          
-          <ul><li>Stength 16</li>
-          <li>Dexterity 12</li>
-          <li>Constitution 16</li>
-          <li>Intelligence 13</li>
-          <li>Wisdom 14</li>
-          <li>Charisma 17</li></ul>
-          
-          
-          <p><h4>Notes</h4><p>
-          
-          <ul><li><b>You will need to recruit her before clearing the mines.</b> Isra is a squire-paladin with other obligations and responsibilities, and will not feel comfortable gallivanting off with strangers without good cause.</li>
-          <li><b>Isra will not join the party if the protagonist is of evil alignment.</b> She won't be rude about it, but she is a paladin. She can tell.</li>
-          <li>If you don't accept her into your party when she first offers, she's gone for good. If you drop her later, you can find her in the Nashkel inn.</li>
-          <li>Isra's friendship track includes thirteen talks, beginning after the Nashkel mines are cleared. Two are triggered upon resting in an inn, and the latter half of the track is largely chapter dependent.</li>
-          <li>Your reputation has to be 10 or higher to advance the friendship track.</li>
-          <li>Don't let your reputation drop below 6 if you want to keep her around.</li>
-          <li>While disrespectful comments won't alienate her completely, Isra values courtesy very highly and won't be very happy with you if you're rude to her.</li>
-          <li>Isra is intended to be a romance option in BGII for a good-aligned protagonist of any race or gender with a charisma of 13 or greater. You may flirt with her in BGI, though she won't be interested in anything more serious until BGII.</li>
-          <li>Isra doesn't get into lethal arguments with any other joinable NPC, though her relationships with evil NPCs are strained at best, downright hostile at worst.</li>
+		  <p>
+			<strong>Content</strong>
+		  </p>
+		  <ul style="margin-left: 4%;">
+			<li>A new cavalier paladin NPC for BG.</li>
+			<li>Voicing.</li>
+			<li>An extensive friendship path with a protagonist.</li>
+			<li>Banters with the original Bioware NPCs.</li>
+			<li>Interjections and commentary.</li>
+			<li>Opportunities for flirtation that may eventually develop into a romance.</li>
+			<li>Player initiated dialogue.</li>
           </ul>
-          
-          
-          
-         
-          
-           <address> <span class="footer">Isra &gt; Details</span> <a href="#top">BACK TO TOP</a>
+		  </p><br>
 
-          </address>
+		  <p>
+			Visit the <a href="http://www.shsforums.net/forum/638-isra/">forum</a> for all the latest updates.
+		  </p><br>
 
-        </div>
 
-        <!-- ================== C r e d i t s ================== -->
+		<address>
+			<span class="footer">Isra NPC &gt; Introduction</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
 
-        <a name="credits" id="credits"></a>
+<!-- ================= C o m p a t i b i l i t y ================= -->
+	  <a name="compat" id="compat"></a>
+	  <div class="content">
 
-        <div class="content">
+		<h2>Compatibility</h2><br>
 
-          <h2>Credits</h2>
+		<p>
+			Isra NPC is designed to work on the following Infinity Engine games:
+		</p>
+		<ul>
+			<li>Baldur's Gate: Enhanced Edition (BG:EE).</li>
+			<li>The conversion projects based on <acronym title="Throne of Bhaal">ToB</acronym>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/"><strong>Baldur's Gate Trilogy (BGT)</strong></a>, <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98"><strong>Baldur's Gate Tutu (<acronym title="Baldur's Gate 'To Two'">Tutu</acronym>)</strong></a> and <a href="https://github.com/K4thos/EET/releases"><strong>Enhanced Edition Trilogy (EET)</strong></a>.</li>
+		</ul></br>
 
-          <p>This could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
-          
-          </p>
-  
-  <span class="t1">Author:</span> <span class="t2">Rhaella</span><br />
-          <span class="t1">Coder:</span> <span class="t2">Rhaella, K'aeloree</span><br />
-          <span class="t1">Portrait:</span> <span class="t2">Lady Lesatho</span><br />
-		 
-			      <hr class="floatfix" />
-          <h5>Programs/tools used in creation:</h5><br />
-          <ul>
-            <li><a href="http://www.weidu.org">WeiDU</a>, by Westley Weimer/Valerio Bigiani (the bigg)</li>
-            <li><a href="http://www.idi.ntnu.no/~joh/ni/">Near Infinity</a>, by Jon Olav Hauglid</li>
-            <li><a href="http://www.shsforums.net/topic/31285-infinity-explorer-v085/">Infinity Explorer</a>, by Dmitry Jemerov/bigmoshi</li>
-            <li><a href="http://www.rarlab.com/">WinRAR</a>, by Eugene Roshal/Alexander Roshal</li>
-            <li><a href="http://iesdp.gibberlings3.net">IESDP</a>, maintained by igi</li>
-          </ul>
-          <h5>Copyright Notice:</h5>
-          <div class="important">
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<p>
+			The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods for BG TuTu or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
+		</p>
+		<p>
+			Although it is not required for Isra NPC to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+		</p><br>
+
+
+		<address>
+			<span class="footer">Isra NPC &gt; Compatibility</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ================== I n s t a l l a t i o n ================== -->
+	  <a name="installation" id="installation"></a>
+	  <div class="content">
+
+		<h2>Installation</h2><br>
+
+		<h3>Notes</h3>
+
+		<p style="margin-top:2%;">
+			<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;setup-isra.exe&nbsp;</span></strong>, un-install all previously installed components and delete the isra folder.</em>
+		</p>
+		<p>
+			<em>When installing or un-installing, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+		</p>
+		<p>
+			<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.
+		</p>
+		<p>
+			You can extract files from the archive using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Special Note for Siege of Dragonspear from Steam/GOG</h3>
+
+		<p style="margin-top:2%;">
+			Good Old Games (GOG) and Steam both package the additional content for Siege of Dragonspear in a method that <acronym title="Weimer Dialogue Utility">WeiDU</acronym>, the tool used to install this mod, cannot access. You must run a program called <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> on your SoD installation before you can install this or any other WeiDU-based mod.
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Enhanced Editions Note</h3>
+
+		<p style="margin-top:2%;">
+			The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Windows</h3>
+
+		<p style="margin-top:2%;">
+			Isra NPC for BG for Windows is distributed as an extractable compressed archive and includes a WeiDU installer.
+		</p>
+		<p>
+			Extract the contents of the mod to the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>). On successful extraction, there should be an isra_bg2 folder and a setup-isra.exe file in your game folder. To install, simply double-click <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;setup-isra.exe&nbsp;</span></strong> and follow the instructions on screen.
+		</p>
+		<p>
+			Run <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;setup-isra.exe&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise change components.
+		</p></br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Mac OS X</h3>
+
+		<p style="margin-top:2%;">
+			Isra NPC for BG for Mac OS X distributed in the same compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+		</p>
+		<p>
+			First, extract the files from the archive into your game directory. On successful extraction, there should be an isra folder, setup-isra and setup-isra.command files in your game folder. To install, double-click <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;setup-isra.command&nbsp;</span></strong> and follow the instructions on screen.
+		</p>
+		<p>
+			You can run <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;setup-isra.command&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise the components settings.
+		</p></br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Linux</h3>
+
+		<p style="margin-top:2%;">
+			Isra NPC for BG for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
+		</p>
+		<p>
+			Extract the contents of the mod to the folder of the game you wish to modify.
+		</p>
+		<p>
+			Download the latest Linux version of <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a> and copy WeiDU and WeInstall to /usr/bin. Then open a terminal and <strong>cd</strong> to your game installation directory.
+		</p>
+		<p>
+			<em>Optional: run 'tolower' and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either, if you've extracted only this mod since the last time you lowercased file names. If unsure, running tolower and choosing both options is the safe bet.</em>
+		</p>
+		<p>
+			Run <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;WeInstall setup-isra&nbsp;</span></strong> in your game folder to install the mod. Then run <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;wine BGMain.exe&nbsp;</span></strong> and start playing.
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Note for Complete Un-installation</h3>
+
+		<p style="margin-top:2%;">
+			In addition to the methods above for removing individual components, you can completely un-install the mod using <strong><span style="font-family: Courier New;font-size: 100%;border: 1px solid black;background-color: black;color: #deded9;">&nbsp;setup-isra --uninstall&nbsp;</span></strong> at the command line to remove all components without wading through prompts.
+		</p><br>
+
+
+		<address>
+			<span class="footer">Isra NPC &gt; Installation</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ================== D e t a i l s ================== -->
+	  <a name="details" id="details"></a>
+	  <div class="content">
+
+		<h2>Details</h2><br>
+
+		<p style="margin-top:2%;">
+		  <table cellpadding=0 cellspacing=0 style="margin-left: 80px; margin-right: 80px">
+			<tr>
+			  <td><img src="images/rhisral.png" title="Isra Ghadir Portrait"></td>
+			  <td width=20 style="border:none"></td>
+			  <td style="border:none;width: 90%;line-height: 150%;">
+				Isra is a twenty year old squire-paladin with the Sisters and Brothers of the Ruby Rose, the Sunite paladinic order. She is a follower of Sune Firehair, the goddess of love, beauty, and passion, and the only chaotic aligned deity to sponsor paladins. As such, she has far more experience with (and sympathy for) the chaotic good churches of Sune and Lliira than any of the lawful churches, and associates with some of the most mirthful churches in the Realms.<br/>
+				So her outlook and personality are somewhat removed from what you might expect from a paladin. Don't expect sermons or proselytism: the Firehair's faith is something better served by building close friendships than by lecturing dogma, and Isra understands that. She definitely still believes in honor, discipline, and order, but she tends to value the courtly aspects of the code of conduct more highly than the demands of duty. As a result, she's usually pretty willing to ignore harmlessly chaotic behavior (not evil behavior, though).</td>
+			</tr>
+		  </table>
+		</p>
+
+		<p>
+			Isra is Amnish, most recently from Crimmor, the Caravan Capital of Amn, and she can be found near Nashkel, trying (with no success whatsoever) to resolve Prism's legal difficulties. Aid her in protecting him from Greywolf, and she will offer to help you investigate the nearby mines and clear them. Make sure you recruit her before clearing them, however. They pose enough of a threat that she'll be willing to take action first and seek permission later; otherwise she'd feel obligated to return south to her order instead of gallivanting off with strangers.
+		</p>
+
+		<p>
+			Troubled by the hints of conspiracy and the threat of war, Isra will be very eager to follow your quest to its ultimate conclusion. She won't join the company of an evil PC under any circumstances. She won't be rude about it, but she does have the magic to tell. She also won't stick around if your reputation drops below 6.
+		</p><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Statistics</h3>
+
+		<p style="margin-top:2%;">
+		  <ul>
+			<li>Strength 16
+			<li>Dexterity 12</li>
+			<li>Constitution 16</li>
+			<li>Intelligence 13</li>
+			<li>Wisdom 14</li>
+			<li>Charisma 17</li>
+		  </ul>
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Biography</h3>
+
+		<p style="margin-top:2%;">
+			When asked about her past, Isra laughs and admits that there is precious little to tell thus far. She explains that she has spent the past eight years in Crimmor, the Caravan Capital of Amn, living amongst her mother's kin while squired to a paladin of Sune in the Order of the Ruby Rose. As much as she seems to enjoy speaking about the city, you are left with the impression that she is quite thrilled to finally be away from it and out in the world on her own.
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Notes</h3>
+
+		<p style="margin-top:2%;">
+		  <ul>
+			<li><strong>You will need to recruit her before clearing the mines.</strong> Isra is a squire-paladin with other obligations and responsibilities, and will not feel comfortable gallivanting off with strangers without good cause.</li>
+			<li><strong>Isra will not join the party if the protagonist is of evil alignment.</strong> She won't be rude about it, but she is a paladin. She can tell.</li>
+			<li>If you don't accept her into your party when she first offers, she's gone for good. If you drop her later, you can find her in the Nashkel inn.</li>
+			<li>Isra's friendship track includes thirteen talks, beginning after the Nashkel mines are cleared. Two are triggered upon resting in an inn, and the latter half of the track is largely chapter dependent.</li>
+			<li>Your reputation has to be 10 or higher to advance the friendship track.</li>
+			<li>Don't let your reputation drop below 6 if you want to keep her around.</li>
+			<li>While disrespectful comments won't alienate her completely, Isra values courtesy very highly and won't be very happy with you if you're rude to her.</li>
+			<li>Isra is intended to be a romance option in BGII for a good-aligned protagonist of any race or gender with a charisma of 13 or greater. You may flirt with her in BGI, though she won't be interested in anything more serious until BGII.</li>
+			<li>Isra doesn't get into lethal arguments with any other joinable NPC, though her relationships with evil NPCs are strained at best, downright hostile at worst.</li>
+		  </ul>
+		</p><br>
+
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>NPC Relationships</h3>
+
+		<p style="margin-top:2%;">
+			If you want to choose NPCs by how much they talk, Quayle, Tiax, Faldorn, and Shar-Teel only have one banter a piece. Dorn sort of has one, though it's not exactly a banter. Branwen, Coran, Dynaheir, Imoen, Khalid, and Jaheira all have three (as does Eldoth if Skie is around). Everyone else has two.
+		</p>
+
+		<p>
+			She tends to get along with most of the good and neutral aligned folk, though there's a bit of religious tension with Ajantis at times, and Branwen as well (Sune hates Tempus; Tempus doesn't care). Rasaad is probably somewhat interesting from a religious perspective also. She gets along really well with Khalid, though there's some tension with Jaheira. She may be crushing on Dynaheir a little bit, though it's a bit hard to tell. Her relationship with Coran is more than a bit mercurial. She does not like Safana at all, while Safana mostly just finds her amusing.
+		</p><br>
+
+
+		<address>
+			<span class="footer">Isra NPC &gt; Details</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- =================== C o m p o n e n t s ==================== -->
+	  <a name="compon" id="compon"></a>
+		<div class="content">
+
+		<h2>Components</h2><br>
+
+		<p>
+			The installer includes the following components. The number of each is the component <em>DESIGNATED</em> number which gives it a fixed install position, lets other components and mods detect it and allows automated installers to specify component choices.
+		</p><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+		<p><strong>0. Isra NPC Mod for BG:EE, EET, BGT and TuTu</strong> (Main component)
+		</p><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+		<p><strong>1. Valerie/Isra crossmod content</strong>
+		</p>
+		<p>
+			This component installs banters between Isra and Valerie, if this mod is detected.
+		</p><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+		<p><strong>1. Valerie/Gavin crossmod content</strong>
+		</p>
+		<p>
+			This component installs banters between Isra and Gavin, if this mod is detected.
+		</p><br>
+
+
+		<address>
+			<span class="footer">Isra NPC for BGII &gt; Components</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ======================= C r e d i t s ====================== -->
+	  <a name="credits" id="credits"></a>
+	  <div class="content">
+
+		<h2>Credits</h2><br>
+
+			<span class="t1">Author:</span> <span class="t2"><a href="http://www.shsforums.net/user/7955-rhaella/">Rhaella</a></span><br />
+			<span class="t1"><acronym title="Weimer Dialogue Utility">WeiDU</acronym> coding:</span> <span class="t2"><a href="http://www.shsforums.net/user/7955-rhaella/">Rhaella</a> and <a href="http://www.shsforums.net/user/3481-kaeloree/">K'aeloree</a></span><br />
+
+		<hr style="clear: both; width: 90%; color: transparent; background-color: transparent; " /><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+		<h5>Special Acknowledgements to:</h5>
+
+		<p>
+			This could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
+		</p>
+
+ 		  <ul class="version-list c1">
+			<li><a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>).</li>
+			<li>Portrait: Lady Lesathoa.</li>
+			<li>Everyone else from <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.</li>
+		  </ul><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+		<h5>Programs/tools used in creation:</h5>
+
+		  <ul class="version-list c1">
+			<li>
+			  <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>, by Wes Weimer, the bigg and Wisp.
+			</li>
+			<li>
+			  <a href="https://github.com/Argent77/NearInfinity/releases">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.
+			</li>
+			<li>
+			  <a href="http://www.shsforums.net/topic/31285-infinity-explorer-v085/">Infinity Explorer</a>, by Dmitry Jemerov / bigmoshi.
+			</li>
+			<li>
+			  <a href="https://gibberlings3.github.io/iesdp/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a>, maintained by igi and lynx.
+ 			</li>
+			<li>
+			  <a href="http://notepad-plus-plus.org/">Notepad++</a>, by the Notepad++ team, Don Ho, and the spellcheck plug-in.
+ 			</li>
+			<li>
+			  <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a>, by Argent77.
+			</li>
+			<li>
+			  <a href="https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it">Infinity Auto Packager</a>, by AL|EN.
+			</li>
+		  </ul><br>
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+		<h5>Copyrights</h5>
+
+		  <div class="important" style="border-color: #781808;">
+			<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> The Isra NPC was developed by Rhaella, based on material from the games Baldur's Gate, Baldur's Gate II, and its expansion, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+			<p>Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.</p>
+		  </div><br>
+
+
+		<address>
+			<span class="footer">Isra NPC &gt; Credits</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
             
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />The Isra NPC was developed by Rhaella, based on material from the games Baldur's Gate, Baldur's Gate II, and its expansion, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+<!-- ============== V e r s i o n   H i s t o r y =============== -->
+	  <a name="version" id="version"></a>
+	  <div class="content">
 
-            <p>Baldur's Gate, Baldur's Gate II: Shadows of Amn, and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp.</p>
-          </div>		
-          <address>
+		<h2>Version History</h2><br>
 
-            <span class="footer">Isra &gt; Credits</span> &#8226;<a href="#top">BACK TO TOP</a>
+		<h6>Version ??? ( March 2020)</h6>
 
-          </address>
+		  <ul>
+			<li>Added <em>isra.ini</em> metadata file to support AL|EN's "Project Infinity"</li>
+			<li>Renamed <em>setup-isra.tp2</em> -> <em>isra.tp2</em> to support AL|EN's "Project Infinity".</li>
+			<li>Replaced <em>AUTHOR</em> keyword with <em>SUPPORT</em>.</li>
+			<li>Added missing <em>REQUIRE_PREDICATE</em> process to avoid installing the mod in inaccurate games.</li>
+			<li>Added components <em>DESIGNATED</em> numbers and "<em>isra_npc_for_bg</em>", "<em>isra_valerie_crossmod_content</em>" and "<em>isra_gavin_crossmod_content</em>" LABELS.</li>
+			<li>Externalized tp2 code into <em>main_component.tpa</em> library for more comfortable readability and maintenance.</li>
+			<li>Commented code as much as possible.</li>
+			<li>Added Modmerge check for SoD games.</li>
+			<li>Replaced <em>GAME_IS</em> conditions with variables checks to speed up install time.</li>
+			<li>Added missing <em>HANDLE_CHARSETS</em> function to convert string entries for EE games (to prepare for possible translations).</li>
+			<li>Reworked install procedure to use WeiDU's built-in <em>HANDLE_AUDIO</em> function.</li>
+			<li>Added EET compatibility.</li>
+			<li>rh#israj.d and valerie.d: fixed wrong tutu variables that were patching wrong dialog files in BGT games and added a workaround to patch right states according to the games.</li>
+			<li>Updated cpmvars files.</li>
+			<li>Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.</li>
+			<li>Simplified area type flagging and Tutu area script assignment patching.</li>
+			<li>Fixed Isra portraits in EE games.</li>
+			<li>Traified rh#isfix.baf and crossmod banters.</li>
+			<li>Updated deprecated modding tools links.</li>
+			<li>Re-formated, updated and renamed readme file to <em>isra-readme-english.html</em> and moved it into new readme folder.</li>
+			<li>Removed useless files.</li>
+			<li>Updated OggDec to v1.9.7 and added sox v14.4.1 for Mac.</li>
+			<li>Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).</li>
+			<li>Uploaded mod to official Spellhold Studios GitHub mirror account.</li>
+		  </ul><br>
 
-        </div>
+		<h6>Version 2.3 (11 April 2018)</h6>
 
+		  <ul>
+			<li>Crossmod bug fixed.</li>
+		  </ul><br>
 
+		<h6>Version 2.2 (2 April 2018)</h6>
 
-        <!-- ================== V e r s i o n   H i s t o r y ================== -->
+		  <ul>
+			<li>Isra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.</li>
+			<li>TRAified.</li>
+			<li>Updated WeiDU installer.</li>
+		  </ul><br>
 
-        <a name="version" id="version"></a>
+		<h6>Version 2.1 (9 June 2014)</h6>
 
-        <div class="content">
+		  <ul>
+			<li>Isra should no longer be transferring to BG2 in a BGT playthrough.</li>
+			<li>Updated WeiDU installer.</li>
+		  </ul><br>
 
-          <h2>Version history</h2>
-          
-           <h6>11 April 2018 - Version 2.3:</h6>
+		<h6>Version 2.0 (8 June 2013)</h6>
 
-          <ul>
+		  <ul>
+			<li>Audio added.</li>
+		  </ul><br>
 
-            <li>Crossmod bug fixed.</li>
-          
-           <h6>2 April 2018 - Version 2.2:</h6>
+		<h6>Version 1.4 (21 February 2013)</h6>
 
-          <ul>
+		  <ul>
+			<li>Bug in Rasaad banter fixed.</li>
+		  </ul><br>
 
-            <li>WeiDU updated, TRAified, Isra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.</li>
-          
-           <h6>9 June 2014 - Version 2.1:</h6>
+		<h6>Version 1.3 (12 February 2013)</h6>
 
-          <ul>
+		  <ul>
+			<li>Dialogue edits.</li>
+			<li>Several new banters and a string fixer added.</li>
+		  </ul><br>
 
-            <li>WeiDU updated; Isra should no longer be transferring to BG2 in a BGT playthrough.</li>
+		<h6>Version 1.2 (22 January 2013)</h6>
 
-          </ul>
+		  <ul>
+			<li>Dialogue bug fixed.</li>
+			<li>Dorn conflict bug fixed.</li>
+			<li>Crossmod with Gavin implemented.</li>
+		  </ul><br>
 
-          <h6>8 June 2013 - Version 2.0:</h6>
+		<h6>Version 1.1 (11 January 2013)</h6>
 
-          <ul>
+		  <ul>
+			<li>Soundset error corrected.</li>
+			<li>BGT joining dialogue bug fixed.</li>
+		  </ul><br>
 
-            <li>Audio added.</li>
+		<h6>Version 1.0 (6 January 2013)</h6>
 
-          </ul>
-          
-          <h6>21 February 2013 - Version 1.4:</h6>
-
-          <ul>
-
-            <li>Bug in Rasaad banter fixed.</li>
-
-          </ul>
-          
-          <h6>12 February 2013 - Version 1.3:</h6>
-
-          <ul>
-
-            <li>Dialogue edits, several new banters and a string fixer added.</li>
-
-          </ul>
- 
- <h6>22 January 2013 - Version 1.2:</h6>
-
-          <ul>
-
-            <li>Dialogue bug fixed, Dorn conflict bug fixed, crossmod with Gavin implemented.</li>
-
-          </ul>
-         
-         <h6>11 January 2013 - Version 1.1:</h6>
-
-          <ul>
-
-            <li>Soundset error corrected, BGT joining dialogue bug fixed.</li>
-
-          </ul>
-
-          <h6>6 January 2013 - Version 1.0:</h6>
-
-          <ul>
-
-            <li>Initial release</li>
-
-          </ul>
-
-          <address>
-
-            <span class="footer">Isra &gt; Version History</span> &#8226;<a href="#top">BACK TO TOP</a>
-
-          </address>
-
-        </div>
+		  <ul>
+			<li>Initial release.</li>
+		  </ul><br>
 
 
+		<address>
+			<span class="footer">Isra NPC &gt; Version History</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
 
-      </div>
-
-    </div>
-
+	</div>
+	</div>
   </body>
-
 </html>
