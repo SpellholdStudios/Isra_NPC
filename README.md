@@ -241,32 +241,25 @@ The installer includes the following components. The number of each is the compo
 #### Version ??? ( March 2020)
 
 - Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
-- TODO Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
+- Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added components `DESIGNATED` numbers and "*isra_npc_for_bg*", "*isra_valerie_crossmod_content*" and "*isra_gavin_crossmod_content*"`LABELS`.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
-
 - Added Modmerge check for SoD games.
 - Replaced `GAME_IS` conditions with variables checks to speed up install time.
 - Removed SoA checks as Isra needs BGT or Tutu to be installed.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
 - Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function.
-
-- TOTO Added EET compatibility.
-
-- rh#israj.d and valerie.d: fixed wrong tutu variables and added a workaround to patch right states according to the games.
+- Added EET compatibility.
+- rh#israj.d and valerie.d: fixed wrong tutu variables that were patching wrong dialog files in BGT games and added a workaround to patch right states according to the games.
 - Updated cpmvars files.
 - Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
 - Simplified area type flagging and Tutu area script assignment patching.
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf and crossmod banters.
 - Updated deprecated modding tools links.
-
-- Updated g3-cpmvars libraries.
-- Fixed wrong tutu variables that were patching wrong dialog files in BGT games.
 - TODO Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
-
 - Removed useless files.
 - Updated OggDec to v1.9.7 and added sox v14.4.1 for Mac.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).

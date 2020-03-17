@@ -94,7 +94,7 @@ REQUIRE_PREDICATE GAME_IS ~tutu tutu_totsc bgee eet bgt~ @11 /* You must have Tu
  * =============================== */
 BEGIN @2										/* Valerie/Isra crossmod content */
 DESIGNATED 1 LABEL ~isra_valerie_crossmod_content~
-REQUIRE_COMPONENT ~setup-isra.tp2~ ~0~ @12		/* Please install Isra NPC for BG main component before additional content. */
+REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
 REQUIRE_COMPONENT ~valerie.tp2~ ~0~ @13			/* You do not appear to have Valerie installed. */
   
 COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
@@ -105,7 +105,7 @@ COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
  * ============================= */
 BEGIN @3										/* Gavin/Isra crossmod content */
 DESIGNATED 2 LABEL ~isra_gavin_crossmod_content~
-REQUIRE_COMPONENT ~setup-isra.tp2~ ~0~ @12		/* Please install Isra NPC for BG main component before additional content. */
+REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
 REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @14			/* You do not appear to have Gavin installed. */
   
 COMPILE EVALUATE_BUFFER ~isra/crossmod/gavin.d~
