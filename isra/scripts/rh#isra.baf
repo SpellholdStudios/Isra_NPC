@@ -1,5 +1,6 @@
-// INITIATE DIALOGUE
-
+/* ------------------- *
+ *  INITIATE DIALOGUE  *
+ * ------------------- */
 IF
 	Global("rh#IsraInitiateBG1","GLOBAL",0)
 	See(Player1)
@@ -9,32 +10,35 @@ IF
 	Dead("Prism")
 	!Dead("rh#Isra")
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraInitiateBG1","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraInitiateBG1","GLOBAL",1)
 END
 
 IF
 	Global("rh#IsraInitiateBG1","GLOBAL",1)
 THEN
-  RESPONSE #100
-	StartDialogueNoSet(Player1)
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
 END
 
-// GREYWOLF FIGHT
 
+/* ---------------- *
+ *  GREYWOLF FIGHT  *
+ * ---------------- */
 IF
 	!Dead("Greywolf")
 	Global("rh#IsraGreywolfAttacks3","GLOBAL",0)
 	OR(2) Global("rh#IsraGreywolfAttacks","GLOBAL",1) Global("rh#IsraGreywolfAttacks2","GLOBAL",1) 
 THEN
-  RESPONSE #100
-  	SetGlobal("rh#IsraGreywolfAttacks3","GLOBAL",1)
-  	Attack("Greywolf")
+	RESPONSE #100
+		SetGlobal("rh#IsraGreywolfAttacks3","GLOBAL",1)
+		Attack("Greywolf")
 END
 
 
-// FRIENDSHIP
-
+/* ------------ *
+ *  FRIENDSHIP  *
+ * ------------ */
 IF
     InParty(Myself)
     Dead("mulahey")
@@ -42,9 +46,9 @@ IF
     AreaType([OUTDOOR])
     Global("rh#IsraTalksBG1","GLOBAL",0)
 THEN
-  RESPONSE #100
-    RealSetGlobalTimer("rh#IsraTalksBG1Timer","GLOBAL",300)
-    SetGlobal("rh#IsraTalksBG1","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("rh#IsraTalksBG1Timer","GLOBAL",300)
+		SetGlobal("rh#IsraTalksBG1","GLOBAL",1)
 END
 
 IF
@@ -53,8 +57,8 @@ IF
 	CheckStatGT(Player1,12,CHR)
 	Global("rh#IsraRomanceCheck","GLOBAL",0)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraRomanceCheck","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraRomanceCheck","GLOBAL",1)
 END
 
 IF
@@ -62,8 +66,8 @@ IF
     !ReputationGT(Player1,9)
 	Global("rh#IsraRomanceCheck","GLOBAL",1)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraRomanceCheck","GLOBAL",2)
+	RESPONSE #100
+		SetGlobal("rh#IsraRomanceCheck","GLOBAL",2)
 END
 
 IF
@@ -77,18 +81,18 @@ IF
     ReputationGT(Player1,9)
 	!Global("rh#IsraTalksBG1Interrupted","GLOBAL",1)
     OR(9)
-      Global("rh#IsraTalksBG1","GLOBAL",2)
-      Global("rh#IsraTalksBG1","GLOBAL",4)
-      Global("rh#IsraTalksBG1","GLOBAL",6)
-      Global("rh#IsraTalksBG1","GLOBAL",8)
-      Global("rh#IsraTalksBG1","GLOBAL",10)
-      Global("rh#IsraTalksBG1","GLOBAL",12)
-      Global("rh#IsraTalksBG1","GLOBAL",14)
-      Global("rh#IsraTalksBG1","GLOBAL",18)
-      Global("rh#IsraTalksBG1","GLOBAL",20)
+		Global("rh#IsraTalksBG1","GLOBAL",2)
+		Global("rh#IsraTalksBG1","GLOBAL",4)
+		Global("rh#IsraTalksBG1","GLOBAL",6)
+		Global("rh#IsraTalksBG1","GLOBAL",8)
+		Global("rh#IsraTalksBG1","GLOBAL",10)
+		Global("rh#IsraTalksBG1","GLOBAL",12)
+		Global("rh#IsraTalksBG1","GLOBAL",14)
+		Global("rh#IsraTalksBG1","GLOBAL",18)
+		Global("rh#IsraTalksBG1","GLOBAL",20)
 THEN
-  RESPONSE #100
-    Dialogue(Player1)
+	RESPONSE #100
+		Dialogue(Player1)
 END
 
 IF
@@ -102,19 +106,19 @@ IF
     ReputationGT(Player1,9)
     !Global("rh#IsraTalksBG1Interrupted","GLOBAL",1)
     OR(6)
-      Global("rh#IsraTalksBG1","GLOBAL",1)
-      Global("rh#IsraTalksBG1","GLOBAL",5)
-      Global("rh#IsraTalksBG1","GLOBAL",7)
-      Global("rh#IsraTalksBG1","GLOBAL",11)
-      Global("rh#IsraTalksBG1","GLOBAL",13)
-      Global("rh#IsraTalksBG1","GLOBAL",19)
+		Global("rh#IsraTalksBG1","GLOBAL",1)
+		Global("rh#IsraTalksBG1","GLOBAL",5)
+		Global("rh#IsraTalksBG1","GLOBAL",7)
+		Global("rh#IsraTalksBG1","GLOBAL",11)
+		Global("rh#IsraTalksBG1","GLOBAL",13)
+		Global("rh#IsraTalksBG1","GLOBAL",19)
 THEN
-  RESPONSE #100
-	IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
+	RESPONSE #100
+		IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
 END
 
 // 2. Messenger
-
+// ------------
 IF
     InParty(Myself)
     See(Player1)
@@ -128,10 +132,10 @@ IF
 	Global("rh#IsraTalksBG1","GLOBAL",3)
 	Global("rh#IsraMessengerSpawn","GLOBAL",0)
 THEN
-  RESPONSE #100
-	CreateCreatureObjectOffset("rh#ismes",Myself,[-15.-15])
-	RealSetGlobalTimer("rh#IsraMessengerRespawnTimer","GLOBAL",300)
-	SetGlobal("rh#IsraMessengerSpawn","GLOBAL",1)
+	RESPONSE #100
+		CreateCreatureObjectOffset("rh#ismes",Myself,[-15.-15])
+		RealSetGlobalTimer("rh#IsraMessengerRespawnTimer","GLOBAL",300)
+		SetGlobal("rh#IsraMessengerSpawn","GLOBAL",1)
 END
 
 IF
@@ -139,8 +143,8 @@ IF
     RealGlobalTimerExpired("rh#IsraMessengerRespawnTimer","GLOBAL")
 	Global("rh#IsraMessengerSpawn","GLOBAL",1)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraMessengerSpawn","GLOBAL",0)
+	RESPONSE #100
+		SetGlobal("rh#IsraMessengerSpawn","GLOBAL",0)
 END
 
 IF
@@ -155,13 +159,13 @@ IF
     Global("rh#IsraMessengerSpawn","GLOBAL",2)
     Global("rh#IsraTalksBG1","GLOBAL",3)   
 THEN
-  RESPONSE #100
-  	RealSetGlobalTimer("rh#IsraTalksBG1Timer","GLOBAL",5) 
-	IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("rh#IsraTalksBG1Timer","GLOBAL",5) 
+		IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
 END
 
 // 5. Morning in an Inn
-
+// --------------------
 IF
     InParty(Myself)
     See(Player1)
@@ -197,12 +201,12 @@ IF
      	AreaCheck("%UlgothsBeard_Inn%")
     Global("rh#IsraTalksBG1","GLOBAL",9)
 THEN
-  RESPONSE #100
+	RESPONSE #100
 	IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
 END
 
 // 8-9. Post Davaeorn
-
+// ------------------
 IF
     InParty(Myself)
     Dead("davaeorn")
@@ -211,10 +215,10 @@ IF
     ReputationGT(Player1,9)
     Global("rh#IsraTalksBG1Chapter5","GLOBAL",0)
 THEN
-  RESPONSE #100
-    RealSetGlobalTimer("rh#IsraTalksBG1TimerChapter5","GLOBAL",300)
-    SetGlobal("rh#IsraTalksBG1Interrupted","GLOBAL",1)
-    SetGlobal("rh#IsraTalksBG1Chapter5","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("rh#IsraTalksBG1TimerChapter5","GLOBAL",300)
+		SetGlobal("rh#IsraTalksBG1Interrupted","GLOBAL",1)
+		SetGlobal("rh#IsraTalksBG1Chapter5","GLOBAL",1)
 END
 
 IF
@@ -227,11 +231,11 @@ IF
     !See([ENEMY])
     ReputationGT(Player1,9)
     OR(2)
-      Global("rh#IsraTalksBG1Chapter5","GLOBAL",1)
-      Global("rh#IsraTalksBG1Chapter5","GLOBAL",3)
+		Global("rh#IsraTalksBG1Chapter5","GLOBAL",1)
+		Global("rh#IsraTalksBG1Chapter5","GLOBAL",3)
 THEN
-  RESPONSE #100
-	IncrementGlobal("rh#IsraTalksBG1Chapter5","GLOBAL",1)
+	RESPONSE #100
+		IncrementGlobal("rh#IsraTalksBG1Chapter5","GLOBAL",1)
 END
 
 IF
@@ -247,21 +251,21 @@ IF
       Global("rh#IsraTalksBG1Chapter5","GLOBAL",2)
       Global("rh#IsraTalksBG1Chapter5","GLOBAL",4)
 THEN
-  RESPONSE #100
-    Dialogue(Player1)
+	RESPONSE #100
+		Dialogue(Player1)
 END
 
 // 11. Candlekeep
-
+// --------------
 IF
     InParty(Myself)
     PartyHasItem("%tutu_var%SCRL2J")
     ReputationGT(Player1,9)
     Global("rh#IsraTalksBG1Candlekeep","GLOBAL",0)
 THEN
-  RESPONSE #100
-    RealSetGlobalTimer("rh#IsraTalksBG1TimerCandlekeep","GLOBAL",15)
-    SetGlobal("rh#IsraTalksBG1Candlekeep","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("rh#IsraTalksBG1TimerCandlekeep","GLOBAL",15)
+		SetGlobal("rh#IsraTalksBG1Candlekeep","GLOBAL",1)
 END
 
 IF
@@ -275,8 +279,8 @@ IF
     ReputationGT(Player1,9)
     Global("rh#IsraTalksBG1Candlekeep","GLOBAL",1)
 THEN
-  RESPONSE #100
-	IncrementGlobal("rh#IsraTalksBG1Candlekeep","GLOBAL",1)
+	RESPONSE #100
+		IncrementGlobal("rh#IsraTalksBG1Candlekeep","GLOBAL",1)
 END
 
 IF
@@ -290,12 +294,12 @@ IF
     ReputationGT(Player1,9)
     Global("rh#IsraTalksBG1Candlekeep","GLOBAL",2)
 THEN
-  RESPONSE #100
-    Dialogue(Player1)
+	RESPONSE #100
+		Dialogue(Player1)
 END
 
 // 12. Post Candlekeep
-
+// -------------------
 IF
     InParty(Myself)
     See(Player1)
@@ -319,12 +323,12 @@ IF
     	AreaCheck("%BaldursGateDocks%")
     	AreaCheck("%CentralBaldursGate%")  
 THEN
-  RESPONSE #100
+	RESPONSE #100
 	IncrementGlobal("rh#IsraTalksBG1","GLOBAL",1)
 END
 
 // Safana Banter
-
+// -------------
 IF
     InParty(Myself)
     See("Safana")
@@ -357,8 +361,8 @@ IF
      	AreaCheck("%NEBaldursGate_SplurgingSturgeon_L1%")
      	AreaCheck("%UlgothsBeard_Inn%")
 THEN
-  RESPONSE #100
-	IncrementGlobal("rh#IsraSafana2","GLOBAL",1)
+	RESPONSE #100
+		IncrementGlobal("rh#IsraSafana2","GLOBAL",1)
 END
 
 IF
@@ -370,12 +374,12 @@ IF
 	!See([ENEMY])
 	Global("rh#IsraSafana2","GLOBAL",1)
 THEN
-  RESPONSE #100
-	Dialogue("Safana")
+	RESPONSE #100
+		Dialogue("Safana")
 END
 
 // Viconia Banter
-
+// --------------
 IF
     InParty(Myself)
     InParty("Viconia")
@@ -387,8 +391,8 @@ IF
 	HPPercentLT("rh#Isra",50)
 	Global("rh#IsraViconia2_BG1","GLOBAL",0)
 THEN
-  RESPONSE #100
-	IncrementGlobal("rh#IsraViconia2_BG1","GLOBAL",1)
+	RESPONSE #100
+		IncrementGlobal("rh#IsraViconia2_BG1","GLOBAL",1)
 END
 
 IF
@@ -400,12 +404,12 @@ IF
 	!See([ENEMY])
 	Global("rh#IsraViconia2_BG1","GLOBAL",1)
 THEN
-  RESPONSE #100
-	Dialogue("Viconia")
+	RESPONSE #100
+		Dialogue("Viconia")
 END
 
 // Tranzig EXP
-
+// -----------
 IF
 	InParty(Myself)
 	!Dead("Tranzig")
@@ -413,27 +417,30 @@ IF
     !See([ENEMY])
     Global("rh#IsraTranzigSpared","GLOBAL",1)
 THEN
-  RESPONSE #100
-	AddexperienceParty(1050)
-    SetGlobal("rh#IsraTranzigSpared","GLOBAL",2)
+	RESPONSE #100
+		AddexperienceParty(1050)
+		SetGlobal("rh#IsraTranzigSpared","GLOBAL",2)
 END
 
-// INTERJECTIONS
+
+/* --------------- *
+ *  INTERJECTIONS  *
+ * --------------- */
 
 // Cloakwood mines attempted flooding
-
+// ----------------------------------
 IF
     InParty(Myself)
     !StateCheck(Myself,CD_STATE_NOTVALID)
     GlobalGT("FLOODED","GLOBAL",0)
     Global("rh#IsraCloakwoodDrowned","GLOBAL",1)
 THEN
-  RESPONSE #100
-    SetGlobal("rh#IsraCloakwoodDrowned","GLOBAL",2)
+	RESPONSE #100
+		SetGlobal("rh#IsraCloakwoodDrowned","GLOBAL",2)
 END
 
 // Dynaheir attacked
-
+// -----------------
 IF
 	AreaCheck("%GnollStronghold%")
 	InParty(Myself)
@@ -443,8 +450,8 @@ IF
 	!Allegiance("dynaheir",ENEMY)
 	Global("rh#IsraDefendDynaheir","GLOBAL",0)
 THEN
-RESPONSE #100
-	SetGlobal("rh#IsraDefendDynaheir","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraDefendDynaheir","GLOBAL",1)
 END
 
 IF
@@ -457,8 +464,8 @@ IF
 	InMyArea(Player1)
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraDynaheirHostile","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraDynaheirHostile","GLOBAL",1)
 END
 
 IF
@@ -468,12 +475,12 @@ IF
 	InMyArea(Player1)
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 THEN
-  RESPONSE #100
-	StartDialogueNoSet(Player1)
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
 END
 
 // Girdle of Masculinity
-
+// ---------------------
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -484,12 +491,12 @@ IF
 	HasItemEquiped("%tutu_var%BELT05",Myself) 
 	Global("rh#IsraGirdle","GLOBAL",0)
 THEN
-RESPONSE #100
-	SetGlobal("rh#IsraGirdle","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraGirdle","GLOBAL",1)
 END
 
 // Brage
-
+// -----
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -503,12 +510,12 @@ IF
 	Global("OublekBounty1","GLOBAL",1)
 	Global("rh#IsraBrageFound","GLOBAL",0)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraBrageFound","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraBrageFound","GLOBAL",1)
 END
 
 // Gallor
-
+// ------
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -520,12 +527,12 @@ IF
 	Global("HelpGallor","GLOBAL",1)
 	Global("rh#IsraGallorHelped","GLOBAL",0)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraGallorHelped","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraGallorHelped","GLOBAL",1)
 END
 
 // Undercellar
-
+// -----------
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -536,9 +543,9 @@ IF
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
-  RESPONSE #100
-  	RealSetGlobalTimer("rh#IsraTalksUndercellarTimer","GLOBAL",15)
-	SetGlobal("rh#IsraUndercellar","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("rh#IsraTalksUndercellarTimer","GLOBAL",15)
+		SetGlobal("rh#IsraUndercellar","GLOBAL",1)
 END
 
 IF
@@ -552,12 +559,12 @@ IF
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraUndercellar","GLOBAL",2)
+	RESPONSE #100
+		SetGlobal("rh#IsraUndercellar","GLOBAL",2)
 END
 
 // Kristin & Slythe
-
+// ----------------
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -571,12 +578,12 @@ IF
 	Dead("krystin")
 	Dead("slythe")
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraKrystinSlythe","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraKrystinSlythe","GLOBAL",1)
 END
 
 // Ramazith & Abela
-
+// ----------------
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -586,19 +593,21 @@ IF
 	Global("rh#IsraRamazith","GLOBAL",1)
 	!Dead("ramazith")
 THEN
-  RESPONSE #100
-  	SetGlobal("rh#IsraRamazith","GLOBAL",2)
+	RESPONSE #100
+		SetGlobal("rh#IsraRamazith","GLOBAL",2)
 END
 
-// low rep
 
+/* --------- *
+ *  low rep  *
+ * --------- */
 IF
 	InParty(Myself)
     !ReputationGT(Player1,9)
 	Global("rh#IsraLowRep","GLOBAL",0)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraLowRep","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraLowRep","GLOBAL",1)
 END
 
 IF
@@ -606,12 +615,14 @@ IF
     !ReputationGT(Player1,5)
 	Global("rh#IsraRepBreak","GLOBAL",0)
 THEN
-  RESPONSE #100
-	SetGlobal("rh#IsraRepBreak","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("rh#IsraRepBreak","GLOBAL",1)
 END
 
-// initiating interjection talks
 
+/* ------------------------------- *
+ *  initiating interjection talks  *
+ * ------------------------------- */
 IF
 	InParty(Myself)
 	InMyArea(Player1)
@@ -631,20 +642,22 @@ IF
 		Global("rh#IsraRamazith","GLOBAL",2)
 		Global("rh#IsraUndercellar","GLOBAL",2)
 THEN
-  RESPONSE #100
-	StartDialogueNoSet(Player1)
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
 END
 
-// IF HOSTILE
 
+/* ------------ *
+ *  IF HOSTILE  *
+ * ------------ */
 IF
 	Allegiance(Myself,ENEMY)
 	!InParty(Myself)
 	Global("rh#NPCFight","LOCALS",0)
 THEN
-  RESPONSE #100
-	ChangeAIScript("rh#israx",CLASS)
-	ChangeAIScript("useitem",GENERAL)
-	ChangeAIScript("",DEFAULT)
-	SetGlobal("rh#NPCFight","LOCALS",1)
+	RESPONSE #100
+		ChangeAIScript("rh#israx",CLASS)
+		ChangeAIScript("useitem",GENERAL)
+		ChangeAIScript("",DEFAULT)
+		SetGlobal("rh#NPCFight","LOCALS",1)
 END
