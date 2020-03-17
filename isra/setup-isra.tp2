@@ -21,7 +21,6 @@ ALWAYS
 	 * -------------------------------------------------------------------------------- */
 		OUTER_SET is_tutu = (GAME_IS ~tutu tutu_totsc~ ? 1 : 0)						// tutu
 		OUTER_SET is_bgt = (GAME_IS ~bgt~) ? 1 : 0									// bgt
-
 		OUTER_SET is_totsc = (GAME_IS ~tutu_totsc bgt bgee eet~) ? 1 : 0			// TotSC
 
 		OUTER_SET is_bgee = (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) ? 1 : 0	// bgee without SoD
@@ -51,17 +50,7 @@ ALWAYS
 		END
 		INCLUDE ~isra_cpmvars.tpa~
 
-/* Crossplatform var stuff blatantly stolen from cmorgan/gavin/bg1npc!
-ACTION_IF FILE_EXISTS_IN_GAME ~neera.dlg~ THEN BEGIN
-END ELSE BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~FW0100.are~ THEN BEGIN
-  END ELSE BEGIN
-    ACTION_IF FILE_EXISTS_IN_GAME ~AR7200.are~ THEN BEGIN
-    END ELSE BEGIN FAIL @4 // Please install on BG:EE, Tutu or BGT.
-    END
-  END
-END
-*/
+
 	/* --------------------------------------------------------------------------------------------- *
 	 *    Convert strings to UTF-8 for BGEE/BG2EE                                                    *
 	 *    No exception, everything needs to be converted                                             *
@@ -92,31 +81,32 @@ LANGUAGE ~English~
          ~isra/translations/english/setup.tra~
 
 
-/* ====================================== *
- *  Isra NPC Mod for BG:EE, BGT and TuTu  *
- * ====================================== */
-BEGIN @1										/* Isra NPC Mod for BG:EE, BGT and TuTu */
+/* =========================================== *
+ *  Isra NPC Mod for BG:EE, EET, BGT and TuTu  *
+ * =========================================== */
+BEGIN @1													 /* Isra NPC Mod for BG:EE, EET, BGT and TuTu */
+DESIGNATED 0 LABEL ~isra_npc_for_bg~
+REQUIRE_PREDICATE GAME_IS ~tutu tutu_totsc bgee eet bgt~ @11 /* You must have Tutu, BGT, BG:EE or EET installed to install Isra NPC for BG mod. */
 
-INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
 
-
-
-/* ============================== *
- *  Valerie/Isra crossmod banter  *
- * ============================== */
-BEGIN @2										/* Valerie/Isra crossmod banter */
-  REQUIRE_COMPONENT ~setup-isra.tp2~ ~0~ @49 /* You do not appear to have Isra installed */
-  REQUIRE_COMPONENT ~valerie.tp2~ ~0~ @50 /* You do not appear to have Valerie installed */
+/* =============================== *
+ *  Valerie/Isra crossmod content  *
+ * =============================== */
+BEGIN @2										/* Valerie/Isra crossmod content */
+DESIGNATED 1 LABEL ~isra_valerie_crossmod_content~
+REQUIRE_COMPONENT ~setup-isra.tp2~ ~0~ @12		/* Please install Isra NPC for BG main component before additional content. */
+REQUIRE_COMPONENT ~valerie.tp2~ ~0~ @13			/* You do not appear to have Valerie installed. */
   
 COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
 
 
-/* ============================ *
- *  Gavin/Isra crossmod banter  *
- * ============================ */
-BEGIN @3										/* Gavin/Isra crossmod banter */
-  REQUIRE_COMPONENT ~setup-isra.tp2~ ~0~ @49 /* You do not appear to have Isra installed */
-  REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @52 /* You do not appear to have Gavin installed */
+/* ============================= *
+ *  Gavin/Isra crossmod content  *
+ * ============================= */
+BEGIN @3										/* Gavin/Isra crossmod content */
+DESIGNATED 2 LABEL ~isra_gavin_crossmod_content~
+REQUIRE_COMPONENT ~setup-isra.tp2~ ~0~ @12		/* Please install Isra NPC for BG main component before additional content. */
+REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @14			/* You do not appear to have Gavin installed. */
   
 COMPILE EVALUATE_BUFFER ~isra/crossmod/gavin.d~
 EXTEND_BOTTOM ~b!gavin.bcs~ ~isra/crossmod/gavin.baf~

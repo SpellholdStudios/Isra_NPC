@@ -1,14 +1,13 @@
 @0    = ~v1.0~
 
-@1    = ~Isra NPC Mod for BG:EE, BGT and TuTu~
-@2    = ~Valerie/Isra crossmod banter~
-@3    = ~Gavin/Isra crossmod banter~
+@1    = ~Isra NPC Mod for BG:EE, EET, BGT and TuTu~
+@2    = ~Valerie/Isra crossmod content~
+@3    = ~Gavin/Isra crossmod content~
 
-@4    = ~Please install on BG:EE, Tutu or BGT.~
-
-@49   = ~You do not appear to have Isra installed~
-@50   = ~You do not appear to have Valerie installed~
-@52   = ~You do not appear to have Gavin installed~
+@11   = ~You must have Tutu, BGT, BG:EE or EET installed to install Isra NPC for BG mod.~
+@12   = ~Please install Isra NPC for BG main component before additional content.~
+@13   = ~You do not appear to have Valerie installed.~
+@14   = ~You do not appear to have Gavin installed.~
 
 @21   = ~Your SoD game needs to be modmerged before mods can be installed on this game. Check the readme for more information and a link to download the DLC Merger or Modmerge.~
 @22   = ~Tutu install detected.~

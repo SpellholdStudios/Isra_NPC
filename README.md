@@ -242,8 +242,8 @@ The installer includes the following components. The number of each is the compo
 
 - Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
 - TODO Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
-- TODO Added components `DESIGNATED` numbers and "*isra_npc*", "*isra_npc_valerie_banters*" and "*isra_npc_gavin_banters*"`LABELS`.
-
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
+- Added components `DESIGNATED` numbers and "*isra_npc_for_bg*", "*isra_valerie_crossmod_content*" and "*isra_gavin_crossmod_content*"`LABELS`.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 
@@ -255,7 +255,7 @@ The installer includes the following components. The number of each is the compo
 
 - TOTO Added EET compatibility.
 
-- rh#israj.d, valerie.d: fixed wrong tutu variables and added a workaround to patch right states according to the games.
+- rh#israj.d and valerie.d: fixed wrong tutu variables and added a workaround to patch right states according to the games.
 - Updated cpmvars files.
 - Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
 - Simplified area type flagging and Tutu area script assignment patching.
