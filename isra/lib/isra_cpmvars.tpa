@@ -1,0 +1,24 @@
+/* ========================================== *
+ *  WORKAROUND TO PATCH RIGHT DIALOGS STATES  *
+ * ========================================== */
+
+ACTION_IF is_bgt BEGIN
+
+	ACTION_IF (FILE_EXISTS ~bgt/bg1.tra~) BEGIN	// If BGT created BG dialog.tra
+		OUTER_SET BGTEDWINJState7 = STATE_WHICH_SAYS 10683 IN ~bgt/bg1.tra~ FROM EDWINJ
+	END ELSE BEGIN								// If BGT used pre-defined dialog.tra
+		OUTER_SET BGTEDWINJState7 = STATE_WHICH_SAYS 10683 IN ~bgt/install/%s/bg1.tra~ FROM EDWINJ
+	END
+
+END ELSE BEGIN
+
+	ACTION_IF is_eet BEGIN
+		OUTER_SET BGTEDWINJState7 = STATE_WHICH_SAYS 210683 FROM EDWINJ_
+	END ELSE BEGIN
+
+		OUTER_SET BGTEDWINJState7 = 7
+END
+
+OUTER_FOR (state = 1 ; state < 3; state += 1) BEGIN
+	OUTER_SET EVALUATE_BUFFER ~BGTEDWINState%state%~ = state + BGTEDWINState0
+END

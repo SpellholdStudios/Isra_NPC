@@ -42,15 +42,15 @@ ALWAYS
 			PRINT @23	// ~BGT install detected.~
 		END
 		ACTION_IF GAME_IS ~bgee~ BEGIN
-//		   INCLUDE ~isra/lib/g3_bgee_cpmvars.tpa~
 			INCLUDE ~isra\lib\liam_bgee_vars.tpa~
 			PRINT @24	// ~Baldur's Gate Enhanced Edition install detected.~
 		END
-/*		ACTION_IF GAME_IS ~eet~ BEGIN
+		ACTION_IF is_eet BEGIN
 			INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
 			PRINT @25	// ~Enhanced Edition Trilogy install detected.~
 		END
-*/
+		INCLUDE ~isra_cpmvars.tpa~
+
 /* Crossplatform var stuff blatantly stolen from cmorgan/gavin/bg1npc!
 ACTION_IF FILE_EXISTS_IN_GAME ~neera.dlg~ THEN BEGIN
 END ELSE BEGIN

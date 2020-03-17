@@ -43,14 +43,14 @@ EXIT
 
 // Sendai interjection
 // -------------------
-INTERJECT ~%tutu_scriptbg%SENDAI~ 0 rh#val.sendai
+INTERJECT ~%tutu_scriptbg%SENDAI%eet_var%~ 0 rh#val.sendai
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID) InParty("T2Val") InMyArea("T2Val") !StateCheck("T2Val",CD_STATE_NOTVALID)~ THEN 
 @19 /* My lady, you dishonor both your house and our nation with such an appalling lack of courtesy. */
-== ~%tutu_scriptbg%SENDAI~ @20 /* Is that so? No amount of acquired class could erase your accent entirely. Is Eshpurta not enough of a backwater for you that you feel compelled to traipse around with these barbarians instead? */
+== ~%tutu_scriptbg%SENDAI%eet_var%~ @20 /* Is that so? No amount of acquired class could erase your accent entirely. Is Eshpurta not enough of a backwater for you that you feel compelled to traipse around with these barbarians instead? */
 == T2ValJ @21 /* These northerners travel under the protection of the Cowled Wizards of Amn, citizen. If you would like to levy any further accusations at us, I can tell you where in Athkatla you should lodge a formal complaint. */
-== ~%tutu_scriptbg%SENDAI~ @22 /* Hmph. Very well, Cowled Wizard, though I must note your exceptionally poor taste in mercenaries. */ 
+== ~%tutu_scriptbg%SENDAI%eet_var%~ @22 /* Hmph. Very well, Cowled Wizard, though I must note your exceptionally poor taste in mercenaries. */ 
 == T2ValJ @23 /* Good help is hard to find, Lady Argrim. They are discrete, at least. */
-== ~%tutu_scriptbg%SENDAI~ @24 /* There is something to be said for that. Very well, you may continue your business. */
+== ~%tutu_scriptbg%SENDAI%eet_var%~ @24 /* There is something to be said for that. Very well, you may continue your business. */
 == T2ValJ @25 /* Thank you, my lady, and we will be on our way. */
 END
 	++ @26 /* Thank you for handling that, Valerie. That could have gotten ugly. */ EXTERN T2ValJ rh#val.Ugly

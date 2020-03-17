@@ -255,7 +255,8 @@ The installer includes the following components. The number of each is the compo
 
 - TOTO Added EET compatibility.
 
-- 
+- rh#israj.d, valerie.d: fixed wrong tutu variables and added a workaround to patch right states according to the games.
+- Updated cpmvars files.
 - Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
 - Simplified area type flagging and Tutu area script assignment patching.
 - Fixed Isra portraits in EE games.

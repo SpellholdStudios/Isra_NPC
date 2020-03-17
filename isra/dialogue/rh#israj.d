@@ -1003,8 +1003,8 @@ RealSetGlobalTimer("rh#IsraTalksBG1Timer","GLOBAL",2700)~
 END
 	++ @327 /* Almost all of the time. */ + t7.1
 	++ @328 /* Gods, no. I hope never to see those walls again. */ + t7.2
-	+ ~OR(2) !InParty("%IMOEN_DV%") StateCheck("%imoen_dv%",CD_STATE_NOTVALID)~ + @329 /* Occasionally. Having to figure things out by myself can be trying. */ + t7.3
-	+ ~InParty("%IMOEN_DV%") !StateCheck("%imoen_dv%",CD_STATE_NOTVALID)~ + @329 /* Occasionally. Having to figure things out by myself can be trying. */ + t7.4
+	+ ~OR(2) !InParty("%IMOEN_DV%") StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ + @329 /* Occasionally. Having to figure things out by myself can be trying. */ + t7.3
+	+ ~InParty("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ + @329 /* Occasionally. Having to figure things out by myself can be trying. */ + t7.4
 	++ @330 /* Yes, though I miss the people more than the place. */ + t7.5
 
 APPEND RH#ISRAJ
@@ -2055,22 +2055,22 @@ END
 
 // Edwin
 // -----
-I_C_T ~%tutu_var%EDWIN~ 0 rh#int.edwin1
+I_C_T ~%tutu_var%EDWIN%eet_var%~ %BGTEDWINState0% rh#int.edwin1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @658 /* And who is this woman that she deserves death? */
-== ~%tutu_var%EDWIN~ @659 /* A most deceitful creature, I assure you. One whose depravity would shock even you. (Though many things would likely shock this one.) */
+== ~%tutu_var%EDWIN%eet_var%~ @659 /* A most deceitful creature, I assure you. One whose depravity would shock even you. (Though many things would likely shock this one.) */
 END
 
-I_C_T ~%tutu_var%EDWIN~ 1 rh#int.edwin2
+I_C_T ~%tutu_var%EDWIN%eet_var%~ %BGTEDWINState1% rh#int.edwin2
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @658 /* And who is this woman that she deserves death? */
-== ~%tutu_var%EDWIN~ @659 /* A most deceitful creature, I assure you. One whose depravity would shock even you. (Though many things would likely shock this one.) */
+== ~%tutu_var%EDWIN%eet_var%~ @659 /* A most deceitful creature, I assure you. One whose depravity would shock even you. (Though many things would likely shock this one.) */
 END
 
-I_C_T ~%tutu_var%EDWIN~ 2 rh#int.edwin3
+I_C_T ~%tutu_var%EDWIN%eet_var%~ %BGTEDWINState2% rh#int.edwin3
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @658 /* And who is this woman that she deserves death? */
-== ~%tutu_var%EDWIN~ @659 /* A most deceitful creature, I assure you. One whose depravity would shock even you. (Though many things would likely shock this one.) */
+== ~%tutu_var%EDWIN%eet_var%~ @659 /* A most deceitful creature, I assure you. One whose depravity would shock even you. (Though many things would likely shock this one.) */
 END
 
 // Eldoth
@@ -2089,10 +2089,10 @@ END
 
 // Joseph's wife
 // -------------
-I_C_T ~%tutu_scriptbg%FTOWN2~ 3 rh#int.joe
+I_C_T ~%tutu_scriptbg%FTOWN2%eet_var%~ 3 rh#int.joe
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @664 /* I see. My lady, I assure you, we will do everything that we can to see your husband returned to you. */
-== ~%tutu_scriptbg%FTOWN2~ @665 /* Thank you for this. */
+== ~%tutu_scriptbg%FTOWN2%eet_var%~ @665 /* Thank you for this. */
 END
 
 // Samantha & Jamie
@@ -2133,7 +2133,7 @@ IF ~~ DO ~SetGlobal("rh#IsraDynaheirAttacked","GLOBAL",2) SetGlobal("rh#IsraJoin
 END
 END
 
-I_C_T ~%EDWIN_JOINED%~ 7 rh#int.dyna2
+I_C_T ~%EDWIN_JOINED%~ %BGTEDWINJState7% rh#int.dyna2
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @673 /* This... so-called deal to commit murder is no true deal at all. Let the wretched Red Wizard find his own way home, <CHARNAME>. */
 END
@@ -2193,15 +2193,15 @@ Global("MACFirewineKnights","GLOBAL",0)~ THEN
 == ~%tutu_var%POE~ @688 /* In any case, I hope you found it satisfying, my friends. */
 END
 
-I_C_T ~%tutu_scriptbg%KNIGHT~ 0 rh#int.knights1
+I_C_T ~%tutu_scriptbg%KNIGHT%eet_var%~ 0 rh#int.knights1
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @689 /* Surely we can find some way to help these knights find peace, <CHARNAME>. */
 END
 
-I_C_T ~%tutu_scriptbg%KNIGHT~ 1 rh#int.knights2
+I_C_T ~%tutu_scriptbg%KNIGHT%eet_var%~ 1 rh#int.knights2
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN
 @690 /* May you... may you rest in peace, my friends. */
-== ~%tutu_scriptbg%KNIGHT~ @691 /* So we shall... */
+== ~%tutu_scriptbg%KNIGHT%eet_var%~ @691 /* So we shall... */
 END
 
 I_C_T ~%tutu_var%OGRMA3~ 1 rh#int.firewine1
@@ -2255,18 +2255,18 @@ END
 
 // Sendai
 // ------
-INTERJECT ~%tutu_scriptbg%SENDAI~ 0 rh#int.sendai
+INTERJECT ~%tutu_scriptbg%SENDAI%eet_var%~ 0 rh#int.sendai
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @701 /* My lady, you dishonor both your house and our nation with such an appalling lack of courtesy. */
-== ~%tutu_scriptbg%SENDAI~ @702 /* Is that so? No amount of acquired class could erase your accent entirely. Is Eshpurta not enough of a backwater for you that you feel compelled to traipse around with these barbarians instead? */
+== ~%tutu_scriptbg%SENDAI%eet_var%~ @702 /* Is that so? No amount of acquired class could erase your accent entirely. Is Eshpurta not enough of a backwater for you that you feel compelled to traipse around with these barbarians instead? */
 END
 	++ @703 /* You insult your own countrywoman, and then have the nerve to call us barbarians? */ + rh#int.sendai2
 	++ @704 /* I am tired of being insulted by every pompous idiot that I come across. Draw steel! */ + 2
 	++ @705 /* Who are you, and what do you want? */ + 3
 
-CHAIN ~%tutu_scriptbg%SENDAI~ rh#int.sendai2
+CHAIN ~%tutu_scriptbg%SENDAI%eet_var%~ rh#int.sendai2
 @706 /* I would not expect you to understand, given your boorish upbringing. A person is no better than the company she keeps, and your company, peasant, is lacking indeed. */
-EXTERN ~%tutu_scriptbg%SENDAI~ 3
+EXTERN ~%tutu_scriptbg%SENDAI%eet_var%~ 3
 
 // Random Commoner
 // ---------------
@@ -2507,10 +2507,10 @@ END
 
 // Neb
 // ---
-I_C_T ~%tutu_scriptbg%NEB~ 6 rh#int.neb
+I_C_T ~%tutu_scriptbg%NEB%eet_var%~ 6 rh#int.neb
 == RH#ISRAJ IF ~InParty("rh#Isra") InMyArea("rh#Isra") !StateCheck("rh#Isra",CD_STATE_NOTVALID)~ THEN 
 @767 /* The only thing I want from you, butcher, is to put a blade through your loathsome heart! */
-== ~%tutu_scriptbg%NEB~ @768 /* Heh heh, but there's a whole wide world of people outside of these walls to slay instead. */
+== ~%tutu_scriptbg%NEB%eet_var%~ @768 /* Heh heh, but there's a whole wide world of people outside of these walls to slay instead. */
 END
 
 // Krystin & Slythe
