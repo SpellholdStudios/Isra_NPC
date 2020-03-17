@@ -35,8 +35,7 @@ This mod adds Isra Ghadir, a young paladin of Sune Firehair, to Baldur's Gate (T
 
 You can find her in the Nashkel Mines region, trying (with no success whatsoever) to resolve Prism's legal difficulties.
 
-ini 
-Isra Ghadir is a follower of Sune Firehair, the goddess of love, beauty, and passion, and the only chaotic aligned deity to sponsor paladins. As such, she isn't necessarily what you might expect of a paladin. As a result, she's usually pretty willing to ignore harmlessly chaotic behavior (not evil behavior, though). You can find her in the Nashkel Mines region, trying (with no success whatsoever) to resolve Prism's legal difficulties.
+&nbsp;
 
 **Content:**
 - A new cavalier paladin NPC for BG.
@@ -241,7 +240,7 @@ The installer includes the following components. The number of each is the compo
 
 #### Version ??? ( March 2020)
 
-- TODO Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
+- Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
 - TODO Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
 - TODO Added components `DESIGNATED` numbers and "*isra_npc*", "*isra_npc_valerie_banters*" and "*isra_npc_gavin_banters*"`LABELS`.
 
@@ -256,12 +255,15 @@ The installer includes the following components. The number of each is the compo
 
 - TOTO Added EET compatibility.
 
+- 
 - Cleaned up old ids entries patch replaced with more recent BG2 Fixpack one and removed animate.ids patching that was ruining Infinity Animations fixes if installed after IA.
 - Simplified area type flagging and Tutu area script assignment patching.
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf and crossmod banters.
 - Updated deprecated modding tools links.
 
+- Updated g3-cpmvars libraries.
+- Fixed wrong tutu variables that were patching wrong dialog files in BGT games.
 - TODO Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
 
 - Removed useless files.
