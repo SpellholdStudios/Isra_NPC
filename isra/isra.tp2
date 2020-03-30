@@ -2,9 +2,9 @@ BACKUP ~isra/backup~
 //AUTHOR ~Rhaella~
 SUPPORT ~Rhaella and Spellhold staff at http://www.shsforums.net/forum/638-isra/~
 
-VERSION ~v2.3~
+VERSION ~v3.0~
 
-README ~isra//readme/isra_readme.html~
+README ~isra/readme/isra-readme-english.html~
 
 
 ALWAYS
@@ -41,7 +41,7 @@ ALWAYS
 			INCLUDE ~isra/lib/g3_bgt_cpmvars.tpa~
 			PRINT @23	// ~BGT install detected.~
 		END
-		ACTION_IF GAME_IS ~bgee~ BEGIN
+		ACTION_IF is_bgee OR is_sod BEGIN
 			INCLUDE ~isra/lib/liam_bgee_vars.tpa~
 			PRINT @24	// ~Baldur's Gate Enhanced Edition install detected.~
 		END
@@ -49,7 +49,7 @@ ALWAYS
 			INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
 			PRINT @25	// ~Enhanced Edition Trilogy install detected.~
 		END
-		INCLUDE ~isra_cpmvars.tpa~
+		INCLUDE ~isra/lib/isra_cpmvars.tpa~
 
 
 	/* --------------------------------------------------------------------------------------------- *
@@ -88,6 +88,8 @@ LANGUAGE ~English~
 BEGIN @1													 /* Isra NPC Mod for BG:EE, EET, BGT and TuTu */
 DESIGNATED 0 LABEL ~isra_npc_for_bg~
 REQUIRE_PREDICATE GAME_IS ~tutu tutu_totsc bgee eet bgt~ @11 /* You must have Tutu, BGT, BG:EE or EET installed to install Isra NPC for BG mod. */
+
+INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
 
 
 /* =============================== *

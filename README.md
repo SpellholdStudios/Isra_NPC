@@ -53,7 +53,7 @@ You can find her in the Nashkel Mines region, trying (with no success whatsoever
 
 ## <a name="compat" id="compat"></a>Compatibility
 
-This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98"><strong>Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
+This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
 The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
 
@@ -235,7 +235,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 #### Copyrights Information
 
-###### <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> Isra NPC is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Rhaella, based on material from the game Baldur's Gate II and its expansion, and is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+###### <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> The Isra NPC mod is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Rhaella, based on material from the game Baldur's Gate II and its expansion, and is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 
 <div align="right"><a href="#top">Back to top</a></div>
@@ -246,13 +246,13 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version ??? ( March 2020)
+#### Version 3.0 (30 March 2020)
 
 - Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
-- Added components `DESIGNATED` numbers and "*isra_npc_for_bg*", "*isra_valerie_crossmod_content*" and "*isra_gavin_crossmod_content*"`LABELS`.
+- Added components `DESIGNATED` numbers and "*isra_npc_for_bg*", "*isra_valerie_crossmod_content*" and "*isra_gavin_crossmod_content*" `LABELS`.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 - Added Modmerge check for SoD games.
@@ -268,7 +268,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf and crossmod banters.
 - Updated deprecated modding tools links.
-- TODO Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
+- Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
 - Removed useless files.
 - Updated OggDec to v1.9.7 and added sox v14.4.1 for Mac.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).

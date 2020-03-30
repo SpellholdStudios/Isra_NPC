@@ -159,7 +159,7 @@ COMPILE EVALUATE_BUFFER ~isra/scripts/rh#israx.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#ismes.baf~
 COMPILE EVALUATE_BUFFER ~isra/scripts/rh#isfix.baf~	USING ~isra/translations/%s\setup.tra~
 
-EXTEND_TOP ~%NashkelMines_BCS%~ ~isra/scripts/fw5400.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%NashkelMines_BCS%.bcs~ ~isra/scripts/fw5400.baf~ EVALUATE_BUFFER
 
 EXTEND_BOTTOM ~%DYNAHEIR_BCS%.bcs~ ~isra/scripts/dynaheir.baf~ EVALUATE_BUFFER
 
@@ -194,7 +194,7 @@ END
  * ---------------------- */
 
 // Messenger (bg: MTOWN2 - tutu: _MTOWN2 - bgt: BGMTOWN2 - eet: MTOWN2_)
-COPY_EXISTING ~%tutu_var%%tutu_scriptbg%mtown2%eet_var%.cre~ ~override/rh#ismes.cre~
+COPY_EXISTING ~%tutu_scriptbg%mtown2%eet_var%.cre~ ~override/rh#ismes.cre~
 	SAY NAME1 @1006 /* Messenger */
 	SAY NAME2 @1006
 	WRITE_ASCII 0x248 ~rh#ismes~ #8  // override script
