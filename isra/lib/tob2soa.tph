@@ -27,7 +27,7 @@ APPEND ~action.ids~ ~337 ReallyForceSpellPointRES(S:RES*,P:Target*)~
 	UNLESS ~337 ReallyForceSpellPointRES(S:RES\*,P:Target\*)~
 
 COPY_EXISTING ~action.ids~ ~override~
-  REPLACE_TEXTUALLY ~^106 Shout(.*$~ ~106 Shout(I:ID*SHOUTIDS)~
+	REPLACE_TEXTUALLY ~^106 Shout(.*$~ ~106 Shout(I:ID*SHOUTIDS)~
 BUT_ONLY
   
 // additional ToB triggers for SoA
@@ -44,7 +44,8 @@ APPEND ~trigger.ids~ ~0x4031 HaveSpellRES(S:Spell*)~
 APPEND ~trigger.ids~ ~0x40D5 ActuallyInCombat()~
 	UNLESS ~0x40D5 ActuallyInCombat()~
 
-COPY_EXISTING ~trigger.ids~ ~override~ ~Heard(O:Object*,I:ID*SHOUTIDS)~
+COPY_EXISTING ~trigger.ids~ ~override~
+	REPLACE_TEXTUALLY ~\bHeard(O:Object\*,I:ID\*)~ ~Heard(O:Object*,I:ID*SHOUTIDS)~
 BUT_ONLY
 
 // SHOUT.IDS creation if it does not exist
