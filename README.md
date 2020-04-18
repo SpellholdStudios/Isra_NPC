@@ -1,5 +1,5 @@
 
-![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"> </a>
+![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
 
@@ -245,6 +245,12 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 
 ## <a name="versions" id="versions"></a>Version History
+
+#### Version 3.1 (18 April 2020)
+
+- Fixed EET install and Valerie Crossmod install.
+
+## 
 
 #### Version 3.0 (30 March 2020)
 
