@@ -98,7 +98,10 @@ INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
 BEGIN @2										/* Valerie/Isra crossmod content */
 DESIGNATED 1 LABEL ~isra_valerie_crossmod_content~
 REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
-REQUIRE_COMPONENT ~valerie.tp2~ ~0~ @13			/* You do not appear to have Valerie installed. */
+REQUIRE_FILE ~T2VALJ.dlg~ @13
+
+/* REQUIRE_COMPONENT ~valerie.tp2~ ~0~ @13			/* You do not appear to have Valerie installed. */
+*/
   
 COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
 
