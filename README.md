@@ -15,7 +15,7 @@
 **Mod Website and Forum:** <a href="http://www.shsforums.net/forum/638-isra/">Isra NPC</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/isra-readme-english.html).
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html).
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/).<br>
 
@@ -108,9 +108,9 @@ Isra NPC for BGII for Linux is distributed as a compressed tarball and does not 
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
-Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal, **cd** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidU and weinstall to `/usr/bin`. Following that, open a terminal, **`cd`** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
 
-To install, run **`WeInstall setup-isra`** in your game folder. Then run **`wine BGMain.exe`** and start playing.
+To install, run **`weinstall setup-isra`** in your game folder. Then run **`wine bgmain.exe`** (or **`wine baldur.exe`** for EE games), and start playing.
 
 ## 
 
@@ -180,7 +180,7 @@ She tends to get along with most of the good and neutral aligned folk, though th
 
 ## <a name="components" id="components"></a>Components
 
-The installer includes the following components. The number of each is the component *DESIGNATED* number which gives it a fixed install position and allows automated installers to specify component choices.
+The installer includes the following components. The number of each is the component `DESIGNATED` number which gives it a fixed install position and allows automated installers to specify component choices.
 
 ## 
 
@@ -246,6 +246,12 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## <a name="versions" id="versions"></a>Version History
 
+#### Version 3.2 (19 July 2020)
+
+- Fixed "*Valerie/Isra crossmod content*" component install with EET games (at last!). : wink:
+
+## 
+
 #### Version 3.1 (18 April 2020)
 
 - Fixed EET install and Valerie Crossmod install.
@@ -257,14 +263,14 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 - Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
+- Added Modmerge check for SoD games.
 - Added components `DESIGNATED` numbers and "*isra_npc_for_bg*", "*isra_valerie_crossmod_content*" and "*isra_gavin_crossmod_content*" `LABELS`.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
-- Added Modmerge check for SoD games.
 - Replaced `GAME_IS` conditions with variables checks to speed up install time.
 - Removed SoA checks as Isra needs BGT or Tutu to be installed.
-- Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
 - Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function.
 - Added EET compatibility.
 - rh#israj.d and valerie.d: fixed wrong tutu variables that were patching wrong dialog files in BGT games and added a workaround to patch right states according to the games.
@@ -274,10 +280,10 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 - Fixed Isra portraits in EE games.
 - Traified rh#isfix.baf and crossmod banters.
 - Updated deprecated modding tools links.
-- Re-formated, updated and renamed readme file to *isra-readme-english.html* and moved it into new readme folder.
+- Re-formated, updated and renamed readme file to *isra-readme-english.html*, then moved it into new readme folder.
 - Removed useless files.
-- Updated OggDec to v1.9.7 and added sox v14.4.1 for Mac.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Updated OggDec to v1.9.7 and added sox v14.4.1 for Mac.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 ## 
