@@ -2,7 +2,7 @@ BACKUP ~isra/backup~
 //AUTHOR ~Rhaella~
 SUPPORT ~Rhaella and Spellhold staff at http://www.shsforums.net/forum/638-isra/~
 
-VERSION ~v3.1~
+VERSION ~v3.2~
 
 README ~isra/readme/isra-readme-english.html~
 
@@ -98,12 +98,28 @@ INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
 BEGIN @2										/* Valerie/Isra crossmod content */
 DESIGNATED 1 LABEL ~isra_valerie_crossmod_content~
 REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
-REQUIRE_FILE ~T2VALJ.dlg~ @13
 
-/* REQUIRE_COMPONENT ~valerie.tp2~ ~0~ @13			/* You do not appear to have Valerie installed. */
-*/
-  
-COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
+ACTION_IF is_eet BEGIN
+
+	ACTION_IF (FILE_EXISTS ~WeiDU-BGEE.log~) AND (FILE_CONTAINS ~WeiDU-BGEE.log~ ~VALERIE\.TP2. #[0-9]+ #0 ~) BEGIN
+		PRINT @14								/* Valerie mod installed and detected. */
+		COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
+	END ELSE BEGIN
+		PRINT @15								/* Valerie mod not installed nor detected. */
+		FAIL  @13								/* You do not appear to have Valerie installed. */
+	END
+
+END ELSE BEGIN
+
+	ACTION_IF (MOD_IS_INSTALLED ~valerie.tp2~ ~0~) BEGIN
+		PRINT @14
+		COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
+	END ELSE BEGIN
+		PRINT @15
+		FAIL  @13								/* You do not appear to have Valerie installed. */
+	END
+
+END
 
 
 /* ============================= *
@@ -112,7 +128,7 @@ COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
 BEGIN @3										/* Gavin/Isra crossmod content */
 DESIGNATED 2 LABEL ~isra_gavin_crossmod_content~
 REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
-REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @14			/* You do not appear to have Gavin installed. */
+REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @16			/* You do not appear to have Gavin installed. */
   
 COMPILE EVALUATE_BUFFER ~isra/crossmod/gavin.d~
 EXTEND_BOTTOM ~b!gavin.bcs~ ~isra/crossmod/gavin.baf~
