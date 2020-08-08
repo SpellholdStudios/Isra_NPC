@@ -2,7 +2,7 @@ BACKUP ~isra/backup~
 //AUTHOR ~Rhaella~
 SUPPORT ~Rhaella and Spellhold staff at http://www.shsforums.net/forum/638-isra/~
 
-VERSION ~v3.2~
+VERSION ~v3.3~
 
 README ~isra/readme/isra-readme-english.html~
 
@@ -80,6 +80,10 @@ AUTO_TRA ~isra/translations/%s~
 LANGUAGE ~English~
          ~english~
          ~isra/translations/english/setup.tra~
+
+LANGUAGE ~Russian~ (Translation: JamesMaxwell & Arcanecoast.ru)
+         ~russian~
+         ~isra/translations/russian/setup.tra~		 
 
 
 /* =========================================== *

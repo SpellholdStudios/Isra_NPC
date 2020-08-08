@@ -1,7 +1,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Russian&color=limegreen)
 
 
 <div align="center"><h1>Isra NPC</h1>
@@ -14,6 +14,7 @@
 **Author:** Rhaella  
 **Mod Website and Forum:** <a href="http://www.shsforums.net/forum/638-isra/">Isra NPC</a>  
 
+## 
 
 [Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html).
 
@@ -108,7 +109,7 @@ Isra NPC for BGII for Linux is distributed as a compressed tarball and does not 
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
-Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidU and weinstall to `/usr/bin`. Following that, open a terminal, **`cd`** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidu and weinstall to `/usr/bin`. Following that, open a terminal, **`cd`** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
 
 To install, run **`weinstall setup-isra`** in your game folder. Then run **`wine bgmain.exe`** (or **`wine baldur.exe`** for EE games), and start playing.
 
@@ -215,9 +216,9 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 - his could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>)
+- JamesMaxwell & Arcanecoast.ru: Russian translation.
 - Portrait: Lady Lesatho.
 - Everyone else from <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
-
 
 ## 
 
@@ -245,6 +246,12 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 
 ## <a name="versions" id="versions"></a>Version History
+
+#### Version 3.3 (8 August 2020)
+
+- Added Russian translation (by JamesMaxwell & Arcanecoast.ru).
+
+## 
 
 #### Version 3.2 (19 July 2020)
 
