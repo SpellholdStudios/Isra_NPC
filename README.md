@@ -16,11 +16,11 @@
 
 ## 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html).
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html)
 
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/).<br>
+[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/)<br>
 
-&nbsp;
+## 
 
 <div align="center">
 <a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#details">Details</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a></br>
@@ -56,7 +56,7 @@ You can find her in the Nashkel Mines region, trying (with no success whatsoever
 
 This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
-The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
+The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu, BG:EE or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
 
 >Although it is not required for Isra NPC to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 <div align="right"><a href="#top">Back to top</a></div>
@@ -74,6 +74,12 @@ The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra 
 *When installing or un-installing, **do not close the DOS window** by clicking on the **X** button! Instead, press the **Enter** key whenever instructed to do so.*
 
 *__Disable any antivirus__ or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.*
+
+## 
+
+#### Special Note for Siege of Dragonspear from Steam/GOG
+
+Good Old Games (GOG) and Steam both package the additional content for Siege of Dragonspear in a method that WeiDU, the tool used to install this mod, cannot access. You must run a program called <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> on your SoD installation before you can install this or any other WeiDU-based mod.
 
 ## 
 
@@ -105,7 +111,7 @@ Run **`setup-isra.command`** in your game folder to reinstall, un-install or oth
 
 #### Linux
 
-Isra NPC for BGII for Linux is distributed as a compressed tarball and does not include a WeiDU installer.
+Isra NPC for BGII for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
@@ -247,6 +253,12 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## <a name="versions" id="versions"></a>Version History
 
+#### Version 3.4 (18 August 2020)
+
+- Updated compatibility with Valerie NPC for BG (v1.2).
+
+## 
+
 #### Version 3.3 (8 August 2020)
 
 - Added Russian translation (by JamesMaxwell & Arcanecoast.ru).
@@ -271,8 +283,8 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 - Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
-- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added Modmerge check for SoD games.
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added components `DESIGNATED` numbers and "*isra_npc_for_bg*", "*isra_valerie_crossmod_content*" and "*isra_gavin_crossmod_content*" `LABELS`.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
@@ -303,7 +315,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 #### Version 2.2 (2 April 2018)
 
-- RIsra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.
+- Isra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.
 - TRAified.
 - Updated WeiDU installer.
 

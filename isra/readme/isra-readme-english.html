@@ -335,7 +335,7 @@
 			Author: Rhaella
 		</p>
 		<p class="about">
-			<a href="http://www.shsforums.net/forum/638-isra/">Mod Website and Forum</a> &#8226; <a href="http://www.shsforums.net/files/file/1042-isra/">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Isra_NPC/releases/latest">GitHub</a> &#8226; Version 3.3
+			<a href="http://www.shsforums.net/forum/638-isra/">Mod Website and Forum</a> &#8226; <a href="http://www.shsforums.net/files/file/1042-isra/">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Isra_NPC/releases/latest">GitHub</a> &#8226; Version 3.4
 		</p>
 		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
 
@@ -464,7 +464,7 @@
 			Isra NPC for BG for Windows is distributed as an extractable compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
 		</p>
 		<p>
-			Extract the contents of the mod to the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>). On successful extraction, there should be an &#x1F4C1; isra folder and a setup-isra.exe file in your game folder. To install, simply double-click <strong><span class="weidu">&nbsp;setup-isra.exe&nbsp;</span></strong> and follow the instructions on screen.
+			Extract the contents of the mod to the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>). On successful extraction, there should be a &#x1F4C1; isra folder and a setup-isra.exe file in your game folder. To install, simply double-click <strong><span class="weidu">&nbsp;setup-isra.exe&nbsp;</span></strong> and follow the instructions on screen.
 		</p>
 		<p>
 			Run <strong><span class="weidu">&nbsp;setup-isra.exe&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise change components.
@@ -480,7 +480,7 @@
 			Isra NPC for BG for Mac OS X distributed in the same compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
 		</p>
 		<p>
-			First, extract the files from the archive into your game directory. On successful extraction, there should be an &#x1F4C1; isra folder, setup-isra and setup-isra.command files in your game folder. To install, double-click <strong><span class="weidu">&nbsp;setup-isra.command&nbsp;</span></strong> and follow the instructions on screen.
+			First, extract the files from the archive into your game directory. On successful extraction, there should be a &#x1F4C1; isra folder, setup-isra and setup-isra.command files in your game folder. To install, double-click <strong><span class="weidu">&nbsp;setup-isra.command&nbsp;</span></strong> and follow the instructions on screen.
 		</p>
 		<p>
 			You can run <strong><span class="weidu">&nbsp;setup-isra.command&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise the components settings.
@@ -729,7 +729,13 @@
 
 		<h2>Version History</h2><br>
 
-		<h6>Version 3.3 (August 8 2020)</h6>
+		<h6>Version 3.4 (18 August 2020)</h6>
+
+		  <ul>
+			<li>Updated compatibility with Valerie NPC for BG (v1.2).</li>
+		  </ul><br>
+
+		<h6>Version 3.3 (8 August 2020)</h6>
 
 		  <ul>
 			<li>Added Russian translation (by JamesMaxwell & Arcanecoast.ru).</li>
@@ -754,13 +760,13 @@
 			<li>Renamed <em>setup-isra.tp2</em> -> <em>isra.tp2</em> to support AL|EN's "Project Infinity".</li>
 			<li>Replaced <span class="tp2">AUTHOR</span> keyword with <span class="tp2">SUPPORT</span>.</li>
 			<li>Added missing <span class="tp2">HANDLE_CHARSETS</span> function to convert string entries for EE games (to prepare for possible translations).</li>
-			<li>Added missing <span class="tp2">REQUIRE_PREDICATE</span> process to avoid installing the mod in inaccurate games.</li>
 			<li>Added Modmerge check for SoD games.</li>
+			<li>Added missing <span class="tp2">REQUIRE_PREDICATE</span> process to avoid installing the mod in inaccurate games.</li>
 			<li>Added components <span class="tp2">DESIGNATED</span> numbers and "<em>isra_npc_for_bg</em>", "<em>isra_valerie_crossmod_content</em>" and "<em>isra_gavin_crossmod_content</em>" <span class="tp2">LABELS</span>.</li>
 			<li>Externalized tp2 code into <em>main_component.tpa</em> library for more comfortable readability and maintenance.</li>
 			<li>Commented code as much as possible.</li>
 			<li>Replaced <span class="tp2">GAME_IS</span> conditions with variables checks to speed up install time.</li>
-			<li>Reworked install procedure to use WeiDU's built-in <span class="tp2">HANDLE_AUDIO</span> function.</li>
+			<li>Reworked install procedure to use <acronym title="Weimer Dialogue Utility">WeiDU</acronym>'s built-in <span class="tp2">HANDLE_AUDIO</span> function.</li>
 			<li>Added EET compatibility.</li>
 			<li>rh#israj.d and valerie.d: fixed wrong tutu variables that were patching wrong dialog files in BGT games and added a workaround to patch right states according to the games.</li>
 			<li>Updated cpmvars files.</li>
@@ -787,14 +793,14 @@
 		  <ul>
 			<li>Isra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.</li>
 			<li>TRAified.</li>
-			<li>Updated WeiDU installer.</li>
+			<li>Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.</li>
 		  </ul><br>
 
 		<h6>Version 2.1 (9 June 2014)</h6>
 
 		  <ul>
 			<li>Isra should no longer be transferring to BG2 in a BGT playthrough.</li>
-			<li>Updated WeiDU installer.</li>
+			<li>Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.</li>
 		  </ul><br>
 
 		<h6>Version 2.0 (8 June 2013)</h6>

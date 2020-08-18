@@ -2,6 +2,7 @@
  *         MAIN COMPONENT INSTALLATION         *
  * =========================================== */
 
+SILENT
 
 /* -------------------------------------------------------------------------------------------------- *
  *   	ADDs CamDawg's custom IsValidForPartyDialogue state used throughout isra. Thanks Cam!         *
