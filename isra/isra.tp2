@@ -50,6 +50,7 @@ ALWAYS
 			PRINT @25	// ~Enhanced Edition Trilogy install detected.~
 		END
 		INCLUDE ~isra/lib/isra_cpmvars.tpa~
+		SILENT
 
 
 	/* --------------------------------------------------------------------------------------------- *
@@ -89,9 +90,9 @@ LANGUAGE ~Russian (Translation: JamesMaxwell & Arcanecoast.ru)~
 /* =========================================== *
  *  Isra NPC Mod for BG:EE, EET, BGT and TuTu  *
  * =========================================== */
-BEGIN @1													 /* Isra NPC Mod for BG:EE, EET, BGT and TuTu */
+BEGIN @1                                                     // ~Isra NPC Mod for BG:EE, EET, BGT and TuTu */
 DESIGNATED 0 LABEL ~isra_npc_for_bg~
-REQUIRE_PREDICATE GAME_IS ~tutu tutu_totsc bgee eet bgt~ @11 /* You must have Tutu, BGT, BG:EE or EET installed to install Isra NPC for BG mod. */
+REQUIRE_PREDICATE GAME_IS ~tutu tutu_totsc bgee eet bgt~ @11 // ~You must have Tutu, BGT, BG:EE or EET installed to install Isra NPC for BG mod.~
 
 INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
 
@@ -99,18 +100,22 @@ INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
 /* =============================== *
  *  Valerie/Isra crossmod content  *
  * =============================== */
-BEGIN @2										/* Valerie/Isra crossmod content */
+BEGIN @2                                                     // ~Valerie/Isra crossmod content~
 DESIGNATED 1 LABEL ~isra_valerie_crossmod_content~
-REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
+REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12                         // ~Please install Isra NPC for BG main component before additional content.~
+REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~t2valj.dlg~) @13     // ~You do not appear to have Valerie installed.~
 
-ACTION_IF is_eet BEGIN
+SILENT
+COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
+
+/*ACTION_IF is_eet BEGIN
 
 	ACTION_IF (FILE_EXISTS ~WeiDU-BGEE.log~) AND (FILE_CONTAINS ~WeiDU-BGEE.log~ ~VALERIE\.TP2. #[0-9]+ #0 ~) BEGIN
-		PRINT @14								/* Valerie mod installed and detected. */
+		PRINT @14								// Valerie mod installed and detected.~
 		COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
 	END ELSE BEGIN
-		PRINT @15								/* Valerie mod not installed nor detected. */
-		FAIL  @13								/* You do not appear to have Valerie installed. */
+		PRINT @15								// ~Valerie mod not installed nor detected.~
+		FAIL  @13								// ~You do not appear to have Valerie installed.~
 	END
 
 END ELSE BEGIN
@@ -120,19 +125,20 @@ END ELSE BEGIN
 		COMPILE EVALUATE_BUFFER ~isra/crossmod/valerie.d~
 	END ELSE BEGIN
 		PRINT @15
-		FAIL  @13								/* You do not appear to have Valerie installed. */
+		FAIL  @13
 	END
 
-END
+END*/
 
 
 /* ============================= *
  *  Gavin/Isra crossmod content  *
  * ============================= */
-BEGIN @3										/* Gavin/Isra crossmod content */
+BEGIN @3                                        // ~Gavin/Isra crossmod content~
 DESIGNATED 2 LABEL ~isra_gavin_crossmod_content~
-REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12			/* Please install Isra NPC for BG main component before additional content. */
-REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @16			/* You do not appear to have Gavin installed. */
-  
+REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12            // ~Please install Isra NPC for BG main component before additional content.~
+REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @16           // ~You do not appear to have Gavin installed.~
+
+SILENT
 COMPILE EVALUATE_BUFFER ~isra/crossmod/gavin.d~
 EXTEND_BOTTOM ~b!gavin.bcs~ ~isra/crossmod/gavin.baf~
