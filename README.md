@@ -16,11 +16,11 @@
 
 ## 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html).
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html)
 
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/).<br>
+[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/)<br>
 
-&nbsp;
+## 
 
 <div align="center">
 <a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#details">Details</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a></br>
@@ -77,6 +77,12 @@ The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra 
 
 ## 
 
+#### Special Note for Siege of Dragonspear from Steam/GOG
+
+Good Old Games (GOG) and Steam both package the additional content for Siege of Dragonspear in a method that WeiDU, the tool used to install this mod, cannot access. You must run a program called <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> on your SoD installation before you can install this or any other WeiDU-based mod.
+
+## 
+
 #### Enhanced Editions Note
 
 The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
@@ -105,7 +111,7 @@ Run **`setup-isra.command`** in your game folder to reinstall, un-install or oth
 
 #### Linux
 
-Isra NPC for BGII for Linux is distributed as a compressed tarball and does not include a WeiDU installer.
+Isra NPC for BGII for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
@@ -246,6 +252,12 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 
 ## <a name="versions" id="versions"></a>Version History
+
+#### Version 3.4 (18 August 2020)
+
+- Updated compatibility with Valerie NPC for BG (v1.2).
+
+## 
 
 #### Version 3.3 (8 August 2020)
 
