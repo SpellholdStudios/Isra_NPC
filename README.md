@@ -1,14 +1,17 @@
 
-![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"> </a>
-![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Russian&color=limegreen)
+![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"></a>
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/SpellholdStudios/Isra_NPC?color=gold)
+![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20MacOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Italian%20%7C%20Russian&color=limegreen)
+
+![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG%20%7C%20BGT%20%7C%20Tutu%20%7C%20BG%3AEE%20%7C%20SoD%20%7C%20EET&color=dodgerblue)
 
 
 <div align="center"><h1>Isra NPC</h1>
 
 <h3>A Spellhold Studios mod for Baldur's Gate I (Tutu, Baldur's Gate Trilogy and BG:EE)<h3>
 
-</div><br />
+</div><br>
 
 
 **Author:** Rhaella  
@@ -220,7 +223,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 #### Special Acknowledgements to:
 
-- his could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
+- This could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>)
 - JamesMaxwell & Arcanecoast.ru: Russian translation.
 - Portrait: Lady Lesatho.
