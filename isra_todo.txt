@@ -1,0 +1,10 @@
+1. Implement Isra BG1 ==> BG2 full continuity "a la Ajantis mod" (DV rh#isra ==> rh#isra2)
+
+2. tp2: Add check to forbid installation after EET_End
+
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @26
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @26
+
+@26  = ~This mod needs to be installed before EET_End on your EET install.~
+@26  = ~Ce mod doit etre installe avant EET_End et apres EET, comme tous les mods ajoutant un PNJ dans un jeu EET.~
+

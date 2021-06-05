@@ -322,6 +322,10 @@
 
 
   <body>
+	<script type="module">
+		document.getElementById("latestVersion").innerText = document.getElementById('versionHistory').getElementsByTagName("h6")[0].innerText
+	</script>
+
 	<div id="wrap">
 	  <a name="top" id="top"></a>
 	  <div id="header">
@@ -335,7 +339,7 @@
 			Author: Rhaella
 		</p>
 		<p class="about">
-			<a href="http://www.shsforums.net/forum/638-isra/">Mod Website and Forum</a> &#8226; <a href="http://www.shsforums.net/files/file/1042-isra/">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Isra_NPC/releases/latest">GitHub</a> &#8226; Version 3.4
+			<a href="http://www.shsforums.net/forum/638-isra/">Mod Website and Forum</a> &#8226; <a href="http://www.shsforums.net/files/file/1042-isra/">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Isra_NPC/releases/latest">GitHub</a> &#8226; <span id="latestVersion"></span>
 		</p>
 		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
 
@@ -388,25 +392,44 @@
 
 		<h2>Compatibility</h2><br>
 
-		<p>
+		<h3>Games supported</h3>
+
+		<p style="margin-top:2%;">
 			Isra NPC is designed to work on the following Infinity Engine games:
 		</p>
-		<ul>
+		<ul style="margin-left: 5%;">
 			<li>Baldur's Gate: Enhanced Edition (BG:EE).</li>
-			<li>The conversion projects based on <acronym title="Throne of Bhaal">ToB</acronym>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/"><strong>Baldur's Gate Trilogy (BGT)</strong></a>, <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98"><strong>Baldur's Gate Tutu (<acronym title="Baldur's Gate 'To Two'">Tutu</acronym>)</strong></a> and <a href="https://github.com/K4thos/EET/releases"><strong>Enhanced Edition Trilogy (EET)</strong></a>.</li>
-		</ul></br>
+			<li>The conversion projects based on <acronym title="Throne of Bhaal">ToB</acronym>: <a href="http://www.shsforums.net/forum/261-bgt-weidu/"><strong>Baldur's Gate Trilogy (BGT)</strong></a>, <a href="https://www.pocketplane.net/bg1tutu/"><strong>Baldur's Gate Tutu (<acronym title="Baldur's Gate 'To Two'">Tutu</acronym>)</strong></a> and <a href="https://github.com/K4thos/EET/releases"><strong>Enhanced Edition Trilogy (EET)</strong></a>.</li>
+		</ul>
+
+		<p><br>
+			The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod.
+		</p><br>
 
 
 		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
 
 
-		<p>
-			The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods for BG TuTu or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
-		</p>
-		<p>
-			Although it is not required for Isra NPC to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+		<h3>Other Mods Compatibility</h3>
+
+		<p style="margin-top:2%;">
+			This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods for BG TuTu or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
 		</p><br>
 
+
+		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
+
+
+		<h3>Installation Order</h3>
+
+		<p style="margin-top:2%;">
+			&#10173; Although it is not required for Isra NPC to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+		</p>
+
+		<ul style="margin-left: 5%;">
+			<li>Please install Isra NPC after TobEx, BG2 Fixpack, EET, Gavin and Valerie.</li>
+			<li>Please install Isra NPC before EET_End, and any final "biffing" routines.</li>
+		</ul><br>
 
 		<address>
 			<span class="footer">Isra NPC &gt; Compatibility</span> &#8226;<a href="#top">BACK TO TOP</a>
@@ -431,7 +454,7 @@
 			<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.
 		</p>
 		<p>
-			You can extract files from the archive using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
+			You can extract files from the archive using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="https://zipgenius.com/">ZipGenius</a> or another file compression utility that handles .zip files.
 		</p><br>
 
 
@@ -474,10 +497,10 @@
 		<hr style="width: 90%; color: #781808; background-color: #781808; " /><br>
 
 
-		<h3>Mac OS X</h3>
+		<h3>Mac OS</h3>
 
 		<p style="margin-top:2%;">
-			Isra NPC for BG for Mac OS X distributed in the same compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+			Isra NPC for BG for Mac OS is distributed in the same compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
 		</p>
 		<p>
 			First, extract the files from the archive into your game directory. On successful extraction, there should be a &#x1F4C1; isra folder, setup-isra and setup-isra.command files in your game folder. To install, double-click <strong><span class="weidu">&nbsp;setup-isra.command&nbsp;</span></strong> and follow the instructions on screen.
@@ -499,7 +522,7 @@
 			Extract the contents of the mod to the folder of the game you wish to modify.
 		</p>
 		<p>
-			Download the latest Linux version of <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a> and copy WeiDU and WeInstall to /usr/bin. Then open a terminal and <strong><span class="weidu">&nbsp;cd&nbsp;</span></strong> to your game installation directory.
+			Download the latest Linux version of <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a> and copy weidu and weinstall to <span class="weidu">/usr/bin</span>. Then open a terminal and <strong><span class="weidu">&nbsp;cd&nbsp;</span></strong> to your game installation directory.
 		</p>
 		<p>
 			<em>Optional: run 'tolower' and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either, if you've extracted only this mod since the last time you lowercased file names. If unsure, running tolower and choosing both options is the safe bet.</em>
@@ -675,6 +698,7 @@
 
 		  <ul class="version-list c1">
 			<li><a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>).</li>
+			<li>Coland: Italian translation.</li>
 			<li>JamesMaxwell & Arcanecoast.ru: Russian translation.</li>
 			<li>Portrait: Lady Lesathoa.</li>
 			<li>Everyone else from <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.</li>
@@ -713,7 +737,7 @@
 		<h5>Copyrights</h5>
 
 		  <div class="important" style="border-color: #781808;">
-			<p><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-sa-3.0.png" title="Creative Commons License" /></a> The Isra NPC mod was developed by Rhaella, based on material from the games Baldur's Gate, Baldur's Gate II, and its expansion, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+			<p><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-sa-3.0.png" title="Creative Commons License" /> The Isra NPC mod was developed by Rhaella, based on material from the games Baldur's Gate, Baldur's Gate II, and its expansion, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
 			<p>Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.</p>
 		  </div><br>
 
@@ -725,9 +749,19 @@
 
 <!-- ============== V e r s i o n   H i s t o r y =============== -->
 	  <a name="version" id="version"></a>
-	  <div class="content">
+	  <div class="content" id="versionHistory">
 
 		<h2>Version History</h2><br>
+
+		<h6>Version 3.5 (6 June 2021)</h6>
+
+		  <ul>
+			<li>Added dynamic install order syntax and global labels to support AL|EN's "Project Infinity".</li>
+			<li>Added Italian translation (thanks Coland!).</li>
+			<li>Fixed wrong <em>rh#israj.tra</em> file encoding (was UTF-8).</li>
+			<li>Readme file: updated deprecated external links.</li>
+			<li>Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v247.</li>
+		  </ul><br>
 
 		<h6>Version 3.4 (18 August 2020)</h6>
 

@@ -2,7 +2,7 @@
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"></a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/SpellholdStudios/Isra_NPC?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20MacOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Italian%20%7C%20Russian&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=languages&message=English%20%7C%20Italian%20%7C%20Russian&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGT%20%7C%20Tutu%20%7C%20BG%3AEE%20%7C%20SoD%20%7C%20EET&color=dodgerblue)
 
@@ -17,11 +17,20 @@
 **Author:** Rhaella  
 **Mod Website and Forum:** <a href="http://www.shsforums.net/forum/638-isra/">Isra NPC</a>  
 
+
 ## 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html)
+[![Created Badge](https://badges.pufler.dev/created/SpellholdStudios/Isra_NPC?style=plastic)](https://badges.pufler.dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/SpellholdStudios/Isra_NPC?style=plastic)
+[![Visits Badge](https://badges.pufler.dev/visits/SpellholdStudios/Isra_NPC?color=cyan&style=plastic)](https://badges.pufler.dev) 
+![Maintenance](https://img.shields.io/static/v1?label=maintained%3F&message=yes&color=greenlight&style=plastic)
+![GitHub contributors](https://img.shields.io/github/contributors/SpellholdStudios/Isra_NPC?color=blueviolet&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/SpellholdStudios/Isra_NPC?size=30&padding=5&bots=true)](https://badges.pufler.dev)
 
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/)<br>
+## 
+
+:page_facing_up: [Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html)
+
+:inbox_tray: [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/)<br>
 
 ## 
 
@@ -57,11 +66,29 @@ You can find her in the Nashkel Mines region, trying (with no success whatsoever
 
 ## <a name="compat" id="compat"></a>Compatibility
 
+#### Games supported
+
 This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="https://www.pocketplane.net/bg1tutu/">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
-The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu, BG:EE or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
+The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod.
+
+## 
+
+#### Other Mods Compatibility
+
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu, BG:EE or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
+
+## 
+
+#### Installation Order
 
 >Although it is not required for Isra NPC to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+
+Here is the recommended installation order:
+- Please install Isra NPC after TobEx, BG2 Fixpack, EET, Gavin and Valerie.
+- Please install Isra NPC before EET_End, and any final "biffing" routines.
+
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -259,9 +286,10 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 #### Version 3.5 (6 June 2021)</h6>
 
-- Added <em>infinityanimations.ini</em> metadata file to support AL|EN's "Project Infinity".
+- Added dynamic install order syntax and global labels to support AL|EN's "Project Infinity".
 - Added Italian translation (thanks Coland!).
 - Fixed wrong *rh#israj.tra- file encoding (was UTF-8).
+- Readme file: updated deprecated external links.
 - Updated WeiDU installer to v247.
 
 ## 

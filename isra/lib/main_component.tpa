@@ -71,8 +71,8 @@ INCLUDE ~isra/lib/ids_entries_gtimes.tph~
  *  - Tutu: Assignment a script to all Areas  *
  *  - Area Type Flagging:                     *
  *        - bit 0: Outdoor                    *
- *        -bit 3: City                        *
- *        -bit 4: Forest                      *
+ *        - bit 3: City                       *
+ *        - bit 4: Forest                     *
  * ------------------------------------------ */
 
 // Tutu Area Script Assignment Patching: All Areas Script ID'd
