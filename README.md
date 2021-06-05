@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20MacOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Italian%20%7C%20Russian&color=limegreen)
 
-![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG%20%7C%20BGT%20%7C%20Tutu%20%7C%20BG%3AEE%20%7C%20SoD%20%7C%20EET&color=dodgerblue)
+![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGT%20%7C%20Tutu%20%7C%20BG%3AEE%20%7C%20SoD%20%7C%20EET&color=dodgerblue)
 
 
 <div align="center"><h1>Isra NPC</h1>
@@ -57,7 +57,7 @@ You can find her in the Nashkel Mines region, trying (with no success whatsoever
 
 ## <a name="compat" id="compat"></a>Compatibility
 
-This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
+This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="https://www.pocketplane.net/bg1tutu/">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
 The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu, BG:EE or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
 
@@ -102,9 +102,9 @@ Run **`setup-isra.exe`** in your game folder to reinstall, un-install or otherwi
 
 ## 
 
-#### Mac OS X
+#### Mac OS
 
-Isra NPC for BGII for Mac OS X is distributed is distributed in the same compressed archive and includes a WeiDU installer.
+Isra NPC for BGII for Mac OS is distributed is distributed in the same compressed archive and includes a WeiDU installer.
 
 First, extract the files from the archive into your game directory. On successful extraction, there should be a :file_folder: isra folder, setup-isra and setup-isra.command files in your game folder. To install, simply double-click **`setup-isra.command`** and follow the instructions on screen.
 
@@ -225,6 +225,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 - This could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>)
+- Coland: Italian translation.
 - JamesMaxwell & Arcanecoast.ru: Russian translation.
 - Portrait: Lady Lesatho.
 - Everyone else from <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
@@ -255,6 +256,15 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 
 ## <a name="versions" id="versions"></a>Version History
+
+#### Version 3.5 (6 June 2021)</h6>
+
+- Added <em>infinityanimations.ini</em> metadata file to support AL|EN's "Project Infinity".
+- Added Italian translation (thanks Coland!).
+- Fixed wrong *rh#israj.tra- file encoding (was UTF-8).
+- Updated WeiDU installer to v247.
+
+## 
 
 #### Version 3.4 (18 August 2020)
 
