@@ -288,7 +288,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 - Added dynamic install order syntax and global labels to support AL|EN's "Project Infinity".
 - Added Italian translation (thanks Coland!).
-- Fixed wrong *rh#israj.tra- file encoding (was UTF-8).
+- Fixed wrong *rh#israj.tra* file encoding (was UTF-8).
 - Readme file: updated deprecated external links.
 - Updated WeiDU installer to v247.
 
