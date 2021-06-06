@@ -2,7 +2,7 @@ BACKUP ~isra/backup~
 //AUTHOR ~Rhaella~
 SUPPORT ~Rhaella and Spellhold staff at http://www.shsforums.net/forum/638-isra/~
 
-VERSION ~v3.4~
+VERSION ~v3.5~
 
 README ~isra/readme/isra-readme-english.html~
 
@@ -20,14 +20,14 @@ ALWAYS
 	/* -------------------------------------------------------------------------------- *
 	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
 	 * -------------------------------------------------------------------------------- */
-		OUTER_SET is_tutu = (GAME_IS ~tutu tutu_totsc~ ? 1 : 0)						// tutu
-		OUTER_SET is_bgt = (GAME_IS ~bgt~) ? 1 : 0									// bgt
-		OUTER_SET is_totsc = (GAME_IS ~tutu_totsc bgt bgee eet~) ? 1 : 0			// TotSC
+		OUTER_SET is_tutu  = (GAME_IS ~tutu tutu_totsc~ ? 1 : 0)                    // tutu
+		OUTER_SET is_bgt   = (GAME_IS ~bgt~) ? 1 : 0                                // bgt
+		OUTER_SET is_totsc = (GAME_IS ~tutu_totsc bgt bgee eet~) ? 1 : 0            // TotSC
 
-		OUTER_SET is_bgee = (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) ? 1 : 0	// bgee without SoD
-		OUTER_SET is_sod = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0			// SoD
-		OUTER_SET is_eet = (GAME_IS "eet") ? 1 : 0									// eet
-		OUTER_SET is_ee = (GAME_IS ~bgee eet~) ? 1 : 0								// EE game
+		OUTER_SET is_bgee  = (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) ? 1 : 0   // bgee without SoD
+		OUTER_SET is_sod   = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0       // SoD
+		OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0                                // eet
+		OUTER_SET is_ee    = (GAME_IS ~bgee eet~) ? 1 : 0                           // EE game
 
 
 	/* ------------------------------------------------------------------------- *
@@ -86,12 +86,16 @@ LANGUAGE ~Russian (Translation: JamesMaxwell & Arcanecoast.ru)~
          ~russian~
          ~isra/translations/russian/setup.tra~		 
 
+LANGUAGE ~Italiano (traduzione di Coland)~
+         ~italian~
+         ~isra/translations/italian/setup.tra~		 
+
 
 /* =========================================== *
  *  Isra NPC Mod for BG:EE, EET, BGT and TuTu  *
  * =========================================== */
 BEGIN @1                                                     // ~Isra NPC Mod for BG:EE, EET, BGT and TuTu */
-DESIGNATED 0 LABEL ~isra_npc_for_bg~
+LABEL ~isra_npc_for_bg~
 REQUIRE_PREDICATE GAME_IS ~tutu tutu_totsc bgee eet bgt~ @11 // ~You must have Tutu, BGT, BG:EE or EET installed to install Isra NPC for BG mod.~
 
 INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
@@ -101,7 +105,7 @@ INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
  *  Valerie/Isra crossmod content  *
  * =============================== */
 BEGIN @2                                                     // ~Valerie/Isra crossmod content~
-DESIGNATED 1 LABEL ~isra_valerie_crossmod_content~
+LABEL ~isra_valerie_crossmod_content~
 REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12                         // ~Please install Isra NPC for BG main component before additional content.~
 REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~t2valj.dlg~) @13     // ~You do not appear to have Valerie installed.~
 
@@ -135,7 +139,7 @@ END*/
  *  Gavin/Isra crossmod content  *
  * ============================= */
 BEGIN @3                                        // ~Gavin/Isra crossmod content~
-DESIGNATED 2 LABEL ~isra_gavin_crossmod_content~
+LABEL ~isra_gavin_crossmod_content~
 REQUIRE_COMPONENT ~isra.tp2~ ~0~ @12            // ~Please install Isra NPC for BG main component before additional content.~
 REQUIRE_COMPONENT ~gavin.tp2~ ~0~ @16           // ~You do not appear to have Gavin installed.~
 

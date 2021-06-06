@@ -1,24 +1,36 @@
 
-![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"> </a>
-![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Russian&color=limegreen)
+![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"></a>
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/SpellholdStudios/Isra_NPC?color=gold)
+![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20MacOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
+![Language](https://img.shields.io/static/v1?label=languages&message=English%20%7C%20Italian%20%7C%20Russian&color=limegreen)
+
+![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGT%20%7C%20Tutu%20%7C%20BG%3AEE%20%7C%20SoD%20%7C%20EET&color=dodgerblue)
 
 
 <div align="center"><h1>Isra NPC</h1>
 
 <h3>A Spellhold Studios mod for Baldur's Gate I (Tutu, Baldur's Gate Trilogy and BG:EE)<h3>
 
-</div><br />
+</div><br>
 
 
 **Author:** Rhaella  
 **Mod Website and Forum:** <a href="http://www.shsforums.net/forum/638-isra/">Isra NPC</a>  
 
+
 ## 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html)
+[![Created Badge](https://badges.pufler.dev/created/SpellholdStudios/Isra_NPC?style=plastic)](https://badges.pufler.dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/SpellholdStudios/Isra_NPC?style=plastic)
+[![Visits Badge](https://badges.pufler.dev/visits/SpellholdStudios/Isra_NPC?color=cyan&style=plastic)](https://badges.pufler.dev) 
+![Maintenance](https://img.shields.io/static/v1?label=maintained%3F&message=yes&color=greenlight&style=plastic)
+![GitHub contributors](https://img.shields.io/github/contributors/SpellholdStudios/Isra_NPC?color=blueviolet&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/SpellholdStudios/Isra_NPC?size=30&padding=5&bots=true)](https://badges.pufler.dev)
 
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/)<br>
+## 
+
+:page_facing_up: [Read the mod's readme](https://spellholdstudios.github.io/readmes/isra-readme-english.html)
+
+:inbox_tray: [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1042-isra/)<br>
 
 ## 
 
@@ -54,11 +66,29 @@ You can find her in the Nashkel Mines region, trying (with no success whatsoever
 
 ## <a name="compat" id="compat"></a>Compatibility
 
-This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.pocketplane.net/mambo/index.php?option=com_content&task=blogcategory&id=143&Itemid=98">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
+#### Games supported
 
-The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod. This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu, BG:EE or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
+This mod is designed to work on the following Infinity Engine games: Baldur's Gate: Enhanced Edition (BG2:EE), the conversion projects <a href="https://www.pocketplane.net/bg1tutu/">Baldur's Gate Tutu</a>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
+
+The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra NPC mod.
+
+## 
+
+#### Other Mods Compatibility
+
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods for BG TuTu, BG:EE or BGT, including BG1NPC. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/638-isra/">report them on the forum</a>!
+
+## 
+
+#### Installation Order
 
 >Although it is not required for Isra NPC to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+
+Here is the recommended installation order:
+- Please install Isra NPC after TobEx, BG2 Fixpack, EET, Gavin and Valerie.
+- Please install Isra NPC before EET_End, and any final "biffing" routines.
+
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -69,9 +99,9 @@ The Tales of the Sword Coast (TotSC) expansion is not required to play the Isra 
 
 #### Notes
 
-*If you've previously installed the mod, remove it before extracting the new version. To do this, run **`setup-isra.exe`**, un-install all previously installed components and delete the :file_folder: **isra** folder.*
+*If you've previously installed the mod, remove it before extracting the new version. To do this, run __`setup-isra.exe`__, un-install all previously installed components and delete the :file_folder: __isra__ folder.*
 
-*When installing or un-installing, **do not close the DOS window** by clicking on the **X** button! Instead, press the **Enter** key whenever instructed to do so.*
+*When installing or un-installing, __do not close the DOS window__ by clicking on the __X__ button! Instead, press the __Enter__ key whenever instructed to do so.*
 
 *__Disable any antivirus__ or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.*
 
@@ -99,9 +129,9 @@ Run **`setup-isra.exe`** in your game folder to reinstall, un-install or otherwi
 
 ## 
 
-#### Mac OS X
+#### Mac OS
 
-Isra NPC for BGII for Mac OS X is distributed is distributed in the same compressed archive and includes a WeiDU installer.
+Isra NPC for BGII for Mac OS is distributed in the same compressed archive and includes a WeiDU installer.
 
 First, extract the files from the archive into your game directory. On successful extraction, there should be a :file_folder: isra folder, setup-isra and setup-isra.command files in your game folder. To install, simply double-click **`setup-isra.command`** and follow the instructions on screen.
 
@@ -220,8 +250,9 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 #### Special Acknowledgements to:
 
-- his could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
+- This could never have happened without K'aeloree, who offered tons of advice, proofreading, help with the often incomprehensible cross-platform coding, and some of the NPC banters as well. So a huge thanks for that!
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>)
+- Coland: Italian translation.
 - JamesMaxwell & Arcanecoast.ru: Russian translation.
 - Portrait: Lady Lesatho.
 - Everyone else from <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
@@ -253,31 +284,41 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version 3.4 (18 August 2020)
+#### Version 3.5 &nbsp;(6 June 2021)
+
+- Added dynamic install order syntax and global labels to support AL|EN's "Project Infinity".
+- Added Italian translation (thanks Coland!).
+- Fixed wrong *rh#israj.tra* file encoding (was UTF-8).
+- Readme file: updated deprecated external links.
+- Updated WeiDU installer to v247.
+
+## 
+
+#### Version 3.4 &nbsp;(18 August 2020)
 
 - Updated compatibility with Valerie NPC for BG (v1.2).
 
 ## 
 
-#### Version 3.3 (8 August 2020)
+#### Version 3.3 &nbsp;(8 August 2020)
 
 - Added Russian translation (by JamesMaxwell & Arcanecoast.ru).
 
 ## 
 
-#### Version 3.2 (19 July 2020)
+#### Version 3.2 &nbsp;(19 July 2020)
 
 - Fixed "*Valerie/Isra crossmod content*" component install with EET games (at last!). : wink:
 
 ## 
 
-#### Version 3.1 (18 April 2020)
+#### Version 3.1 &nbsp;(18 April 2020)
 
 - Fixed EET install and Valerie Crossmod install.
 
 ## 
 
-#### Version 3.0 (30 March 2020)
+#### Version 3.0 &nbsp;(30 March 2020)
 
 - Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
@@ -307,13 +348,13 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 2.3 (11 April 2018)
+#### Version 2.3 &nbsp;(11 April 2018)
 
 - Crossmod bug fixed.
 
 ## 
 
-#### Version 2.2 (2 April 2018)
+#### Version 2.2 &nbsp;(2 April 2018)
 
 - Isra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.
 - TRAified.
@@ -321,33 +362,33 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 2.1 (9 June 2014)
+#### Version 2.1 &nbsp;(9 June 2014)
 
 - Isra should no longer be transferring to BG2 in a BGT playthrough.
 - Updated WeiDU installer.
 
 ## 
 
-#### Version 2.0 (8 June 2013)
+#### Version 2.0 &nbsp;(8 June 2013)
 
 - Audio added.
 
 ## 
 
-#### Version 1.4 (21 February 2013)
+#### Version 1.4 &nbsp;(21 February 2013)
 
 - Bug in Rasaad banter fixed.
 
 ## 
 
-#### Version 1.3 (12 February 2013)
+#### Version 1.3 &nbsp;(12 February 2013)
 
 - Dialogue edits.
 - Several new banters and a string fixer added.
 
 ## 
 
-#### Version 1.2 (22 January 2013)
+#### Version 1.2 &nbsp;(22 January 2013)
 
 - Dialogue bug fixed.
 - Dorn conflict bug fixed.
@@ -355,14 +396,14 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 1.1 (11 January 2013)
+#### Version 1.1 &nbsp;(11 January 2013)
 
 - Soundset error corrected.
 - BGT joining dialogue bug fixed.
 
 ## 
 
-#### Version 1.0 (6 January 2013)
+#### Version 1.0 &nbsp;(6 January 2013)
 
 - Initial release.
 <div align="right"><a href="#top">Back to top</a></div>

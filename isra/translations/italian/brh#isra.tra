@@ -1,0 +1,573 @@
+// Ajantis
+// -------
+@0    = ~Devo confessare, mia Signora, che ho avuto pochissime relazioni con quelli del tuo ordine prima d'ora.~
+@1    = ~Non è il mio ordine, Sir Ajantis. Non ancora. Proprio come te, sono ancora una novizia.~
+@2    = ~Ti aspetti che la Rosa Rubino decida a breve sulla tua accettazione?~
+@3    = ~Non del tutto, no. Abbiamo... molte meno formalità di voi, sicuramente.~
+@4    = ~Non ne dubito. Non intendo offendere, ma non potrei immaginare di appartenere a una chiesa così disorganizzata.~
+@5    = ~Sono brave persone, mio signore.~
+@6    = ~Potrebbe essere vero, ma mi è sempre stato insegnato che senza un'adeguata disciplina, anche le migliori intenzioni possono andare fuori strada. Non trovi che sia così?~
+@7    = ~A volte, e per alcune persone. Ma non pensi anche che ci sono alcune persone all'interno della tua chiesa il cui... zelo supera la loro misericordia, per così dire? Più di alcune, forse.~
+@8    = ~Forse sono stato indelicato, mia signora, ma la mia domanda era in buona fede. La tua ostilità è ingiustificata.~
+@9    = ~Io... no, perdonami. È una vecchia discussione, e una che ho avuto fin troppo spesso con un certo scudiero di Tyr. Inutile dire che non siamo più amici molto intimi.~
+@10   = ~Capisco. Allora dovremo evitare questo argomento in futuro. Ci mettiamo al passo con gli altri?~
+@11   = ~Deve essere davvero un grande privilegio servire al fianco di un uomo famoso come Lord Keldorn.~
+@12   = ~Sì, mia signora. Lo conosci?~
+@13   = ~Solo di sfuggita. Mio padre ha lavorato con lui una volta, diversi anni fa. Era impressionato, anche se in qualche modo... disturbato dalla rettitudine di Lord Keldorn. Ho paura che mio padre tenda a adottare un approccio più pragmatico... per i suoi affari.~
+@14   = ~Un sentimento condiviso da troppi nell'Amn, ho notato.~
+@15   = ~Non sono in disaccordo. Se posso essere così audace, Athkatla sembra un posto strano e non del tutto comodo per uno di Waterdeep.~
+@16   = ~Forse. Vado dove posso essere d'aiuto, tuttavia, e la Sala del Cuore Radioso è accogliente, anche se il resto della città non lo è.~
+@17   = ~Se mai avessi la possibilità di visitare Crimmor, sarei felice di indirizzarti a una qualsiasi delle mie amiche. Sono un gruppo piuttosto vivace, per non dire altro.~
+@18   = ~Non sono... sicuro che sarebbe del tutto appropriato, mia signora.~
+@19   = ~Non stavo insinuando baldoria ubriachesca e orgiastica, Sir Ajantis.~
+@20   = ~Io... perdonami se ti ho offeso, Lady Isra. Se vuoi scusarmi...~
+@21   = ~Ricordo di aver sentito l'ultima notizia di Eleint per una breve campagna del Cuore Radioso contro i Sythillisiani. C'era qualcuno che conosci coinvolto?~
+@22   = ~Ero lì anch'io, si dà il caso, a servire come scudiero di Sir Keldorn. Devo ammettere, non mi ero reso conto che le gesta dell'Ordine fossero di dominio pubblico.~
+@23   = ~Le tue truppe attraversano Crimmor abbastanza spesso. Tendiamo a tenere traccia di queste cose.~
+@24   = ~Se solo tutti quelli che osservano i nostri movimenti fossero così benevoli.~
+@25   = ~Deve essere strano essere così rinomati.~
+@26   = ~Mia signora, non riesco a immaginarti timida di attenzione.~
+@27   = ~Molto acuto, Sir. No, mi chiedo solo a volte quanto sarebbe diversa la vita nel tuo ordine rispetto al mio.~
+@28   = ~Probabilmente ci sono più somiglianze che differenze.~
+@29   = ~Forse, anche se non ho mai visto una battaglia campale. Ovviamente, ho visto invece più di una tana di drago... anche se solo a combattimento terminato.~
+@30   = ~Allora questo è un chiaro parallelo.~
+@31   = ~Non sono sicura di aver capito.~
+@32   = ~Qualunque sia la sua religione, un cavaliere fa sempre un lavoro ammirevole nel tenere il suo scudiero fuori dal pericolo.~
+@33   = ~Sì, sono sicura che nessuno di noi sarebbe qui se fosse altrimenti.~
+@34   = ~Concordo.~
+ 
+// Alora
+// -----
+@35   = ~Allora cosa fai quando non sei un paladino, Isra? I cavalieri danno mai delle feste?~
+@36   = ~Quasi ogni fede ha i suoi giorni sacri, anche se immagino che poche sarebbero contente di sentirli descritti come feste.~
+@37   = ~Allora... cosa? Ti siedi e ascolti un tizio che parla di dovere per tutta la notte? Questo... uh, non sembra molto divertente.~
+@38   = ~*sorride* Alcune persone potrebbero certamente beneficiare di promemoria aggiuntivi, mia piccola signora. Le nostre grandi feste potrebbero essere più di tuo gradimento, tuttavia, in particolare se ti interessano la musica e la danza.~
+@39   = ~Oh? Come sono quelle?~
+@40   = ~Non posso dire di esserci stata qui, purtroppo. A Crimmor, Sune, Lliira e Milil condividevano un tempio, quindi i festeggiamenti tendevano a diventare... piuttosto selvaggi, a volte.~
+@41   = ~Non sembri molto impressionata da questo.~
+@42   = ~... C'è un'ottima ragione per cui non bevo, Alora.~
+@43   = ~Cosa... oh. Oh. Ahahah, c'è qualche possibilità che io possa strapparti quella storia?~
+@44   = ~No.~
+@45   = ~Alora, hai...~
+@46   = ~Se ti fossi degnata di chiedere, ti avrei lasciato guardare.~
+@47   = ~Ma dov'è il divertimento poi?~
+@48   = ~Queste cose sono reali, Izzy?~
+@49   = ~Certamente. Era un cimelio di famiglia di mia madre, uno dei miei preferiti, dato il motivo a rubino. Ora, se lo restituissi per favore?~
+@50   = ~Va bene, va bene. Ecco qua. Non devi essere così scontrosa, sai.~
+@51   = ~Scontrosa? Alora, so che hai buone intenzioni, ma se non riesci a padroneggiare questi... impulsi, è probabile che un giorno finirai in prigione. O peggio. Vorrei che tu crescessi abbastanza da riconoscerlo, nient'altro.~
+@52   = ~Uuh, sei diventata tutta seriosa... Non avrei dovuto dire nulla!~
+ 
+// Branwen
+// -------
+@53   = ~Cosa... sarebbe quello?~
+@54   = ~Questo? Profumo Calishita. Il preferito di famiglia, anche se un po' difficile da trovare negli ultimi tempi. Sei la benvenuta se vuoi provarne un po', ovviamente.~
+@55   = ~Sono una guerriera, non una ballerina.~
+@56   = ~Non è necessario essere una ballerina, come dici tu, per avere un po' di rispetto per sé stesse e per il proprio aspetto.~
+@57   = ~Il rispetto di sé non si guadagna bagnandosi con fragranze maleodoranti, donna. Si guadagna con la forza di volontà e la maestria delle armi.~
+@58   = ~E che dire della dignità? Non ti interessa quello che gli altri pensano di te? Per quanto mi dispiaccia dirtelo, un bagno non ti farebbe male.~
+@59   = ~Se il mio profumo è così offensivo per te, Sunite, puoi starmi lontana.~
+@60   = ~...~
+@61   = ~*sospira* Perdona il mio brutto carattere, Branwen. Ho... ho sentito le tue storie su Seawolf. Se in qualche modo credi che avremmo una opinione inferiore su di te se decidessi di abbracciare più pienamente il tuo genere, sappi che non è vero. Ti sei lasciata alle spalle le Moonshaes. Non portare con te i loro pregiudizi.~
+@62   = ~Basta. Cose così meschine non mi interessano adesso, come dovresti ben sapere. Lasciami in pace.~
+@63   = ~Non riesco davvero a immaginare che non ti stanchi mai, Branwen... battaglia per amore della battaglia, senza nient'altro al di fuori di essa.~
+@64   = ~Cos'altro è necessario? Sei una guerriera tanto quanto me, Isra. Puoi negare il brivido del momento, la gloria, il valore? È così che sappiamo di essere vive.~
+@65   = ~Eppure ho visto quanto velocemente ti dai all'idromele dopo una vittoria. Intendi dirmi che tale baldoria non rallegra anche il tuo cuore?~
+@66   = ~No, non ho detto niente del genere. Ma dopo mi chiederai degli uomini, forse, e poi dell'amore stesso... sì, penso di aver colto nel segno.~
+@67   = ~Le nostre fedi sono in contrasto--~
+@68   = ~Solo per te, Sunita.~
+@69   = ~E tu non sei certo una delicata domestica. Ti ho visto combattere. In verità, è una cosa strana mettere a fuoco la passione di Chiomadifuoco, eppure lo fai lo stesso.~
+@70   = ~... Non provo alcun piacere perverso nel massacro - né combatto da qualsiasi parte mi piacerebbe, come spesso fanno i seguaci di Tempus.~
+@71   = ~Combatto dalla tua stessa parte, donna. Non dimenticarlo.~
+@72   = ~Io... no, hai ragione. Perdonami l'insinuazione.~
+@73   = ~Non pensarci. Ma proseguiamo, sono stanca di questa lite... anche se sospetto ne avremo molte altre prima che questa ricerca sarà finita.~
+@74   = ~La richiesta è stata onorevole, Sunita. Vuoi davvero rifiutarti?~
+@75   = ~Onorevole? Branwen, stai quasi per ridacchiare. E c'è davvero poco onore da trovare in una gara così... banale.~
+@76   = ~Tempus vede onore in tutte le gare di forza, donna, dalla più potente alla più banale.~
+@77   = ~Non ti accigliare così, Isra. Non sarebbe la prima volta che rendi inconsapevolmente omaggio a Foehammer. Tutt'altro.~
+@78   = ~... Molto bene. Se vinco io, tuttavia, chiederò un pegno.~
+@79   = ~Per una semplice lotta con le armi?~
+@80   = ~Sì.~
+@81   = ~Spero che non abbia a che vedere con quel tuo profumo nauseabondo?~
+@82   = ~Semplice sapone, te lo assicuro.~
+@83   = ~Prima dovrai vincere.~
+@84   = ~Ne sono ben consapevole.~
+@85   = ~Allora siamo d'accordo. Forse c'è ancora speranza per te, Isra.~
+ 
+// Coran
+// -----
+@86   = ~Bellissima. Se avessimo più tempo, potrei scrivere un sonetto solo sugli zigomi di quella ragazza...~
+@87   = ~E i suoi occhi, più radiosi degli zaffiri, e i capelli luccicanti sulla sua testa come oro prezioso... se ne avessi la capacità, ne scriverei uno adesso.~
+@88   = ~*ride*~
+@89   = ~Lo ammetto, mia signora, stavo per presentarmi a lei, ma forse dovremmo considerare di presentarla a te invece!~
+@90   = ~Non sarebbe saggio, caro elfo. Non hai notato l'anello?~
+@91   = ~Ah, ma cosa sono queste inezie quando messe di fronte alla gloria del vero amore?~
+@92   = ~Il vero amore? Raramente ti dai il tempo di assaporare una storia d'amore prima di balzare su quella successiva. Questo mi pare decisamente lontano dal vero amore.~
+@93   = ~Balzare, Isra? Credo che anche molte delle tue stesse fedi balzino allo stesso modo, non ultima la tua stessa dea! Diresti anche a lei parole così fredde?~
+@94   = ~... C'è un mondo di differenza, Coran.~
+@95   = ~Strano, che approvi l'uno ma non l'altro! Ma non sono troppo orgoglioso di dire che potresti avere ragione, cara signora. Forse ti andrebbe di provare a insegnarmi l'errore dei miei modi?~
+@96   = ~*sorride* Non sono una cortigiana.~
+@97   = ~Ahimè, ed è un peccato che tu non serva la tua dea in un modo così diretto come io servo il mio!~
+@98   = ~Per te, forse. Ma basta, questa conversazione non porta a nulla e c'è molto da fare prima che diventi <DAYNIGHT>.~
+@99   = ~Coran, apprezzerei molto se smettessi di guardarmi così.~
+@100  = ~Perdonami, mia signora... così come, esattamente?~
+@101  = ~Come se stessi cercando di decidere quale, precisamente, sia il miglior complimento da farmi.~
+@102  = ~*ride* Effettivamente. Eppure, sono sempre stato portato a credere che non ci sia un modo più appropriato per approcciare una Sunita.~
+@103  = ~Questo vale di più per le Guardiane del Cuore, ma anche così... tendiamo a preferire che i complimenti... siano spontanei. Non meditati. Il cuore parla più sinceramente della mente.~
+@104  = ~E se il mio cuore avesse semplicemente troppo da dire in merito? Più di quanto possa essere rapidamente e facilmente trasformato in parole?~
+@105  = ~Allora forse dovresti lasciarlo tacere per una volta. È già abbastanza soffocante così com'è.~
+@106  = ~Ah, mi ferisci, cara signora! Ma se è il silenzio che desideri, dovrò accontentarmi di ammirarti da lontano.~
+@107  = ~*sospira* A volte temo che tu sia troppo da sopportare, Coran. Dovrei essere in grado di rimanere arrabbiata con te per più di qualche minuto.~
+@108  = ~Se può consolarti, ero convinto che ti avrei avuta nel mio letto già da parecchio tempo.~
+@109  = ~Ah... no. No, non è affatto una consolazione.~
+@110  = ~Perché questo sguardo di disapprovazione, Isra? Non è che ho abbandonato la bambina al suo destino.~
+@111  = ~Sì, e sarebbe mostruoso da parte tua se lo avessi fatto. Eppure, Coran, una donna sposata?~
+@112  = ~Hai visto suo marito, vero? Non certo un bel tipo, puoi ben dirlo. Vuoi biasimarla per aver voluto qualcosa di un po' più... saporito?~
+@113  = ~... saporito.~
+@114  = ~Porto un tale dolce soccorso alle donne sole e miserabili di Faerun, mia signora. Sicuramente non puoi biasimarmi per questo.~
+@115  = ~Porti soccorso a te stesso, Coran. Non fingere che le tue motivazioni siano tutt'altro che egoistiche.~
+@116  = ~Mi giudichi troppo duramente, carissima. Non arrabbiamoci l'uno con l'altra adesso.~
+@117  = ~Ti giudico già abbastanza severamente. Se avessi una qualche comprensione del rispetto, dell'empatia o della responsabilità, sarebbe davvero una gradita sorpresa.~
+@118  = ~Bene, bene... rimproverami se lo desideri. Non aspettarti che mi senta molto in colpa per la questione, però.~
+@119  = ~Ti rispetterei di più se lo facessi.~
+@120  = ~Ah beh, in questo caso sono senz'altro pron--~
+@121  = ~Strano. Non credevo che a un paladino fosse permesso allontanarsi da una discussione.~
+ 
+// Dynaheir
+// --------
+@122  = ~Hai un comportamento più gradevole di quanto mi sarei aspettata, data la tua vocazione marziale.~
+@123  = ~Grazie mille, Lady Dynaheir.~
+@124  = ~Non devi gloriarti di lodi così semplici, Isra. La realtà della guerra non logora mai questo tuo atteggiamento benevolo?~
+@125  = ~Non sono del tutto sicura di aver capito cosa intendi.~
+@126  = ~Questo mondo a volte può essere un posto discretamente sgradevole. "Brutto", credo lo definiresti. Non sei una sempliciotta che distolga la mente da tale verità. Non ti viene mai da tirarti indietro per il suo orrore?~
+@127  = ~A volte, forse. Ci sono alcuni Guardiani del Cuore che vedono solo la bellezza nel mondo che li circonda e che possono estrapolare un filo di luce anche dalle storie più terribili... *sorride* Se io fossi una di loro.~
+@128  = ~Ma darei volentieri la mia vita per trasformare le loro visioni in realtà, e forse ci sono abbastanza benedizioni in questo.~
+@129  = ~È triste, credo, che la tua dea non abbia seguito nel mio paese.~
+@130  = ~Sarei lieta di insegnarti i suoi modi, se avessi intenzione di cambiare questo fatto.~
+@131  = ~No, Isra. Il mio cuore non è così generoso, temo, né lo sarà mai.~
+@132  = ~Il Rashemen deve essere davvero una terra ricca se tutti i suoi maghi sono come te, Lady Dynaheir. I nostri incantatori spesso lasciano... molto a desiderare.~
+@133  = ~Si è visto spesso che quando non hai un nemico comune, ti rivolgi contro te stesso. Il Rashemen è unito dalla sua sfida contro il Thay. Le tue terre non hanno nemici così incombenti.~
+@134  = ~E per la grazia degli dèi, possa rimanere così a lungo.~
+@135  = ~Le Streghe del Rashemen... il nome è sempre sembrato così inquietante quando i miei tutori lo pronunciavano a casa. Anche se immagino che rendessero qualsiasi lezione sulla magia il più terrificante possibile.~
+@136  = ~Non hanno sbagliato a farlo. Se i Maghi Rossi non ci hanno insegnato nient'altro, ci hanno insegnato che la magia è pericolosa nelle mani sbagliate.~
+@137  = ~Molte cose in questo mondo sono pericolose nelle mani sbagliate.~
+@138  = ~Sì, questa è la sfortunata verità.~
+@139  = ~Isra, mi è capitato di sentire nelle locande locali storie inappropriate sul tuo conto di cui forse dovresti essere a conoscenza.~
+@140  = ~Storie? Io... sono abbastanza certa di non aver fatto nulla di improprio.~
+@141  = ~Niente del tutto?~
+@142  = ~*sospira* Vorrei credere che le storie siano esagerate dal passaparola. Attiri più attenzione di quanto vorresti con i tuoi atteggiamenti amorosi. Non hai davvero fatto niente?~
+@143  = ~Io... una volta, suppongo, ma anche allora, è stato un semplice bacio, niente di più. Era un Sunita; è un saluto e un addio abbastanza comune tra noi.~
+@144  = ~Era per caso un bardo?~
+@145  = ~Non avrebbe mai sparlato di me, Dynaheir.~
+@146  = ~Allora può darsi che tu fossi in uno spazio pubblico. È senza dubbio raro da queste parti vedere un paladino impegnato in atti del genere... un argomento sufficientemente ricco per pettegolezzi meschini, credo.~
+@147  = ~... Sì.~
+@148  = ~Non essere così abbattuta, ragazza. È spiacevole, ma abbiamo affrontato mali peggiori di una canzone oscena mal composta.~
+@149  = ~Sì, ma questo è esattamente il risultato da cui speravo di guardarmi. Ci sono abbastanza storie di frivolezza Sunita così com'è. Io...~
+@150  = ~Ti vergogni della tua chiesa, Isra?~
+@151  = ~No! Certo che no.~
+@152  = ~Allora dimmi, perché dovrebbe disturbarti tanto, se tu stessa non hai fatto nulla di vergognoso?~
+@153  = ~Io... non lo so. No... no, non è proprio così, ma preferirei non parlarne.~
+@154  = ~A volte dimentico quanto sei giovane.~
+@155  = ~... Non mi stai facendo sentire meglio, Dynaheir.~
+@156  = ~Forse no, ma questa è la tua vocazione, Isra. Non la mia.~
+@157  = ~*ride* Grazie. Sei davvero un'ottima amica, lasciatelo dire.~
+@158  = ~Con i tuoi continui richiami, sarebbe molto difficile da dimenticare.~
+ 
+// Edwin
+// -----
+@159  = ~Puah! Faremmo meglio a tornare rapidamente alla civiltà, <CHARNAME>. Anche il paladino sta cominciando a diventare trasandata e non avendo nulla da offrire a questo gruppo ad eccezione del suo aspetto è senz'altro un problema.~
+@160  = ~Frena la tua lingua, mago. Non sono dell'umore giusto per le tue sciocchezze.~
+@161  = ~Non che credessi potessi essere più arguta di un hobgoblin, ma persino tu dovresti essere in grado di elaborare una risposta migliore. No? Beh, forse no.~
+@162  = ~Ogni momento che spreco con te, Edwin, è un momento che potrebbe essere utilizzato in modo più significativo.~
+@163  = ~Senza dubbio non sei ancora abbastanza evoluta per afferrare il concetto di multitasking, tanto meno per realizzare un'abilità così rudimentale. (Bah! Perché spreco il mio tempo con questi idioti è un mistero.)~
+@164  = ~Non vedi che sono occupata, ragazza? E la tua armatura non è abbastanza levigata per servire adeguatamente come un vero specchio da barba.~
+@165  = ~E non ti guarderei, se potessi scegliere. Nessun miglioramento estetico potrebbe sperare di nascondere la bruttezza della tua anima, Edwin, e il fascino dei tuoi modi è già abbastanza infimo così com'è.~
+@166  = ~Puah! L'unica volta in cui la tua opinione in merito sarebbe di qualche valore è se dovessi degnarmi di invitarti nel mio letto. E anche allora, potrei trovare un uso migliore per quella tua bocca. (Mmm, mi domando...)~
+@167  = ~Con maniere come le tue, mago, l'unica compagnia che avrai la possibilità di apprezzare è quella dei mostri che tu stesso evochi.~
+@168  = ~E persino quella sarebbe comunque infinitamente preferibile alla tua, ragazza. Ora lasciami stare.~
+ 
+// Eldoth
+// ------
+@169  = ~Per Sune! Sei in grado di comporre anche una singola canzone che non finisca in rovina o... o diabolica perversione per tutte le parti coinvolte?~
+@170  = ~Perdonami se ho offeso la tua sensibilità religiosa, mia cara. La mia arte è sempre stata ispirata dalla vita e dall'esperienza... piuttosto che dall'idealismo e dai sogni sciocchi.~
+@171  = ~Allora non posso fare a meno di provare compassione per la vita che devi aver condotto.~
+@172  = ~Buon per te. Ma ho imparato a non preoccuparmi mai di una Sunita. A meno che, ovviamente, non possieda una morale più sciolta e pragmatica di te.~
+@173  = ~Sei sempre stato così odioso, Eldoth?~
+@174  = ~Dipende interamente da come si definisce "odio", mia cara. Se è semplicemente l'inverso della tua concezione Sunita dell'amore - ozioso, fiorito, sentimentale ed eccessivamente romanticizzato - ebbene allora, sì... Suppongo di essere sempre stato così odioso.~
+@175  = ~Se in qualsiasi momento ti interessasse unirti a me nella realtà, tuttavia, potresti cambiare velocemente idea.~
+@176  = ~La nostra concezione dell'amore è molto più sfumata di così, disgraziato, anche se immagino che a te sembrerebbe uguale.~
+@177  = ~Come no. Porta la tua furia giustizialista altrove, ragazza.~
+@178  = ~Mia cara, sei troppo adorabile per nasconderti sotto tutta quella armatura così ingombrante.~
+@179  = ~Qualunque cosa tu intendi offrirmi, bardo, non mi interessa.~
+@180  = ~Tale atteggiamento sospettoso non ti si addice, Lady Isra. Volevo solo suggerire che la tua bellezza sarebbe meglio valorizzata in quanto gioiello più prezioso nell'harem di un sovrano che su di un sanguinoso campo di battaglia. Tutte le ragazze hanno fantasie infantili di tanto in tanto, ma la maggior parte delle donne di solito cresce e le supera.~
+@181  = ~Se queste sono le parole dolci che usi per attirare le giovani donne, la tua tecnica è diventata parecchio scarsa ultimamente.~
+@182  = ~Per quanto mi dispiaccia deluderti, temo di preferire le figlie dei paladini... non i paladini stessi.~
+@183  = ~Forse dovrei ricordarti che ci vorrebbe uno sforzo minimo per finire ciò che Lord Piergeiron ha iniziato.~
+@184  = ~Ah, ovviamente. Il ricorso alla violenza. Molto bene, mia signora, ti lascio alla tua spada giocattolo... fammi sapere quando sarai curiosa di giocare con una vera.~
+@185  = ~Eldoth... una parola a parte, se puoi.~
+@186  = ~Mia signora, per quanto piacevole sia la tua compagnia, temo che la devozione del mio cuore sia rivolta a qualcun’altra--~
+@187  = ~Oh, fai silenzio. Non mi servono le tue bugie o i tuoi inganni, bardo. Sappi che se provi anche solo a toccarla, ti ucciderò io stessa.~
+@188  = ~Mia cara--~
+@189  = ~Non ti ho detto di parlare. Per il momento, posso solo aspettare e pregare che ritorni in sé col tempo, ma se i tuoi... affetti, per così dire, minacceranno il suo benessere più di quanto farebbe la tua morte prematura, nel nome di Sune, non me ne starò a guardare pigramente.~
+@190  = ~Davvero? Bene, continua a blaterare, mia signora. Dopotutto, è piacevole la vista della rabbia impotente di un paladino.~
+@191  = ~Allora farai meglio ad assicurarti che rimanga impotente.~
+ 
+// Faldorn
+// -------
+@192  = ~Isra, mi sto stancando di vederti piagnucolare ogni volta che <CHARNAME> rinuncia a una delle tue preziose locande per la notte. La tua ossessione per quelle trappole civilizzate mi fa star male.~
+@193  = ~Io non piagnucolo, druido.~
+@194  = ~Ma ci vai molto vicino, donna. Puah! Probabilmente ti difenderesti dicendo che la musica è attraente, o simili follie. Se ti interessassi veramente alla bellezza, ti impegneresti di più per proteggere la natura, non le opere insignificanti dell'umanità.~
+@195  = ~Faldorn, basta così. Ti sopporto già a malapena così com'è. Lasciami stare.~
+@196  = ~Grr! Come ti pare, non vali comunque la fatica.~
+ 
+// Garrick
+// -------
+@197  = ~Dove hai imparato a suonare così, Garrick? La tua tecnica è davvero molto buona.~
+@198  = ~Lo pensi davvero, mia signora? Ti ringrazio. Ho imparato a Berdusk, ma è passato un po' di tempo dall'ultima volta che ho ricevuto una formazione adeguata. Suoni anche tu, uh, per caso?~
+@199  = ~Molto male, temo. Sono stata istruita da bambina, ma non sono mai stata in grado di mettere adeguatamente in pratica la teoria.~
+@200  = ~Sai, forse, uh... forse avresti più fortuna se ci provassi di nuovo? Potrei insegnarti io. Se vuoi, cioè.~
+@201  = ~*sorride* Mi piacerebbe, credo.~
+@202  = ~Davvero? Voglio dire, è fantastico. Avrò solo, ehm, bisogno di un po' di tempo per prepararmi.~
+@203  = ~Lady Isra! Io, uhm, io volevo, beh...~
+@204  = ~*sorride* Suvvia, non posso essere così intimidatoria.~
+@205  = ~Cosa? No! Oh no, non sei per niente spaventosa! Voglio dire, sono sicuro che lo sei per i tuoi nemici, e molto, ma, ehm...~
+@206  = ~Cosa c'è, Garrick?~
+@207  = ~Io, uh, beh, quella canzone che stavi cercando di canticchiare l'altro giorno... ehm...~
+@208  = ~Se l'ho rovinata così tanto, non mi arrabbierò se me lo dici tu.~
+@209  = ~Beh... uh, non direi esattamente *rovinata*, ma... ho finalmente capito cosa fosse ora! Quindi se, sai, tu volessi ascoltarla...~
+@210  = ~... suonata correttamente intendi?~
+@211  = ~No, non sussultare così. Davvero, mi piacerebbe molto.~
+@212  = ~Oh. Va bene, fantastico. Lasciami solo assicurarmi che questa cosa sia accordata correttamente prima...~
+ 
+// Imoen
+// -----
+@213  = ~Pensi di potermi insegnare quella cosa che fai con i tuoi capelli, zia Izzy?~
+@214  = ~Stasera, certo, se abbiamo tempo. Anche se non sono del tutto convinta che tu abbia la pazienza necessaria per farlo.~
+@215  = ~Eh... immagino che sembri un po' complicato. E i miei capelli potrebbero non essere abbastanza lunghi...~
+@216  = ~Questo dovrebbe fare poca differenza. Anche se ci sono molte altre cose interessanti che potremmo fare per tenerli lontani dalla tua faccia.~
+@217  = ~Ehi. Vuoi dire che non ti piacciono così come sono?~
+@218  = ~Non vorrei un giorno dover vedere un nemico afferrarteli.~
+@219  = ~Oh. Sì, immagino che tu abbia ragione.~
+@220  = ~Imoen, pensi davvero che sia saggio giocare con quelle pergamene? Non mi ero resa conto che avessi ricevuto un'istruzione adeguata sulla magia.~
+@221  = ~Beh... forse perché non ce l'ho. Non proprio. Ma ehi, non ti ho ancora trasformato in una rana o qualcosa del genere, giusto?~
+@222  = ~Non è esattamente questo il punto.~
+@223  = ~Ma mi fa piacere vedere che ti interessi a qualcosa di diverso del contenuto delle tasche degli altri...~
+@224  = ~Andiamo, Isra. Andrà tutto bene.~
+@225  = ~Lo spero sicuramente.~
+@226  = ~Sai, Izzy, mi piace un bel racconto bardico tanto quanto chiunque, ma quando ti ho chiesto una storia l'altra sera, volevo un racconto tutto tuo.~
+@227  = ~I racconti bardici sono molto più interessanti, ti assicuro, per quanto difficile possa essere distinguere i fatti dagli abbellimenti.~
+@228  = ~Ma sei un paladino di Sune! Devi avere *qualche* storia divertente da condividere!~
+@229  = ~Imoen, ci sono domande appropriate e altre meno. Forse dovresti imparare la differenza.~
+@230  = ~Oh, andiamo, nessuna damigella in pericolo? Neanche un bel principe a spasimare ai tuoi piedi? Oooh, ci sono, una relazione amorosa proibita con un mago malvagio o qualcosa del genere...~
+@231  = ~Non Edwin, però, perché sarebbe veramente... eek.~
+@232  = ~Non Xzar, però, perché sarebbe veramente... eek.~
+@233  = ~*ride* Sune lo proibisce! No, Imoen, niente maghi, e non c'è monarchia nell'Amn. Per quanto riguarda le damigelle in pericolo... la cosa più vicina in cui mi sono imbattuta è stata senza dubbio esserne una, e quella storia è molto meno interessante - e più imbarazzante - di quanto si potrebbe pensare.~
+@234  = ~Niente draghi?~
+@235  = ~Semplice follia adolescenziale, e non è una storia che mi interessa raccontare.~
+@236  = ~Guastafeste.~
+ 
+// Jaheira
+// -------
+@237  = ~Quel kajal di Mulhoran a cui sei così affezionata sta cominciando a fare macchie, Isra. Forse dovresti riconsiderare quali abitudini siano appropriate e quali meno lungo la strada.~
+@238  = ~Io... oh, è vero. Grazie. Avrò bisogno di trovare qualcosa di più adatto per questo clima nordico, a quanto sembra.~
+@239  = ~Saresti più saggia a dedicare meno tempo ed energie al tuo aspetto e di più al combattimento con la spada.~
+@240  = ~Sono perfettamente in grado di fare entrambe le cose, mia signora.~
+@241  = ~Mmpf. Non usare quel tono con me, bambina...~
+@242  = ~Con tutto il rispetto, Jaheira, *non* sono una bambina e tu non mi tratterai come tale. Se trovi un difetto - un difetto sostanziale – nel mio modo di combattere, sei libera di farmelo notare. Tuttavia, francamente, le mie scelte personali non sono di tuo interesse. Ci siamo capiti?~
+@243  = ~Abbastanza. Spero solo che ricorderai questo momento quando inevitabilmente troverai altri che agiscono in modo contrario ai tuoi desideri, cara la mia cavalieressa.~
+@244  = ~Lady Jaheira, quello stufato che hai preparato l'altra sera...~
+@245  = ~Solo "Jaheira", bambina. Non mi servono gli ornamenti della nobiltà.~
+@246  = ~Come desideri. Ma volevo dire che il tuo stufato di ieri sera era davvero delizioso. Hai una ricetta per caso?~
+@247  = ~No. Né la condividerei con te se l'avessi. Il livello di precisione e conoscenza delle tradizioni dei boschi necessarie per evitare di avvelenarsi...~
+@248  = ~Hai bisogno di cure, Isra? Sembri improvvisamente debole.~
+@249  = ~Sto... bene. Non sono più sicura che mi piaccia l'idea che tu cucini qualcosa. Mai più. Ma per il resto sto... abbastanza bene.~
+@250  = ~Mmpf. Non essere ridicola. Ma forse sarebbe saggio attenersi alle spezie Calishite che preferisci.~
+@251  = ~Sì... sì, oserei dire che sarebbe la cosa migliore.~
+@252  = ~Isra, stai male? Sembri stranamente a disagio.~
+@253  = ~Perdonami, ho visto qualcosa tra i cespugli un attimo fa. È stato... assolutamente ripugnante.~
+@254  = ~Questa regione è nota per le sue varie specie di roditori. Tuttavia, sembra che ora sia scappato via.~
+@255  = ~Sì, e i miei occhi ringraziano.~
+@256  = ~Mmpf. La natura non esiste solo per servire i tuoi gusti estetici, bambina. Per tutto ciò che trovi bello nella foresta, ce ne sarà un altro che invece consideri orribile.~
+@257  = ~Ti assicuro, mia signora, questo mi è chiaro.~
+ 
+// Kagain
+// ------
+@258  = ~Sei una tipa mondana per una del tuo ordine, non è vero? Ti piacciono i tuoi profumi raffinati e quelle robe lì.~
+@259  = ~In misura ragionevole, può darsi. Dovrei affermare di appoggiare questo genere di cose e poi rifiutarmi di proteggerle? Sarebbe ipocrita.~
+@260  = ~Arh, Arh, sei sicura di non essere una seguace di Waukeen, ragazza?~
+@261  = ~Abbastanza.~
+@262  = ~Una volta, lavorando con uno di voi, almeno si poteva stare sicuri che i soldi erano al sicuro da dannatissime ragazze sciocche.~
+@263  = ~Ti assicuro che spendo solo i soldi che ho portato con me. Anche se oso dire che fosse per te non compreresti neppure il cibo, avessi la scelta.~
+@264  = ~Sì, se potessi farne a meno, non posso dire che lo farei.~
+@265  = ~Per uno così preso dai soldi, Kagain, raramente sembri propenso a spenderli. Non posso dire di capirlo.~
+@266  = ~Adesso vuoi farmi la predica, ragazza? L'oro vale qualcosa solo se spendi con la tua gente.~
+@267  = ~Non sono mai stato molto colpita dalla stravaganza dell'Amn, no, ma la tua avarizia fa sembrare attraente persino quella. La falsa carità è almeno ancora carità.~
+@268  = ~Sei una ragazza ricca, non è vero? Sei nata ricco, è probabile che tu muoia ricca - e prima di quanto tu pensi, se non smetterai di importunarmi.~
+@269  = ~... Ci sono diversi tipi di ricchezza, Kagain e diversi tipi di povertà. Qualunque sia la vacuità che si nasconde nella tua anima, dubito fortemente che tutti i soldi dell'Amn possano riempirla.~
+@270  = ~Arh, non Amn, forse, ma possiamo pensare un po' più in grande di così, non trovi?~
+ 
+// Khalid
+// ------
+@271  = ~Quella c-canzone che stavi c-canticchiando, Isra... m-mi ricorda una che c-conoscevo durante la m-mia infanzia.~
+@272  = ~Nel Calimshan? Potrebbe anche essere. La mia famiglia vive nell'Amn da generazioni, ma siamo ancora piuttosto tradizionalisti.~
+@273  = ~Questo p-può essere una maledizione t-tanto quanto una benedizione.~
+@274  = ~Sì... vero. Immagino che non ti manchi eccessivamente il Calimshan?~
+@275  = ~Non mi è rimasto n-nulla di cui p-poter sentire la mancanza. Ma tu sei più giovane... e p-per la prima volta lontana da c-casa, suppongo.~
+@276  = ~Completamente al di fuori dell'Amn, sì. Per essere completamente onesta con me stessa, tuttavia, dovrei ammettere che Crimmor stava diventando un po' troppo... soffocante.~
+@277  = ~S-soffocante? In che senso?~
+@278  = ~È una città meravigliosa, certamente... una delle più piacevoli dell'Amn, ma un tale splendore a volte genera auto-compiacimento.~
+@279  = ~Capisco. E p-può essere p-pericoloso quanto qualsiasi male p-più evidente, a volte.~
+@280  = ~Le famiglie nobili di Crimmor difficilmente lasciano che i poveri muoiano di fame per le strade, ma a volte non riescono a vedere oltre i propri confini. In verità, però, preferirei non parlarne male.~
+@281  = ~Come dici tu, Isra. M-ma abbiamo i-indugiato abbastanza a lungo... f-forse dovremmo raggiungere gli altri.~
+@282  = ~Khalid, potresti tenerlo sollevato un momento? Volevo vedere... oh, sì. Avrei dovuto aspettarmelo che si sarebbe gonfiato a quel modo.~
+@283  = ~Se fa ancora male, sono c-certo che Jaheira sarebbe disposta a d-darci un'occhiata.~
+@284  = ~Se fa ancora male, f-forse dovresti chiedere a un c-chierico di d-darci un'occhiata.~
+@285  = ~E sprecare un incantesimo per la mia stessa goffaggine? No, ce la posso fare.~
+@286  = ~Non hai davvero b-bisogno delle nostre s-sessioni di s-sparring. Affrontiamo abbastanza c-combattimenti così com'è senza la necessità di u-ulteriori esercitazioni.~
+@287  = ~Apprezzo la routine. E preferirei di gran lunga scoprire di essere diventata disattenta *fuori* dalla battaglia piuttosto che dentro.~
+@288  = ~Ovviamente, se preferisci fermarti, non voglio insistere.~
+@289  = ~No, sono disposto a c-continuare... fintanto che accetterai di prenderti c-cura di te in seguito. A volte sei troppo orgogliosa, Isra.~
+@290  = ~*sorride* Penso di poter accettare questi termini, Khalid. Grazie.~
+@291  = ~Devo confessare, Khalid, non ho mai sentito parlare di una coppia sposata che insieme si dà all'avventura. E pur avendo viaggiato con voi ormai da un po' di tempo, il concetto mi rimane ancora... estraneo.~
+@292  = ~Questo sì c-che è s-sorprendente. Avrei pensato che c-cose del genere fossero c-comuni tra i S-Suniti.~
+@293  = ~Tra i chierici, forse. Le loro abitudini a volte possono cambiare con i loro stati d'animo, ma tra i paladini... non l'ho mai visto prima.~
+@294  = ~Preferiamo tenere gli oggetti della nostra devozione lontani dal pericolo.~
+@295  = ~E su un p-piedistallo, m-magari, per essere ammirati d-da lontano?~
+@296  = ~Non ti piace l'idea, noto.~
+@297  = ~Esiste una cosa c-chiamata essere t-troppo romantici per il p-proprio bene, Isra. Se poni intenzionalmente il tuo sguardo s-su uno fuori p-portata, avrai m-molte delusioni nella tua vita.~
+@298  = ~Pochi di noi praticano esclusivamente l'amore cortese, lo ammetto, anche se è certamente più gentile che lasciare il proprio coniuge a fermentare in un castello, se così si può dire.~
+@299  = ~Eppure ti o-opponi all'idea di viaggiare p-per strada come una c-coppia.~
+@300  = ~Non riesco a immaginare che non sia... terrificante, davvero. Se posso chiedere, come puoi sopportare l'incertezza di tutto questo?~
+@301  = ~Confido che Jaheira sappia p-prendersi cura di sé stessa, e che faccia lo s-stesso con me. Cos'è l'amore senza f-fiducia reciproca?~
+@302  = ~Fiducia reciproca... forse c'è del vero in questo, anche se il concetto mi lascia ancora perplessa. Non intendo mettere in dubbio la sincerità del vostro attaccamento, ovviamente.~
+@303  = ~*ride* Non ho mai p-pensato ne avessi l'intenzione. Ma vieni, a-andiamo avanti adesso.~
+ 
+// Kivan
+// -----
+@304  = ~La tua attenzione vaga troppo spesso nella mia direzione, Isra. Sarebbe meglio tenerla sulla strada.~
+@305  = ~Può darsi, anche se mi è sempre stato insegnato che la conoscenza dei propri alleati può rivelarsi importante in battaglia quanto la conoscenza dei propri nemici.~
+@306  = ~Mmm.~
+@307  = ~È estremamente difficile parlare con te a volte, Kivan.~
+@308  = ~Sì, me l'hanno già detto.~
+@309  = ~La mia mente è afflitta al momento, Isra, e qualsiasi tentativo tu possa fare per alleggerirla servirebbe solo ad affliggerla ulteriormente. Per favore, lasciami stare.~
+@310  = ~Io... capisco. Se questo è ciò che desideri.~
+@311  = ~Tutti i cavalieri del tuo ordine sono molto simili a te, Isra?~
+@312  = ~Cosa intendi?~
+@313  = ~Sei innamorata dell'amore stesso, amica mio, e ti ammiro per questo. Ma sei ancora molto giovane.~
+@314  = ~... Capisco.~
+@315  = ~Ci sono alcuni membri nel mio ordine che... hanno subito perdite come la tua, Kivan. Abbiamo anche diverse storie di cavalieri di altre fedi che si dedicano interamente a Chiomadifuoco... dopo una simile tragedia. È una cosa rara, ma a volte succede.~
+@316  = ~Mi auguro che questo risponda allo spirito della tua domanda, se non esattamente alle parole.~
+@317  = ~A dire il vero io non lo capisco.~
+@318  = ~Kivan, non sono così giovane da non riconoscere che accadano cose terribili in questo mondo. Nessuno di noi lo è, ma si può trovare conforto in cose migliori della vendetta.~
+@319  = ~E per ognuno che trova conforto, quanti cadono invece?~
+@320  = ~Io... davvero, non potrei dirlo con certezza.~
+@321  = ~Questo non mi sorprende.~
+@322  = ~È una strada crudele, Kivan, con nient'altro che oscurità alla fine.~
+@323  = ~È la strada che ho scelto e non ne sarò allontanato.~
+@324  = ~No, c'è ancora qualcosa di strano nella tua posizione...~
+@325  = ~... Oh. Oh, cavolo.~
+@326  = ~La tua offerta è stata gentile, ma l'arco non... è decisamente la mia vocazione, temo.~
+@327  = ~L'abilità nelle armi raramente si guadagna dall'oggi al domani, cosa che tu conosci bene quanto me. Sono sorpreso che il tuo ordine non ti abbia insegnato il tiro con l'arco.~
+@328  = ~Mio padre ci ha provato una volta, anni fa. Dovrei considerarmi fortunata di non essermi ferita a un piede. Dopo quella debacle, non è mai stata una priorità, anche prima che venissi formalmente addestrata.~
+@329  = ~Non dovresti sprecare il tuo tempo, davvero. Anche se non avessi la stessa probabilità di colpire un amico che un nemico, dubito che mi sentirei mai del tutto a mio agio con un arco.~
+@330  = ~È un'abilità inestimabile e vale tutto il tempo necessario per apprenderla.~
+@331  = ~Per favore, Kivan, vorresti toglierti questa folle idea dalla mente una volta per tutte?~
+@332  = ~Certamente, se è questo che desideri.~
+ 
+// Minsc
+// -----
+@333  = ~Compagna Isra! Boo e io ci stavamo chiedendo qualcosa.~
+@334  = ~Che cosa, Minsc?~
+@335  = ~Sei molto carina, per una donna guerriera. Boo ne ha raramente viste di così belle.~
+@336  = ~*ride*Grazie.~
+@337  = ~E sei molto coraggiosa, oh, davvero molto coraggiosa! Il male corre a nascondersi quando alzi il tuo possente braccio con la spada verso le loro brutte facce.~
+@338  = ~Minsc si chiede, però, se forse la bella signora non debba stargli dietro in battaglia. Non è sicuro per le donne essere in prima linea, specialmente quelle così belle come Isra!~
+@339  = ~Mi lusinghi, amico mio, ma posso cavarmela da sola. Veramente.~
+@340  = ~Beh, se ne sei sicura. Tuttavia, forse dovresti starci un po' più vicina sul campo. Non vogliamo che tu ti faccia male!~
+@341  = ~*ride* I miei ringraziamenti, Minsc. Lo terrò a mente.~
+@342  = ~Boo dice di dirti che approva il tuo zelo nel combattere le forze del male e che è felice di averti al fianco di Minsc.~
+@343  = ~Ma, Isra, cos'è esattamente lo "zelo"? Boo non lo dirà e Minsc è confuso.~
+@344  = ~Passione, Minsc. Passione nella sua forma più pura. Dimmi, come ti senti riguardo alla prospettiva di sradicare il male da questo mondo?~
+@345  = ~È il compito più importante di tutti! Non si deve permettere al male di diffondere ulteriormente la sua corruzione e deve essere preso a calci nelle chiappe e schiacciato orribilmente sotto i nostri talloni!~
+@346  = ~Esatto, e quello che provi in questo momento, Minsc... *quello* è zelo.~
+@347  = ~Ahah! Vedi, Boo, non è stato così difficile?!~
+@348  = ~Minsc è d'accordo con la valutazione di Boo. La compagna Isra è decisamente zelante nel combattere le forze del male!~
+@349  = ~Come te, amico mio.~
+ 
+// Montaron
+// --------
+@350  = ~Non mi piace molto quel bagliore da mercenario nei tuoi occhi, Montaron.~
+@351  = ~È così? Stavo pensando, quelli della tua risma valgono più di quanto pensassi.~
+@352  = ~Davvero?~
+@353  = ~Certo, la tua armatura vale una cifra niente male di questi tempi, per non parlare di quanto sia ingioiellata... ma non sono ancora riuscito a decidere se una ragazza come te varrebbe di più da viva che morta.~
+@354  = ~Dammi un solo motivo per abbatterti, ladro, e ti prometto che lo farò.~
+@355  = ~Forse da morta, allora. Suppongo che possa aspettare che qualche freccia vagante faccia il suo lavoro.~
+@356  = ~Sei decisamente più disinvolta con le tue grazie rispetto alla maggior parte della tua risma, complimenti.~
+@357  = ~Ti invito a rivolgere la tua bava e relativi commenti osceni altrove, ladro.~
+@358  = ~I commenti forse, ma la bava resta dov'è. Mi sono guadagnato un bel gruzzolo in taverna scommettendo su quanto lontana ti saresti spinta con quel bardo, bello spettacolo comunque.~
+@359  = ~Sei assolutamente disgustoso.~
+@360  = ~Forse, ma è stata l 'unica volta in cui è valsa la pena essere in questa compagnia.~
+@361  = ~Non puoi davvero fare a meno di trasformare tutto ciò che è giusto a questo mondo in una sua schifosa parodia, vero?~
+@362  = ~È un talento naturale, bella.~
+ 
+// Quayle
+// ------
+@363  = ~Vedi, Isra? Nel tempo che abbiamo trascorso in reciproca compagnia, ho già iniziato ad avere un impatto positivo su di te.~
+@364  = ~Di cosa stai parlando nel nome dei Reami, Quayle?~
+@365  = ~Beh, non fai tutte quelle cose stupide con i tuoi capelli come una volta. È un bel miglioramento.~
+@366  = ~... A meno che tu non sia in qualche modo responsabile della mancanza di tempo di recente...~
+@367  = ~Sai, sei davvero fortunata che io sia qui con voi. Sono ampiamente - e giustamente, ovviamente - considerato una delle persone più attraenti del Faerun, e ti assicuro che avere un aspetto così bello non è facile! Che dire, potrei fornirti un numero qualsiasi di consigli di bellezza alla moda! Non c'è niente come imparare dai migliori, dopotutto.~
+@368  = ~Potresti per favore... sparire dalla mia vista?~
+@369  = ~Capisco che ti senti sopraffatta dalla mia bellezza. Ho sentito che a volte succede con i Suniti.~
+ 
+// Safana
+// ------
+@370  = ~Devo dire, tesoro, che sono davvero piuttosto impressionata.~
+@371  = ~Cosa, nel nome dei Reami, pensi di fare, Safana? Mettilo giù immediatamente!~
+@372  = ~Tra un attimo, cara. Sono abbastanza sicura di non aver visto prodotti di questa qualità da quando ho lasciato Calimshan. Potrei aver bisogno di prenderlo in prestito ad un certo punto. Non ti dispiacerebbe, vero?~
+@373  = ~Sicuramente sì.~
+@374  = ~Peccato. Non avevo idea che la chiesa di Sune fosse così BEN fornita. Forse dovrei prendere in considerazione di convertirmi un giorno.~
+@375  = ~Safana, hai circa tre secondi per togliere quelle mani dalla mia borsa...~
+@376  = ~Oh mio Dio, è questo quello che penso che sia? Non ne avevo mai visti di così...~
+@377  = ~Oouch! Va bene, va bene. Puoi riavere la tua preziosa *attrezzatura*.~
+@378  = ~Se trovo che manca qualcosa--~
+@379  = ~Ohh, stavo solo guardando disinteressata, tesoro. Giuro.~
+@380  = ~Era davvero necessario, Safana?~
+@381  = ~Non essere ipocrita, tesoro. O dovrei chiamarti "perdente irritata"? Come se anche tu non te lo stessi mangiando con gli occhi.~
+@382  = ~Era certamente affascinante, ma questo non è certo il momento o il luogo per tali indulgenze. Spero che tu almeno abbia preso commiato in modo appropriato.~
+@383  = ~Ohh, se così si può dire, in un certo senso.~
+@384  = ~... L'hai derubato, vero?~
+@385  = ~Certo che l'hai fatto. Come possano gli uomini continuare a cadere nei tuoi giochetti manipolatori...~
+@386  = ~*sospira* A volte penso che non io ti piaccia affatto, tesoro.~
+@387  = ~In effetti, no. Dovrei pensare che ormai sia abbastanza ovvio che ti trovo completamente ripugnante. Qualunque cosa tu gli abbia preso, Safana, la rivoglio indietro. Adesso.~
+@388  = ~Se insisti... sai, non sei più divertente. Se può essere d'aiuto, ti lascerò il prossimo tutto per te.~
+@389  = ~Oh, non fare l'offesa. Ora, perché non fai la brava bambina e non restituisci gli oggetti di valore rubati a quel povero ragazzo? Mi piacerebbe davvero godermi la colazione in pace.~
+@390  = ~Isra, tesoro, non parli la lingua Calishita da secoli, dico bene? Quell'accento è assolutamente atroce, anche per una ragazza di provincia.~
+@391  = ~Sono stupita dalla tua delicata eloquenza.~
+@392  = ~Che è comunque più delicata di quanto hai appena detto. Chi erano i tuoi antenati, marinai di Memnon?~
+@393  = ~Signori della Guerra di Calimport, per quanto ne so. Immagino che la mia dizione non sia proprio quella a cui sei abituata.~
+@394  = ~Beh, non importa. Di certo ho sentito di peggio. Vedi, c'era questo affascinante ladro che conoscevo a Calimport... non posso dire di aver capito più di una parola su tre quando parlava.~
+@395  = ~Ovviamente mio padre alla fine lo fece impiccare.~
+@396  = ~Non sembri molto triste per questo.~
+@397  = ~Ha fatto le sue scelte. Io la mia.~
+@398  = ~Sì, non ne dubito.~
+@399  = ~Sei sempre così moralista. Davvero, tesoro, quel cipiglio è terribilmente poco attraente su di te. Non trovi che sia un peccato?~
+@400  = ~A volte non so nemmeno perché mi prendo la briga di parlare con te.~
+@401  = ~Qualcosa che mi sono chiesta più di una volta io stessa, te lo assicuro.~
+ 
+// Shar-Teel
+// ---------
+@402  = ~Sei una vergogna, donna. Sei abile e forte, eppure ti lasci vincolare da codici scritti da uomini idioti.~
+@403  = ~Non capisci che non ti considerano? Cercano sempre di proteggerti quando combatti al loro fianco, come se fossi una sciocca bamboccia! Bah.~
+@404  = ~... Non più di quanto farebbe chiunque altro.~
+@405  = ~Se sapessi di quei codici la metà di quanto professi, sapresti anche che stai nuotando in acque pericolose.~
+@406  = ~Ah! Non ho nessuna voglia di combatterti, paladino. Riservo la mia furia per coloro che la meritano. Un giorno, forse, ti sveglierai da questo tuo stupido sogno e farai lo stesso.~
+@407  = ~Il giorno in cui dovessi vedere il mondo alla tua maniera, Shar-Teel, sarà il giorno in cui cadrò volentieri sulla mia stessa spada.~
+@408  = ~Che gesto romantico, ragazza. Vedremo se te lo ricorderai ancora quando i tuoi amati fratelli ti avranno abbandonata al tuo destino.~
+@409  = ~Ma non ha senso continuare parlare con te. Forse ti dimostrerai utile una volta cresciuta.~
+ 
+// Skie
+// ----
+@410  = ~Isra, è normale che i nobili dell'Amn insegnino alle proprie figlie come usare le armi?~
+@411  = ~Non molto comune, no. Oserei dire che mio padre ha deciso rapidamente che se la scelta era tra l'essere addestrata dai migliori istruttori e io che faccio l'autodidatta negli spogliatoi della caserma, era decisamente più saggia la prima.~
+@412  = ~*ridacchia* Vorrei che mio padre fosse altrettanto pragmatico.~
+@413  = ~Può darsi, anche se bisogna stare attenti a non eccedere nel senso opposto.~
+@414  = ~Sei proprio sicura di non avere affatto nostalgia di casa?~
+@415  = ~Certo che no! Avventura, strada aperta... questa è la vita che ho sempre sognato!~
+@416  = ~Ma è anche una vita per la quale sei... impreparata, Lady Silvershield. Potresti essere uccisa. Ognuno di noi potrebbe esserlo.~
+@417  = ~Lo so, Isra. E ne ho abbastanza di persone che mi dicono di andare a casa e di essere una vera signora, quindi smettila. È la mia vita, e ho smesso di viverla come tutti gli altri mi dicono che dovrei!~
+@418  = ~Molto bene, allora. Come desideri.~
+@419  = ~Posso parlarti un momento, mia signora? In privato?~
+@420  = ~Se si tratta di quel profumo che ho preso in prestito...~
+@421  = ~Cosa? Oh, no. Certo che no.~
+@422  = ~Sei... giovane per certi versi. Più giovane di quanto penso tu realizzi. Veramente, non vorrei vederti farne uno che ti perseguiterà per il resto della tua vita.~
+@423  = ~Fare cosa?... di cosa stai parlando?~
+@424  = ~Un errore. Che ha un nome ed un cognome. Eldoth Kron.~
+@425  = ~Anche tu, Isra? Ma tu... dovresti adorare e servire l'amore! Perché dovresti provare a tenerci separati?~
+@426  = ~Sono devota a Sune, vero. Eldoth... non lo è. Sarei molto sorpresa di apprendere che serva chiunque a parte sé stesso.~
+@427  = ~È un *serpente*, Skie. Non sono sicura di aver mai sentito una parola dalla sua lingua che non fosse falsa. Qualunque cosa ti abbia detto per farti innamorare così...~
+@428  = ~Non sai di cosa stai parlando! Lui mi ama.~
+@429  = ~No, non lo fa. Non c'è posto in quel... cuore di bestia per l'amore. Se non vuoi prestare attenzione al modo in cui ti tratta, guarda almeno come tratta gli altri intorno a lui.~
+@430  = ~Sei una donna bella, gentile e intelligente... ti meriti di meglio di... questa parodia d'amore.~
+@431  = ~Tu... sei come tutti gli altri! Perché non potete lasciarci tutti soli!?~
+@432  = ~*sospira* Se tutti continuano a ripeterti la stessa cosa, Skie, forse dovresti farti qualche domanda.~
+ 
+// Tiax
+// ----
+@433  = ~Quando Tiax governerà su tutto, paladino, tu sarai una delle sue consorti!~
+@434  = ~... penso di no. Trovo nauseabondo persino il pensiero di passare un solo momento con te.~
+@435  = ~Bene! Tiax il bello non ha bisogno di una consorte! Non ha bisogno di nessuno se non di sé stesso!~
+@436  = ~Capisco. Hai mai avuto una relazione significativa nella tua vita, Tiax? Nessuna?~
+@437  = ~Tiax è il suo migliore amico, confidente e amante! Chi mai avrebbe bisogno di qualcun altro se non del magnifico distruttore di mondi?~
+@438  = ~Non sono... del tutto sicura di voler ragionare su quello che ho appena sentito.~
+ 
+// Viconia
+// -------
+@439  = ~Ho notato quanto spesso i tuoi occhi si soffermino sul mio corpo, jalil. Il richiamo del proibito tenta anche te?~
+@440  = ~Non adulare te stessa.~
+@441  = ~Ti allontani al suono della mia voce come una bambina colta in flagrante. *ridacchia* Quindi forse ti ritrovi davvero a considerare concetti che non ti dovrebbero interessare... uno specchio oscuro è una prospettiva seducente, non è vero?~
+@442  = ~... mi fai *ribrezzo*, Viconia.~
+@443  = ~Posso tollerare la tua esistenza per il momento, ma se MAI menzionerai ancora la tua vile fede in mia presenza, questa pace terminerà all'istante. Ci siamo capiti?~
+@444  = ~Sei così sulla difensiva, rivvil. Uno si aspetterebbe che la certezza della sua fede possa resistere a un piccolo esame, ma... forse mi sbaglio io. Ti lascerò stare.~
+@445  = ~Tieni quelle mani lontane da me, Viconia.~
+@446  = ~*ridacchia* Sembra che moriresti volontariamente piuttosto che accettare il mio aiuto.~
+@447  = ~Puoi dirlo forte.~
+@448  = ~Come desideri, jalil. Ma considerato come mi guardi, una bambina ipocrita in meno al mondo non sarebbe una perdita per nessuno.~
+ 
+// Xan
+// ---
+@449  = ~Non riesco a decidere se sei completamente pazza o semplicemente naif.~
+@450  = ~Rifletti piuttosto male i modi della tua gente, Xan, se questa è la tua idea di cortesia.~
+@451  = ~Non sarebbe la prima volta.~
+@452  = ~Sei una donna attraente, suppongo, per un'umana. Almeno, spero proprio che tu lo sia, considerato che passi metà della mattinata a truccarti...~
+@453  = ~... Stai esagerando, sicuramente.~
+@454  = ~Che differenza fa? E poi ti precipiti via così impazientemente per farti ammazzare... è sorprendente che tu non sia già stata sfigurata. Come qualcuna che apprezzi così tanto il suo aspetto possa rischiare in modo così folle è al di là della mia comprensione.~
+@455  = ~... anche io apprezzo la mia vita. Dovrei allontanarmi dal pericolo semplicemente per preservarlo?~
+@456  = ~Se fossi intelligente, lo faresti.~
+@457  = ~Abbiamo concezioni molto diverse di intelligenza, a quanto pare.~
+@458  = ~*sospira* Follia.~
+@459  = ~Dimmi, Xan, nella tua città c'è davvero una sorgente che può curare tutti i dolori? Ne ho sentito parlare una o due volte.~
+@460  = ~Nessuna quantità di magia può curare tutti i dolori, nemmeno quello della Sorgente Cantante. Ma sì, esiste.~
+@461  = ~Capisco. Avevo sempre pensato che il leggendario splendore di Evereska fosse solo appunto... leggenda. Forse mi sono sbagliata.~
+@462  = ~Qualunque cosa tu abbia sentito, probabilmente impallidisce in confronto alla realtà.~
+@463  = ~Eppure la nascondete al resto del mondo. Sembra una vergogna terribile.~
+@464  = ~Sarebbe senza dubbio già stata spogliata se non lo facessimo. Non dimenticare che Myth Drannor ha segnato il suo destino quando ha aperto le sue porte alle masse dell'umanità.~
+@465  = ~Può darsi, ma il mondo è più ricco grazie a questo.~
+@466  = ~E la mia gente, più povera. E adesso siamo già abbastanza poveri così com'è.~
+@467  = ~Ma so che non ti convincerò. Non so nemmeno perché mi prenda la briga di provare.~
+ 
+// Xzar
+// ----
+@468  = ~Xzar, l'hai davvero appena... mangiato?~
+@469  = ~Mmm? E allora?~
+@470  = ~Io... perdonami...~
+@471  = ~Era morto da pochi giorni. Il corpo umano è sorprendentemente resistente a questo genere di cose, sai.~
+@472  = ~Il tuo, forse... ma certamente non il mio.~
+@473  = ~Ti ho sognato la scorsa notte, paladino... o forse la tua dea. Mmm. Le immagini accecanti svaniscono al risveglio, ahimè, e a volte può essere piuttosto pericoloso dire dove una cosa inizia e l'altra finisce.~
+@474  = ~Se ti aspetti che io sia in grado di interpretare le tue parole senza senso, Xzar--~
+@475  = ~Interpretare? Oh, no, no... non andrebbe affatto bene. Un sogno che è stato interpretato perde tutto il suo potere. Pensavo che lo sapessero tutti.~
+@476  = ~... Non è quello che intendevo dire.~
+@477  = ~*sospira* Non intendiamo mai quello che diciamo. Oppure diciamo quello che intendiamo, forse. Almeno, non mi sembra di farlo mai.~
+@478  = ~Così ho notato.~
+@479  = ~Ed anche nel mio sogno, l'hai notato. Anche se devo dire che hai notato molte cose che non sembri vedere nel mondo della veglia...~
+@480  = ~Xzar, davvero non mi interessa sentire i tuoi discorsi senza senso.~
+@481  = ~Oh? Un vero peccato.~
+ 
+// Yeslick
+// -------
+@482  = ~Per essere un paladino, Isra, è un piacere viaggiare con te. È bello non dover ascoltare discorsi costanti sulle virtù dell'onore, del dovere e della pazienza per una volta.~
+@483  = ~... Non sono del tutto sicura di doverlo considerare un complimento.~
+@484  = ~Ach, ragazza, non prenderla nel modo sbagliato. Sei una brava donna, con una bellissima testa sulle spalle e un braccio forte con la spada. È rinfrescante non dover affrontare le tipiche sciocchezze da paladino.~
+@485  = ~Mi sembra molto poco caritatevole, Yeslick. E mi sorprende. Mi avevi sempre colpito come un tipo rispettoso.~
+@486  = ~Faresti fatica a trovare un nano più onorevole, certo, ma i paladini sembrano insistere su tali virtù e fa male alle orecchie dopo le prime ore.~
+@487  = ~Secondo la mia esperienza, la maggior parte sa già quali virtù scelgono di seguire, e non c'è bisogno che gli venga ricordato quali dovrebbero. Non porta mai da nessuna parte tranne che litigare.~
+@488  = ~Non ne so molto sui Suniti, Isra. Vorresti parlare a un vecchio nano della dea di cui segui la fede?~
+@489  = ~Ah, ma da dove dovrei iniziare? Bellezza e amore, sì, ma questo va molto più in profondità di quanto le semplici parole possano descrivere.~
+@490  = ~Lei è... l'ispirazione, direi... la fonte della passione che rende la vita degna di essere vissuta. Dietro ogni atto d'amore, ogni barlume di bellezza in questo mondo spezzato, puoi sentire il suo tocco... davvero, è straordinario che lei darebbe così tanto e tuttavia si aspetti così poco in cambio - solo che le rendiamo onore gloriandoci dei suoi doni.~
+@491  = ~*sorride* Vorrei poter essere una poetessa migliore, per renderle giustizia.~
+@492  = ~Ad essere sinceri, ragazza, da come la descrivi sembra più la tua amante che la tua dea! Non è forse un modo inappropriato per parlare della tua divinità?~
+@493  = ~*ride* Al contrario, amico mio, è quello che si aspetta da noi. "Perditi nell'amore di Dama Chiomadifuoco". Sarei davvero una povera servitrice se disobbedissi ai suoi stessi comandi.~
+@494  = ~Mi sembra un po' strano, ma sembri molto più felice della maggior parte dei paladini che questo vecchio nano ha avuto il dubbio piacere di incontrare. E questo dovrebbe valere qualcosa.~
+@495  = ~Grazie, Isra. Non ne so molto degli dèi umani, ma sono sempre interessato a imparare, e se vuoi passare il tempo...~
+@496  = ~Certamente. E lo confesso, ne so un po' meno degli dèi nanici di quanto mi piacerebbe, quindi forse possiamo insegnarci l'un l'altro.~
+@497  = ~Sarebbe un grande piacere, ragazza. Davvero.~
+

@@ -1,0 +1,71 @@
+//@0    = ~v3.3~
+ 
+@1    = ~Mod NPC Isra per BG:EE, EET, BGT e TuTu~
+@2    = ~Contenuto crossmod Valerie/Isra~
+@3    = ~Contenuti crossmod Gavin/Isra~
+ 
+@11   = ~Devi avere installato Tutu, BGT, BG:EE o EET per installare il mod Isra NPC per BG.~
+@12   = ~Installa il componente principale Isra NPC per BG prima dei contenuti aggiuntivi.~
+@13   = ~Sembra che la mod Valerie non sia installata.~
+@14   = ~Mod Valerie installata e rilevata.~
+@15   = ~Mod Valerie non installata né rilevata.~
+@16   = ~Sembra che la mod Gavin non sia installata.~
+ 
+@21   = ~Il tuo gioco con SoD deve essere modificato prima che le mod possano essere installate su di esso. Controlla il file readme per ulteriori informazioni e un link per scaricare DLC Merger o Modmerge.~
+@22   = ~Installazione di Tutu rilevata.~
+@23   = ~Installazione di BGT rilevata.~
+@24   = ~Installazione di Baldur's Gate Enhanced Edition rilevata.~
+@25   = ~Rilevata installazione di Enhanced Edition Trilogy.~
+
+
+/* ----------- *
+ *  Creatures  *
+ * ----------- */
+@1006 = ~Messaggero~
+
+
+/* ---------- *
+ *  Isra NPC  *
+ * ---------- */
+@1007 = ~Isra~
+@1008 = ~Quando le viene chiesto del suo passato, Isra ride e ammette che finora c'è poco da dire. Spiega che ha trascorso gli ultimi otto anni a Crimmor, la capitale carovaniera dell'Amn, vivendo con i parenti di sua madre mentre era al servizio di un paladino di Sune nell'Ordine della Rosa Rubino. Per quanto le piaccia parlare della città, hai l'impressione che sia piuttosto entusiasta di essere finalmente lontana da essa e di conoscere il mondo da sola.~
+ 
+@1010 = ~Sono davvero onorata di poter far parte della tua compagnia.~ [rh#is001]
+@1011 = ~Non sono d'accordo con alcune delle scelte che hai fatto.~ [rh#is002]
+@1012 = ~Non posso più continuare a fare finta di niente.~ [rh#is003]
+@1013 = ~Basta! Non posso continuare così.~ [rh#is004]
+@1014 = ~Questo è nuovo... e non del tutto sgradito.~ [rh#is005]
+@1015 = ~Queste ore stanno cominciando a logorarmi.~ [rh#is006]
+@1016 = ~Vorrei che ci fossero dei Lliiriani tra di noi per scacciare la noia.~ [rh#is007]
+@1017 = ~Per Chiomadifuoco!~ [rh#is008]
+@1018 = ~Per tutto ciò che è buono!~ [rh#is009]
+@1019 = ~Per la gloria di Sune!~ [rh#is010]
+ 
+ 
+@1022 = ~Un aiuto da guaritore, per favore!~ [rh#is013]
+@1023 = ~Per quanto sia adorabile qui, comincio a sentire la mancanza della civiltà.~ [rh#is014]
+@1024 = ~Ah, la città, in tutta la sua magnificenza... e infamia.~ [rh#is015]
+@1025 = ~Mi chiedo quali meraviglie perdute potremmo trovare nascoste quaggiù.~ [rh#is016]
+@1026 = ~Tutto sembra possibile alla luce del giorno.~ [rh#is017]
+@1027 = ~È una notte bellissima... almeno per il momento.~ [rh#is018]
+@1028 = ~Ti ascolto.~ [rh#is019]
+@1029 = ~Di cosa hai bisogno?~ [rh#is020]
+@1030 = ~Come posso aiutarti?~ [rh#is021]
+@1031 = ~Sono pronta.~ [rh#is022]
+@1032 = ~Sì?~ [rh#is023]
+@1033 = ~Sì, cosa c'è?~ [rh#is024]
+@1034 = ~Sicuro.~ [rh#is025]
+@1035 = ~Molto bene.~ [rh#is026]
+@1036 = ~Come desideri.~ [rh#is027]
+@1037 = ~Farò come dici tu.~ [rh#is028]
+@1038 = ~Sì, immaginavo.~ [rh#is029]
+@1039 = ~Certamente.~ [rh#is030]
+@1040 = ~Come vuoi.~ [rh#is031]
+ 
+ 
+@1043 = ~Così non va bene!~ [rh#is034]
+@1044 = ~È più di quello che posso portare.~ [rh#is035]
+@1045 = ~Mmm?~ [rh#is036]
+@1046 = ~Questo potrebbe rivelarsi interessante.~ [rh#is037]
+@1047 = ~Il mio incantesimo...~ [rh#is038]
+
