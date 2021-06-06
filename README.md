@@ -99,9 +99,9 @@ Here is the recommended installation order:
 
 #### Notes
 
-*If you've previously installed the mod, remove it before extracting the new version. To do this, run **`setup-isra.exe`**, un-install all previously installed components and delete the :file_folder: **isra** folder.*
+*If you've previously installed the mod, remove it before extracting the new version. To do this, run __`setup-isra.exe`__, un-install all previously installed components and delete the :file_folder: __isra__ folder.*
 
-*When installing or un-installing, **do not close the DOS window** by clicking on the **X** button! Instead, press the **Enter** key whenever instructed to do so.*
+*When installing or un-installing, __do not close the DOS window__ by clicking on the __X__ button! Instead, press the __Enter__ key whenever instructed to do so.*
 
 *__Disable any antivirus__ or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.*
 
@@ -131,7 +131,7 @@ Run **`setup-isra.exe`** in your game folder to reinstall, un-install or otherwi
 
 #### Mac OS
 
-Isra NPC for BGII for Mac OS is distributed is distributed in the same compressed archive and includes a WeiDU installer.
+Isra NPC for BGII for Mac OS is distributed in the same compressed archive and includes a WeiDU installer.
 
 First, extract the files from the archive into your game directory. On successful extraction, there should be a :file_folder: isra folder, setup-isra and setup-isra.command files in your game folder. To install, simply double-click **`setup-isra.command`** and follow the instructions on screen.
 
@@ -284,7 +284,7 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version 3.5 (6 June 2021)</h6>
+#### Version 3.5 &nbsp;(6 June 2021)
 
 - Added dynamic install order syntax and global labels to support AL|EN's "Project Infinity".
 - Added Italian translation (thanks Coland!).
@@ -294,31 +294,31 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 3.4 (18 August 2020)
+#### Version 3.4 &nbsp;(18 August 2020)
 
 - Updated compatibility with Valerie NPC for BG (v1.2).
 
 ## 
 
-#### Version 3.3 (8 August 2020)
+#### Version 3.3 &nbsp;(8 August 2020)
 
 - Added Russian translation (by JamesMaxwell & Arcanecoast.ru).
 
 ## 
 
-#### Version 3.2 (19 July 2020)
+#### Version 3.2 &nbsp;(19 July 2020)
 
 - Fixed "*Valerie/Isra crossmod content*" component install with EET games (at last!). : wink:
 
 ## 
 
-#### Version 3.1 (18 April 2020)
+#### Version 3.1 &nbsp;(18 April 2020)
 
 - Fixed EET install and Valerie Crossmod install.
 
 ## 
 
-#### Version 3.0 (30 March 2020)
+#### Version 3.0 &nbsp;(30 March 2020)
 
 - Added *isra.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-isra.tp2* -> *isra.tp2* to support AL|EN's "Project Infinity".
@@ -348,13 +348,13 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 2.3 (11 April 2018)
+#### Version 2.3 &nbsp;(11 April 2018)
 
 - Crossmod bug fixed.
 
 ## 
 
-#### Version 2.2 (2 April 2018)
+#### Version 2.2 &nbsp;(2 April 2018)
 
 - Isra will no longer remain in the party after the opening dungeon of Siege of Dragonspear.
 - TRAified.
@@ -362,33 +362,33 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 2.1 (9 June 2014)
+#### Version 2.1 &nbsp;(9 June 2014)
 
 - Isra should no longer be transferring to BG2 in a BGT playthrough.
 - Updated WeiDU installer.
 
 ## 
 
-#### Version 2.0 (8 June 2013)
+#### Version 2.0 &nbsp;(8 June 2013)
 
 - Audio added.
 
 ## 
 
-#### Version 1.4 (21 February 2013)
+#### Version 1.4 &nbsp;(21 February 2013)
 
 - Bug in Rasaad banter fixed.
 
 ## 
 
-#### Version 1.3 (12 February 2013)
+#### Version 1.3 &nbsp;(12 February 2013)
 
 - Dialogue edits.
 - Several new banters and a string fixer added.
 
 ## 
 
-#### Version 1.2 (22 January 2013)
+#### Version 1.2 &nbsp;(22 January 2013)
 
 - Dialogue bug fixed.
 - Dorn conflict bug fixed.
@@ -396,14 +396,14 @@ This component installs banters between Isra and Gavin, if this mod is detected.
 
 ## 
 
-#### Version 1.1 (11 January 2013)
+#### Version 1.1 &nbsp;(11 January 2013)
 
 - Soundset error corrected.
 - BGT joining dialogue bug fixed.
 
 ## 
 
-#### Version 1.0 (6 January 2013)
+#### Version 1.0 &nbsp;(6 January 2013)
 
 - Initial release.
 <div align="right"><a href="#top">Back to top</a></div>
