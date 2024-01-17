@@ -266,6 +266,23 @@ COPY ~isra/creatures/rh#isra.cre~ ~override/rh#isra.cre~
 	ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~NONE~ ~weapon1~ EQUIP
 BUT_ONLY
 
+/* ---------------------------------------------------*
+ *  Change Isra voiceset from BG2 setup to BG1 setup  *
+ *  (only affects BGEE)                               *
+ * ---------------------------------------------------*/
+
+ACTION_IF GAME_IS ~bgee~ BEGIN
+	COPY_EXISTING ~rh#isra.cre~ ~override/rh#isra.cre~
+		SAY 0x1E0 @1037			/* I shall do as you say. */	/* SAY BGEE_ACTION4 */
+		SAY 0x1E4 @1038			/* Aye, I thought so. */		/* SAY BGEE_ACTION5 */
+		SAY 0x1E8 @1039			/* Certainly. */				/* SAY BGEE_ACTION6 */
+		SAY 0x1EC @1040			/* As you would have it. */		/* SAY BGEE_ACTION7 */
+		WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+		WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+		WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+		WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+	BUT_ONLY
+END
 
 /* ----------------- *
  *  Appending files  *
