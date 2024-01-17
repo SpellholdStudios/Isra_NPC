@@ -1171,7 +1171,7 @@ IF ~~ t8.5
  SAY @377 /* No. Even Davaeorn's death, gratifying though it may be, won't return the years that he stole from his victims. They... I can only hope that they find the help that they will no doubt need. */
  = @378 /* As much as I should like to take the time to help them further, I would hesitate to turn from this trail even a moment now. */
 	++ @379 /* Whatever help they need, they can no doubt get it from the Ilmatari. */ + t8.6
-	++ @380 /* You weren't anywhere near this angry about Mulahey or Tazoc. */ + t8.7
+	++ @380 /* You weren't anywhere near this angry about Mulahey or Tazok. */ + t8.7
 	++ @381 /* Indeed. I'm looking forward to some very sharp words with this Rieltar myself. */ + t8.8
 	++ @382 /* I'm not sure I care for this holy vengeance spiel. */ + t8.9
 END
