@@ -1,3 +1,8 @@
+<hr>
+
+:warning: **The maintenance and support of this project has been moved to a [new repository](https://github.com/Spellhold-Studios/Isra-NPC).**
+
+<hr><br>
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Isra_NPC?include_prereleases&color=darkred)<a name="top" id="top"></a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/SpellholdStudios/Isra_NPC?color=gold)
